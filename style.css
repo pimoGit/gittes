@@ -1,4 +1,33 @@
-/*qui andranno le regole della index*/
-footer{
-  background-color: white;
+/* #trans {
+  width: 100px;
+  height: 100px;
+  background: blue;
+  animation: pacman;
+  animation-duration: 3s;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
+
+@keyframes pacman {
+
+  0% { left: 0; top: 0;}
+
+  50% { left: calc(100% - 100px); top:0;}
+
+  60% {left: calc(100% - 100px); top:calc(100% - 100px);}
+
+  90% {left:0; top:calc(100% - 100px); }
+
+
+}
+
+.filter1 {
+  filter: sepia(0) blur(0) ;
+  transition: all 1s ease-out 0s;
+}
+
+.filter1:hover {
+  filter: sepia(1) blur(4px) ;
+}
+ */
