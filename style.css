@@ -1,3 +1,8 @@
+ul li {
+  list-style-type: none;
+}
+
+
 /* #trans {
   width: 100px;
   height: 100px;
