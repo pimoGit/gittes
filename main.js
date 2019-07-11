@@ -1,249 +1,282 @@
+//Crea due array che hanno un numero di elementi diversi. 
+//Aggiungi elementi all’array che ha meno elementi 
+//fino a quando ne avrà tanti quanti l’altro.
 
-var palla = {
-   "colore": ["red","blue"],
-   "tipo": "pallina da golf",
-   "tipo2": "qualcosa",
-   "chiave" : "altro valore"
-   };
+var array1 = [15, 2, 7];
+var array2 = [5];
 
-   var personaarr = ["mario","33","1.70","brutto"];
+if (array1.length == array2.length){
+    console.log('Sono uguali');
+  
+} else if (array1.length > array2.length){
+    var maxArray = array1;
+    var minArray = array2;
+  
+} else {
+    var maxArray = array2;
+    var minArray = array1;
+}
 
-   var persona180 = {
-      "nome": "mario",
-      "eta": 33,
-      "altezza": 1.70,
-      "aspetto": "brutto",
-      "user": "mariobrutto79"
-   }
+var diff = maxArray.length - minArray.length;
 
-   var persona181 = {
-      "nome": "marcello",
-      "eta": 32,
-      "altezza": 1.80,
-      "aspetto": "bellissimo",
-      "user": "marcvellobellismo80"
-   }
+for (var i = 0; i < diff; i++){
+    var randomNumber = Math.floor(Math.random()*(100+ 1));
 
-   // persona.user;
+    minArray.push(randomNumber);
+}
 
-
-   var utenti = [persona180, persona181];
-
-   console.log("lo username del primo utente dell'array è: " + utenti[1].user);
+console.log(minArray);
+console.log(maxArray);
 
 
 
-   // console.log(palla.chiave);
-
-   // console.log("palla peso prima", palla.peso);
-
-   // palla.peso = 46;
-
-   // console.log("palla peso dopo",palla.peso);
-
-   palla.peso = [46, 60];
-
-   // console.log("palla peso dopo riassegnazione",palla.peso);
-   
-   // console.log(palla);
 
 
-   for (var key in palla) {
-      // codice da eseguire
-      // key prima sarà “prezzo” poi “tipo” 
-      console.log("alla chiave: "+ key + " è assegnato il valore: " + palla[key]);
-      }
+// var palla = {
+//    "colore": ["red","blue"],
+//    "tipo": "pallina da golf",
+//    "tipo2": "qualcosa",
+//    "chiave" : "altro valore"
+//    };
 
-// function randonum10 (max) {
-//    var risultato = Math.floor(Math.random() * (max+1));
-//    console.log("altre cose bellissime!");
-//    return risultato;
-// }
+//    var personaarr = ["mario","33","1.70","brutto"];
 
-// function paridispari (numero) {
-//    if(numero % 2 === 0){
-//       return "pari";
-//    } else {
-//       return "dispari";
+//    var persona180 = {
+//       "nome": "mario",
+//       "eta": 33,
+//       "altezza": 1.70,
+//       "aspetto": "brutto",
+//       "user": "mariobrutto79"
 //    }
 
-// }
+//    var persona181 = {
+//       "nome": "marcello",
+//       "eta": 32,
+//       "altezza": 1.80,
+//       "aspetto": "bellissimo",
+//       "user": "marcvellobellismo80"
+//    }
 
-// var numutente = parseInt(prompt("inserisci un numero"));
+//    // persona.user;
 
-// var risultatoparita = paridispari(numutente);
 
-// console.log(risultatoparita);
+//    var utenti = [persona180, persona181];
 
-// // var numrandom1 = randonum10 (10);
-// // var numrandom2 = randonum10 (20);
-// // var numrandom3 = randonum10 (30);
+//    console.log("lo username del primo utente dell'array è: " + utenti[1].user);
 
-// // console.log(numrandom1,numrandom2,numrandom3);
 
 
+//    // console.log(palla.chiave);
 
-// // var listaspesa = [
-// //     "latte",
-// //     "pane",
-// //     "fonzies",
-// //     "carne",
-// //     "seppia",
-// //     "uova"
-// // ]
+//    // console.log("palla peso prima", palla.peso);
 
-// // var elemento = document.getElementById("mio_id");
+//    // palla.peso = 46;
 
-// // var contenutoTemp;
+//    // console.log("palla peso dopo",palla.peso);
 
-// // var newelement = prompt("inserisci qualcosa da comprare");
+//    palla.peso = [46, 60];
 
-// // listaspesa.push(newelement);
+//    // console.log("palla peso dopo riassegnazione",palla.peso);
+   
+//    // console.log(palla);
 
 
-// //  for (var i = 0; i < listaspesa.length; i++) {
-// //     //  console.log(listaspesa[i]);
+//    for (var key in palla) {
+//       // codice da eseguire
+//       // key prima sarà “prezzo” poi “tipo” 
+//       console.log("alla chiave: "+ key + " è assegnato il valore: " + palla[key]);
+//       }
 
-// //     contenutoTemp = elemento.innerHTML;
-// //     console.log(contenutoTemp);
+// // function randonum10 (max) {
+// //    var risultato = Math.floor(Math.random() * (max+1));
+// //    console.log("altre cose bellissime!");
+// //    return risultato;
+// // }
 
-// //     elemento.innerHTML = contenutoTemp + "<li>" + listaspesa[i] + "</li>";
-// //  }
+// // function paridispari (numero) {
+// //    if(numero % 2 === 0){
+// //       return "pari";
+// //    } else {
+// //       return "dispari";
+// //    }
 
-// // //  elemento.innerHTML =  listaspesa;
+// // }
 
+// // var numutente = parseInt(prompt("inserisci un numero"));
 
-// // // var contenuto = [];
+// // var risultatoparita = paridispari(numutente);
 
-// // // for (var i = 0; i < listaspesa.length; i++) {
-// // //     //  console.log(listaspesa[i]);
+// // console.log(risultatoparita);
 
+// // // var numrandom1 = randonum10 (10);
+// // // var numrandom2 = randonum10 (20);
+// // // var numrandom3 = randonum10 (30);
 
+// // // console.log(numrandom1,numrandom2,numrandom3);
 
-// // //     elemento.innerHTML = "<li>" + contenuto[j] + "</li>";
-// // //  }
 
-// // //  for(var j = 0; j < listaspesa.length; j++){
-// // //     contenuto[j] = listaspesa[i];
-// // //   }
 
-
-
-// // // var nomi = ["nome1","nome2","nome3","nome4","nome5"];
-
-// // // //  for (var i = 0; i < nomi.length; i++){ 
-// // // //      console.log(nomi[i]);
-// // // //  }
-
-
-// // // //  var i = 0;
-// // //  while (trovato === true){ 
-// // //     console.log(nomi[i]);
-// // //     if(qualcosa){
-// // //         trovato = false;
-// // //     }
-// // // }
-
-
-// // // var numarray = [3,6,2,17,22,5];
-
-// // // for (var i = 0; i < numarray.length; i++){
-
-// // //     if (numarray[i] % 2 != 0){
-// // //         console.log(numarray[i]);
-// // //     }
-    
-// // // }
-
-
-
-
-// // // for (var i = 1000; i >= 0; i--){
-
-// // //     console.log(i);
-// // // }
-
-// // // var mioarray = ["nome1","nome2","nome3","nome4","nome5"];
-
-// // // console.log(mioarray.length);
-
-// // // mioarray.push("nomaaltro");
-
-// // // console.log(mioarray.length);
-
-// // // for (var i = 0; i < mioarray.length; i++) {
-// // //     console.log(mioarray[i]);
-// // // }
-
-
-
-
-// // // var nomi = [];
-
-// // // nomi[0] = "Mario";
-// // // nomi[1] = "Altro";
-// // // nomi[2] = "Altro ancora";
-
-
-// // // var numero = parseInt(prompt("numero tra 0 e 2!"));
-// // // console.log("nuemro inserito", numero);
-
-// // // console.log(nomi[numero]);
-
-// // // console.log(nomi);
-
-// // // nomi.push("alvolo!");
-
-// // // document.getElementById("mio_id").innerHTML = nomi;
-
-
-
-
-
-
-
-
-
-
-
-
+// // // var listaspesa = [
+// // //     "latte",
+// // //     "pane",
+// // //     "fonzies",
+// // //     "carne",
+// // //     "seppia",
+// // //     "uova"
+// // // ]
 
 // // // var elemento = document.getElementById("mio_id");
-// // // var risultato, sceltapd, sceltaNumd, scelatNumcpu, somma ;
+
+// // // var contenutoTemp;
+
+// // // var newelement = prompt("inserisci qualcosa da comprare");
+
+// // // listaspesa.push(newelement);
 
 
-// // // // utente sceglie pari o dispari
-// // // sceltapd = prompt("scegli pari o dispari");
-// // // console.log(sceltapd);
+// // //  for (var i = 0; i < listaspesa.length; i++) {
+// // //     //  console.log(listaspesa[i]);
 
-// // // // utente sceglie numero da 1 a 5
-// // // sceltaNumd = parseInt(prompt("scegli unnumero da 1 a 5"));
-// // // console.log(sceltaNumd);
+// // //     contenutoTemp = elemento.innerHTML;
+// // //     console.log(contenutoTemp);
 
-// // // // cpu genera numero da 1 a 5
-// // // scelatNumcpu = Math.floor(Math.random() * 5) + 1;
-// // // console.log(scelatNumcpu);
-
-// // // // sommo i 2 numeri e salvo il risultato in "somma"
-// // // somma = sceltaNumd + scelatNumcpu;
-// // // console.log(somma);
-
-// // // // verifico che la somma sia pari o dispari, salvandomi il valore "risultato"
-// // //  if (somma % 2 === 0) {
-// // //       risultato = "pari";
-// // //  } else {
-// // //       risultato = "dispari";
-// // //      //dispari
+// // //     elemento.innerHTML = contenutoTemp + "<li>" + listaspesa[i] + "</li>";
 // // //  }
 
-// // // // var temvar = somma % 2;
-// // // // console.log(temvar);
+// // // //  elemento.innerHTML =  listaspesa;
 
 
-// // // // stampo vincitore confrontando  che la scelta iniziale (utente) corrisponda o meno al valore "risultato"
+// // // // var contenuto = [];
 
-// // // if (risultato === sceltapd) {
-// // //     elemento.innerHTML = "hai vinto";
-// // // } else {
-// // //     elemento.innerHTML = "hai perso!!!!";
-// // // }
+// // // // for (var i = 0; i < listaspesa.length; i++) {
+// // // //     //  console.log(listaspesa[i]);
+
+
+
+// // // //     elemento.innerHTML = "<li>" + contenuto[j] + "</li>";
+// // // //  }
+
+// // // //  for(var j = 0; j < listaspesa.length; j++){
+// // // //     contenuto[j] = listaspesa[i];
+// // // //   }
+
+
+
+// // // // var nomi = ["nome1","nome2","nome3","nome4","nome5"];
+
+// // // // //  for (var i = 0; i < nomi.length; i++){ 
+// // // // //      console.log(nomi[i]);
+// // // // //  }
+
+
+// // // // //  var i = 0;
+// // // //  while (trovato === true){ 
+// // // //     console.log(nomi[i]);
+// // // //     if(qualcosa){
+// // // //         trovato = false;
+// // // //     }
+// // // // }
+
+
+// // // // var numarray = [3,6,2,17,22,5];
+
+// // // // for (var i = 0; i < numarray.length; i++){
+
+// // // //     if (numarray[i] % 2 != 0){
+// // // //         console.log(numarray[i]);
+// // // //     }
+    
+// // // // }
+
+
+
+
+// // // // for (var i = 1000; i >= 0; i--){
+
+// // // //     console.log(i);
+// // // // }
+
+// // // // var mioarray = ["nome1","nome2","nome3","nome4","nome5"];
+
+// // // // console.log(mioarray.length);
+
+// // // // mioarray.push("nomaaltro");
+
+// // // // console.log(mioarray.length);
+
+// // // // for (var i = 0; i < mioarray.length; i++) {
+// // // //     console.log(mioarray[i]);
+// // // // }
+
+
+
+
+// // // // var nomi = [];
+
+// // // // nomi[0] = "Mario";
+// // // // nomi[1] = "Altro";
+// // // // nomi[2] = "Altro ancora";
+
+
+// // // // var numero = parseInt(prompt("numero tra 0 e 2!"));
+// // // // console.log("nuemro inserito", numero);
+
+// // // // console.log(nomi[numero]);
+
+// // // // console.log(nomi);
+
+// // // // nomi.push("alvolo!");
+
+// // // // document.getElementById("mio_id").innerHTML = nomi;
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // // // var elemento = document.getElementById("mio_id");
+// // // // var risultato, sceltapd, sceltaNumd, scelatNumcpu, somma ;
+
+
+// // // // // utente sceglie pari o dispari
+// // // // sceltapd = prompt("scegli pari o dispari");
+// // // // console.log(sceltapd);
+
+// // // // // utente sceglie numero da 1 a 5
+// // // // sceltaNumd = parseInt(prompt("scegli unnumero da 1 a 5"));
+// // // // console.log(sceltaNumd);
+
+// // // // // cpu genera numero da 1 a 5
+// // // // scelatNumcpu = Math.floor(Math.random() * 5) + 1;
+// // // // console.log(scelatNumcpu);
+
+// // // // // sommo i 2 numeri e salvo il risultato in "somma"
+// // // // somma = sceltaNumd + scelatNumcpu;
+// // // // console.log(somma);
+
+// // // // // verifico che la somma sia pari o dispari, salvandomi il valore "risultato"
+// // // //  if (somma % 2 === 0) {
+// // // //       risultato = "pari";
+// // // //  } else {
+// // // //       risultato = "dispari";
+// // // //      //dispari
+// // // //  }
+
+// // // // // var temvar = somma % 2;
+// // // // // console.log(temvar);
+
+
+// // // // // stampo vincitore confrontando  che la scelta iniziale (utente) corrisponda o meno al valore "risultato"
+
+// // // // if (risultato === sceltapd) {
+// // // //     elemento.innerHTML = "hai vinto";
+// // // // } else {
+// // // //     elemento.innerHTML = "hai perso!!!!";
+// // // // }
