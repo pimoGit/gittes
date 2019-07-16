@@ -2,6 +2,19 @@
 
 .addred {color: red;}
 
+p {display: none;}
+
+#cerchio {
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+  background-color: orange;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 
 /* ul li {
   list-style-type: none;

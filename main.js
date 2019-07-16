@@ -1,86 +1,69 @@
-var element = document.getElementById("bottone");
+//Aggiungere la classe test a tutti questi selettori
 
-var saluto = document.getElementById("saluto");
 
-element.addEventListener("click", randomnum);
+//  Creare il titolo di un paragrafo e un bottone 
+// che permette di espandere il testo inizialmente nascosto
 
-function randomnum(){
-   var numero = Math.floor(Math.random() * (100+1));
-   saluto.innerHTML = numero;
-   // alert(numero);
-   // if(numero){
-      // return numero;
-   // }
-}
 
-//alert(randomnum());
+// Rendere visibile la scritta “Live Coding” dentro il cerchio arancione 
+// quando passo con il mouse sul cerchio.
 
 
 
 
+$( document ).ready(function() {
 
-// var element = document.getElementById("saluto");
+   $("#cerchio").mouseenter(
+      function(){
+         $("#cerchio p").show(15000);
+      }
+   );
 
-// var decisione = prompt("vuoi che il testo sia rosso?");
+//    var clickato = false;
 
-// if (decisione === "si"){
-//    //element.className = "addred";
-//    element.style.color = "red";
-// }
-
-
-
-//var start = 10;
-
-
-// function countdown (){
-
-//    if(start === 0){
-//       alert("Buon ANNOOOO!!! eheheheh!");
-//       clearInterval(clock);
-//    } else{
-   
-//    start = start -1;
-//    console.log(start);
+// $(".mybutton").click(function(){
+//       if(clickato === false){
+//          $("p").show(1000);
+//          clickato = true;
+//       } else {
+//          $("p").hide(500);
+//          clickato = false;
+//       }
 //    }
-// }
+//   );
+  
 
-// var clock = setInterval(function (){
+// var miobut = $(".mybutton");
 
-//    if(start === 0){
-//       alert("Buon ANNOOOO!!! eheheheh!");
-//       clearInterval(clock);
-//    } else{
-   
-//    start = start -1;
-//    console.log(start);
-//    }
-// }, 1000);
+// miobut.mouseenter(function() {
+//    $('h1').addClass("addred");
+// });
 
+// miobut.mouseleave(function() {
+//    $('h1').removeClass("addred");
+// });
 
+// miobut.dblclick(function() {
+//    miobut.text("cliccato");
+// });
 
+// //Tutti gli h1
+// $('h1').addClass('test');
 
+// //l'Id prova
+// $("#prova").addClass('test');
 
-
-
-
-
-
-
-//  var tempocottura = parseInt( prompt("quanti secondi mancano alla cottura della pasta?"));
-
-//  var tempocotturams = tempocottura * 1000;
+// //Tutti i li con classe active
+// $("li.active").addClass('test');
 
 
-//  function asyncrona() {
-//     //alert('Ou! la pasta è pronta!!!');
-//     console.log("hei quando avete finito poi ci sono io!!");
-    
-//  }
+// //tutti gli strong dentro un p con classe big
+// $("p.big strong").addClass('test');
 
+// //Tutti gli small figli (solo figli) di una section
+// $("section > small").addClass('test');
 
+// //agli h3 e h4
+// $("h3, h4").addClass('test');
 
-//  setTimeout(asyncrona, 0);
-
-// console.log("istruzione sincrona dopo il timeout");
-// console.log("altra istruzione sincrona dopo il timeout");
+});
