@@ -11,26 +11,54 @@
 
 
 
-$( document ).ready(function() {
+ $( document ).ready(function() {
 
-   $("#cerchio").mouseenter(
-      function(){
-         $("#cerchio p").show(15000);
-      }
-   );
+$(".todoitem").click(
+   // funzione di callback sull'evento click
+   function(){
+      $(this).hide(1000,
+         //funzione di callback di fine animazione
+         function(){
+            $("h1").text("Item cancellatoooo!!!").show(2000,
+               function(){
+                  setTimeout(function(){
+                     $("h1").hide(2000);
+                  }, 2000);
+               } 
+               );
+         }
+         );
+});
 
-//    var clickato = false;
 
-// $(".mybutton").click(function(){
-//       if(clickato === false){
-//          $("p").show(1000);
-//          clickato = true;
-//       } else {
-//          $("p").hide(500);
-//          clickato = false;
-//       }
+//    $(".faq").click(function(){
+//       //if(clickato === false){
+//          $(this).children("p").toggle(1000);
+//       //    clickato = true;
+//       // } else {
+//       //    $("p").hide(500);
+//       //    clickato = false;
+//       // }
 //    }
 //   );
+
+
+// $(".mybutton").click(function(){
+//    $("#sipario").slideToggle(2500, function(){
+//       alert("animazione finita");
+//    });
+// });
+
+
+//    $("#cerchio").mouseenter(
+//       function(){
+//          $("#cerchio p").show(15000);
+//       }
+//    );
+
+   //var clickato = false;
+
+
   
 
 // var miobut = $(".mybutton");
