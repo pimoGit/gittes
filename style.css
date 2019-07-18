@@ -1,69 +1,71 @@
-/* #saluto { color: red;} */
 
-h1 {
-  display: none;
+/* REGOLE GENERICHE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 
-/* 
-#sipario {
-  width: 100%;
-  height: 80vh;
-  background-color: red;
-  display: none;
-} */
 
-/* .addred {color: red;}*/
+/* HEADER */
+header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 20px;
+}
 
-/* p {display: none;}  */
-
-/* #cerchio {
-  height: 200px;
-  width: 200px;
-  border-radius: 100%;
-  background-color: orange;
-  color: #fff;
+nav {
+  width: 20vw;
   display: flex;
   align-items: center;
-  justify-content: center;
-} */
+  justify-content: space-between;
+}
 
+#dropcont {
+  position: relative;
+}
 
-/* ul li {
-  list-style-type: none;
-} */
-
-
-/* #trans {
-  width: 100px;
-  height: 100px;
-  background: blue;
-  animation: pacman;
-  animation-duration: 3s;
+#drop {
+  width: 150px;
+  border: solid 1px #000;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 20px;
+  right: -20px;
+  display: none;
 }
 
-@keyframes pacman {
-
-  0% { left: 0; top: 0;}
-
-  50% { left: calc(100% - 100px); top:0;}
-
-  60% {left: calc(100% - 100px); top:calc(100% - 100px);}
-
-  90% {left:0; top:calc(100% - 100px); }
-
-
+#drop.active {
+  display: block;
 }
 
-.filter1 {
-  filter: sepia(0) blur(0) ;
-  transition: all 1s ease-out 0s;
+
+
+/*FOOTER*/
+footer{
+  padding: 0 20px;
+  background-color: #ccc;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
-.filter1:hover {
-  filter: sepia(1) blur(4px) ;
+.footeritem {
+  display: flex;
+  justify-content: space-between;
 }
- */
+
+.footeritem ul {
+  display: flex;
+  /* width: 40%; */
+}
+
+/* .footeritem ul:first-child {
+  width: 60%;
+} */
+
+
+.footeritem ul li {
+  list-style-type: none;
+  margin-right: 10px;
+}
