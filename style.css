@@ -2,6 +2,13 @@
   margin: 10px;
 }
 
+.msg.sent {
+  background-color: green;
+}
+.msg.risp {
+  background-color:grey;
+}
+
 #template {
   display: none;
 }

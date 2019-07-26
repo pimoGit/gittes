@@ -5,6 +5,7 @@
     <title>test Git</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.2/handlebars.min.js"></script>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
@@ -19,12 +20,19 @@
     
 
 
-      <div id="template">
-          <div class='msg altraclasse'>ù
+      <!-- <div id="template">
+          <div class='msg'>
             
           </div>
-          <div class="altrodaclonare"></div>
-      </div>
+      </div> -->
+
+
+      <script id="msgtemplate" type="text/x-handlebars-template">
+        <div class='msg {{addclass}}'>
+          <span>{{text}}</span>
+          <img src="{{urlimg}}"/>
+        </div>
+      </script>
   
 
   
