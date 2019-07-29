@@ -3,55 +3,63 @@
 $( document ).ready(function() {
 
 
-   $("#sendmsg").click(
-      function(){
-         //salvo valore inserito dall'utente
-         var inputval = $("#msginput").val();
-         // console.log(inputval);
-
-         
-         // var msgelement = $("#template .msg").clone();
-         // // console.log(msgelement);
-         // msgelement.text(inputval);
-         // $(".container").append(msgelement);
-
-         var source   = $("#msgtemplate").html();
-         console.log(source);
-         
-         var template = Handlebars.compile(source);
-         console.log("iltemplate è" + template);
-
-         var context = {text: inputval, addclass: "sent", urlimg: "https://freewebsitetemplates.com/images/forum/500/ecologicalwebsitetemplate.jpg"};
-         var html    = template(context);
-
-         $(".container").append(html);
-         
-           
-           //pulisco l'input alla fine
-           $("#msginput").val("");
+     var apirandnum = "https://flynn.boolean.careers/exercises/api/random/inty";
 
 
-           //messaggio di risaposta
+      //chiediamo all'utente num tra 0 e 9
+      var numutente = parseInt(prompt("inserisci un numero da 0 a 9"));
+      console.log("numero utente", numutente);
+      
 
-         setTimeout(reply,1000);
+      //richiediamo via ajax all'API un numero random
+      $.ajax(
+         {
+            url : apirandnum,
+            method: "GET",
+            success: function(data){
+               var numapi = data.response;
+               console.log("num api", numapi);
 
-         function reply(){
-
-         var contextrips = {text: "risposta pc! 'zzo vuoi!", addclass: "risp"};
-         var htmlrips    = template(contextrips);
-
-         $(".container").append(htmlrips);
-
+                  //confrontiamo i 2 numeri  e output chi ha vinto
+                  if(numapi > numutente){
+                     $(".randnum").text("hey tu utente hai perso!");
+                  } else if (numapi < numutente){
+                     $(".randnum").text("hey tu utente hai vinto! però stai calmo.");
+                  } else {
+                     $(".randnum").text("acciderbolina sono pari!");
+                  }
+            },
+            error: function(richiesta,stato,errore){
+               console.log("c'è un problema con il server",richiesta,stato,errore);
+            }
          }
-           
+      );
 
 
-      }
-   );
 
 
-   // var altrocoso = $("#template .altrodaclonare").clone();
-   
+
+
+
+
+//   $.ajax(
+//      {
+//         url : apirandnum,
+//         method: "GET",
+//         success: function(data){
+//          console.log(data);
+//          $(".randnum").text(data.response);
+//         },
+//         error: function(){
+//             console.log("c'è stato un errore riprova più tardi.")
+//         }
+//      }
+//   );
+     
+//      console.log("io sono prepotente e voglio apparire prima!");
+
+
+
 
 
 });
