@@ -3,7 +3,7 @@
 $( document ).ready(function() {
 
 
-     var apirandnum = "https://flynn.boolean.careers/exercises/api/random/inty";
+     var apirandnum = "https://flynn.boolean.careers/exercises/api/random/int";
 
 
       //chiediamo all'utente num tra 0 e 9
