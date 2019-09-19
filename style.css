@@ -1,0 +1,92 @@
+/* regole generali */
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+  }
+  
+  /* header */
+  header{
+    background-color: blue;
+  }
+  
+    /* navbar principale */
+  #mainnav{
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  #mainnav:after {
+    content: "";
+    display: table;
+    clear: both;
+    background: blue; /* debug*/
+  }
+  
+  .nacol1{
+    float: left;
+    width: 20%;
+  }
+  
+  .nacol2{
+    float: left;
+    width: 50%;
+  }
+  
+  .nacol3{
+    float: right;
+    width: 30%;
+  
+  }
+  
+  #mainnav ul {
+    list-style-type: none;
+  }
+  
+  #mainnav li {
+    display: inline-block;
+  }
+  
+  #mainnav li a {
+    color: #fff;
+    display: block;
+    text-decoration: none;
+  }
+  
+   /*parte bassa header*/
+  .headrow{
+    width: 90%;
+    margin-left: 10%;
+  }
+  
+   .headrow:after {
+     content: "";
+     display: table;
+     clear: both;
+     background: green; /* debug*/
+   }
+   .headrowcol{
+     margin-top: 80px;
+     float: left;
+     width: 50%;
+     border: solid 1px; /* debug*/
+     height: 50px; /* debug*/
+   }
+  
+   .fakebutton {
+     padding: 7px;
+     border: solid 1px red;
+     border-radius: 3px;
+   }
+  .fakebutton.greenbg {
+    background-color: green;
+  }
+  
+  
+  /* footer */
+  footer{
+    background-color: #ccc;
+    height: 200px; /* debug*/
+  }
+  
