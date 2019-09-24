@@ -5,88 +5,93 @@
     border: 0;
     box-sizing: border-box;
   }
-  
-  /* header */
-  header{
-    background-color: blue;
+
+  body {
+    font-size: 15px;
   }
-  
-    /* navbar principale */
-  #mainnav{
-    width: 80%;
-    margin: 0 auto;
-  }
-  
-  #mainnav:after {
-    content: "";
-    display: table;
-    clear: both;
-    background: blue; /* debug*/
-  }
-  
-  .nacol1{
-    float: left;
+
+header{
+  background-color: red;
+  height: 150px;
+}
+
+.clerfix::after {
+  content: "";
+  display: table;
+  clear: both;
+
+}
+
+.col1, .col2, .col3 {
+  float: left;
+  border: solid 1px #000;
+  padding: 5px;
+  /* height: 100px; */
+}
+
+p {
+  font-size: 1.5em;
+}
+
+.col3 p {
+  font-size: 1em;
+}
+
+.col1 {
+  width: 30%;
+}
+.col2 {
+  width: 50%;
+}
+.col3 {
+  width: 20%;
+}
+
+
+
+
+footer{
+  background-color: blue;
+  height: 100px;
+}
+
+
+/*media per tablet*/
+
+@media screen and (min-width: 481px) and (max-width: 1028px)  {
+
+  .col1 {
     width: 20%;
   }
-  
-  .nacol2{
-    float: left;
-    width: 50%;
+  .col2 {
+    width: 60%;
   }
-  
-  .nacol3{
-    float: right;
-    width: 30%;
-  
+
+}
+
+/*media per mobile*/
+@media screen and (max-width: 480px){
+
+  /* .clerfix:after {
+    display: none;
+  } */
+
+  body {
+    font-size: 20px;
   }
-  
-  #mainnav ul {
-    list-style-type: none;
+
+  .col1, .col2, .col3 {
+    float: none;
+    width: 100%;
   }
-  
-  #mainnav li {
-    display: inline-block;
+
+}
+
+/*small smartphone*/
+@media screen and (max-width: 320px){
+
+  .col3 {
+    display: none;
   }
-  
-  #mainnav li a {
-    color: #fff;
-    display: block;
-    text-decoration: none;
-  }
-  
-   /*parte bassa header*/
-  .headrow{
-    width: 90%;
-    margin-left: 10%;
-  }
-  
-   .headrow:after {
-     content: "";
-     display: table;
-     clear: both;
-     background: green; /* debug*/
-   }
-   .headrowcol{
-     margin-top: 80px;
-     float: left;
-     width: 50%;
-     border: solid 1px; /* debug*/
-     height: 50px; /* debug*/
-   }
-  
-   .fakebutton {
-     padding: 7px;
-     border: solid 1px red;
-     border-radius: 3px;
-   }
-  .fakebutton.greenbg {
-    background-color: green;
-  }
-  
-  
-  /* footer */
-  footer{
-    background-color: #ccc;
-    height: 200px; /* debug*/
-  }
-  
+
+}
