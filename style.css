@@ -1,9 +1,19 @@
+
+
+
+
 .contsx {
   padding-right: 10px;
 }
 
 p{
   color: red;
+}
+
+/* debug */
+
+[class*="col-"] {
+  border: solid 1px #000;
 }
 
 /* .padd5 {
