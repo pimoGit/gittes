@@ -1,14 +1,12 @@
+/* regole generali */
 
-
-
-
-.contsx {
-  padding-right: 10px;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-p{
-  color: red;
-}
+
 
 /* debug */
 
@@ -16,6 +14,67 @@ p{
   border: solid 1px #000;
 }
 
-/* .padd5 {
-  padding: 5px;
+
+/* header */
+header{
+  background-color: #2C3E50;
+}
+
+header nav li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+
+
+.mainnav .nav-pills > li.active > a, .mainnav .nav-pills > li.active > a:hover{
+  background-color: #1abc9c;
+  color: #fff;
+}
+
+
+.mainnav .nav-pills > li > a {
+  color: #fff;
+}
+
+.mainnav .nav-pills > li > a:hover, .mainnav.nav-pills > li > a:focus{
+  background-color: #2C3E50;
+  color:#1abc9c;
+}
+
+
+
+/* sezione introduttiva */
+#intro{
+  background-color: #1ABC9C;
+}
+
+/* sezione porfolio */
+
+
+/* sezione about */
+#about{
+  background-color: #1ABC9C;
+}
+
+/* sezione contact */
+/* #contact {
+  background-color: red;
 } */
+
+#contact h2 {
+  text-align: center;
+}
+
+
+/* footer */
+footer{
+  background-color: #2C3E50;
+  text-align: center;
+  color: #fff;
+}
+
+#copy{
+  background-color: #1A252F;
+
+}
