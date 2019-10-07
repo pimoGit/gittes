@@ -108,3 +108,73 @@ footer{
   background-color: #1A252F;
 
 }
+
+
+
+/* transition */
+.animami{
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  transition: width 2s ease 0s, height 2s ease 0s, background-color 0s ease 2s ;
+}
+
+.animami:hover{
+  background-color: red;
+  width: 500px;
+  height: 400px;
+}
+
+/* animation */
+
+.move {
+  background-color: green;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: angoli;
+  animation-duration: 3s;
+}
+
+
+@keyframes angoli {
+
+  0% {
+    top: 0;
+    left: 0;
+  }
+
+  25% {
+    top: 0;
+    left: calc(100% - 100px);
+  }
+
+  50% {
+    top: calc(100% - 100px);
+    left: calc(100% - 100px);
+  }
+  75%{
+    top: calc(100% - 100px);
+    left: 0;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+
+
+}
+
+
+/* filters */
+img {
+  filter: grayscale(1);
+  transition: all 2s ease 0s;
+}
+
+img:hover {
+  cursor: pointer;
+  filter: none;
+}
