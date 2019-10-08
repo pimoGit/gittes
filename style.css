@@ -1,180 +1,42 @@
-/* regole generali */
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-
-
-/* debug */
-
-[class*="col-"] {
-  border: solid 1px #000;
-}
-
-
-/* header */
-header{
-  background-color: #2C3E50;
-}
-
-header nav li {
-  display: inline-block;
-  list-style-type: none;
-}
-
-
-
-.mainnav .nav-pills > li.active > a, .mainnav .nav-pills > li.active > a:hover{
-  background-color: #1abc9c;
-  color: #fff;
-}
-
-
-.mainnav .nav-pills > li > a {
-  color: #fff;
-}
-
-.mainnav .nav-pills > li > a:hover, .mainnav.nav-pills > li > a:focus{
-  background-color: #2C3E50;
-  color:#1abc9c;
-}
-
-
-
-/* sezione introduttiva */
-#intro{
-  background-color: #1ABC9C;
-}
-
-/* sezione customer digital ocean */
-
-/* #customer-do ul::after{
-  content: "";
-  display: table;
-  clear: both;
-} */
-
-#customer-do li{
-  display: inline-block;
-  list-style-type: none;
-  width: calc((100% / 6) - 4px);
-  /* float: left; */
-  /* width: calc(100% / 6);
-  height: 100px;
-  line-height: 100px; */
-}
-
-#customer-do li img {
-  max-width: 80%;
-}
-
-@media screen and (max-width:480px){
-
-  #customer-do li{
-    width: calc((100% / 3) - 4px);
-  }
-
-}
-
-/* sezione porfolio */
-
-
-/* sezione about */
-#about{
-  background-color: #1ABC9C;
-}
-
-/* sezione contact */
-/* #contact {
-  background-color: red;
-} */
-
-#contact h2 {
-  text-align: center;
-}
-
-
-/* footer */
-footer{
-  background-color: #2C3E50;
-  text-align: center;
-  color: #fff;
-}
-
-#copy{
-  background-color: #1A252F;
-
-}
-
-
-
-/* transition */
-.animami{
-  width: 100px;
-  height: 100px;
-  background-color: blue;
-  transition: width 2s ease 0s, height 2s ease 0s, background-color 0s ease 2s ;
-}
-
-.animami:hover{
-  background-color: red;
-  width: 500px;
-  height: 400px;
-}
-
-/* animation */
-
-.move {
+.contenitore {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  align-content:flex-start;
+  flex-wrap: wrap;
   background-color: green;
-  width: 100px;
+  width: 100%;
+  height: 100vh;
+}
+
+
+.centrami {
   height: 100px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  animation: angoli;
-  animation-duration: 3s;
+  width: 100px;
+  flex-grow: 2;
+  flex-shrink: 0;
+  order: 3;
+  background-color: red;
+  /* margin: 0 5px; */
 }
 
-
-@keyframes angoli {
-
-  0% {
-    top: 0;
-    left: 0;
-  }
-
-  25% {
-    top: 0;
-    left: calc(100% - 100px);
-  }
-
-  50% {
-    top: calc(100% - 100px);
-    left: calc(100% - 100px);
-  }
-  75%{
-    top: calc(100% - 100px);
-    left: 0;
-  }
-  100% {
-    top: 0;
-    left: 0;
-  }
-
-
+.centrami2 {
+  height: 100px;
+  width: 100px;
+  flex-grow: 1;
+  flex-shrink: 0;
+  order: 2;
+  background-color: blue;
+  /* margin: 0 5px; */
 }
 
-
-/* filters */
-img {
-  filter: grayscale(1);
-  transition: all 2s ease 0s;
-}
-
-img:hover {
-  cursor: pointer;
-  filter: none;
+.centrami3 {
+  height: 100px;
+  width: 100px;
+  flex-grow: 1;
+  flex-shrink: 0;
+  order: 1;
+  background-color: yellow;
+  /* margin: 0 5px; */
 }
