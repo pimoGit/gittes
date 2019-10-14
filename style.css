@@ -1,42 +1,62 @@
-.contenitore {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* DEBUG */
+div {
+  border: solid 1px #000;
+}
+
+
+/* container principale */
+
+.container{
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: flex-start;
-  align-content:flex-start;
-  flex-wrap: wrap;
-  background-color: green;
-  width: 100%;
-  height: 100vh;
+  height: calc(100vh - 100px);
 }
 
-
-.centrami {
-  height: 100px;
-  width: 100px;
-  flex-grow: 2;
-  flex-shrink: 0;
-  order: 3;
-  background-color: red;
-  /* margin: 0 5px; */
+/* menu SX */
+.leftmenu {
+   background-color: #000;
+  flex-basis: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: #ccc;
 }
 
-.centrami2 {
-  height: 100px;
-  width: 100px;
+.playlist{
   flex-grow: 1;
-  flex-shrink: 0;
-  order: 2;
-  background-color: blue;
-  /* margin: 0 5px; */
+  /* overflow-y: auto; */
+  overflow-y: hidden;
 }
 
-.centrami3 {
+.playlist ul {
+  margin-bottom: 15px;
+}
+
+.playlist .scrollint {
+  overflow-y: auto;
+  height: 100%;
+  /* box-sizing: initial;
+  padding-bottom: 10px; */
+}
+
+/* .profile{
+  align-self: flex-end;
+} */
+
+
+.mainapp{
+  flex-basis: calc(100vw - 230px);
+}
+
+
+
+
+/* player */
+.player{
   height: 100px;
-  width: 100px;
-  flex-grow: 1;
-  flex-shrink: 0;
-  order: 1;
-  background-color: yellow;
-  /* margin: 0 5px; */
 }
