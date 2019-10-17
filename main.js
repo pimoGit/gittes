@@ -1,62 +1,44 @@
-// EX SALUTO UTENTE + EX QUANDO SEI NATO?
+// Gioco: pari o dispari?
 
-// chiedo utente il nome
-var inputuser = prompt("scrivi qui il tuo nome!!!");
-
-// creao la stringa di saluto in base a nome utente
-var saluto = "Ciao " + inputuser;
-
-// chiedo età utente
-var eta = prompt("quanti anni hai? inserisci un numero");
-
-// calcolo anno di nascita
-var annonascita = 2019 - eta;
-
-// creo la stringa di output finale
-var outputfin = saluto + " allora sei nato nel: " + annonascita;
-
-//creao stringa per output anno di nascita
-// var annonascita = saluto + " allora sei nato nel: " + (2019 - eta);
-
-// document.writeln(annonascita);
+var pariodisp, sceltauser, numuser, numpc, somma;
 
 
-// seleziono elemento html in cui fare output
-var htmlElement = document.getElementById('mioid');
-
-// // output finale su elemnto selezionato
-htmlElement.innerHTML = outputfin;
+// chiedo utente di scegliere tra pari o dispari
+sceltauser = prompt("scegli tra pari o dispari");
+console.log("hai scelto " + sceltauser);
 
 
+// chiedo utente numero da 1 a 5 (la sua puntata) [forzando il valore a numero]
+numuser = parseInt(prompt("scegli un numero tra 1 e 5"));
+
+// pc fa puntata numero random tra 1 e 5
+numpc = Math.floor(Math.random() * 5) +1 ;
+
+// console.log(numpc);
 
 
-// // EX SALUTO UTENTE
-// var inputuser = prompt("scrivi qui il tuo nome!!!");
+// sommo i numeri delle puntate 
+somma = numuser + numpc;
+console.log(numuser, numpc, somma);
 
-// var saluto = "anadate tutti a .. ciao!"
-// console.log(saluto);
-
-
-// var saluto = "Ciao " + inputuser;
-
-// // console.log(saluto + inputuser);
-// // console.log(saluto);
-// // alert(saluto);
-
-// document.getElementById('mioid').innerHTML = saluto;
+// e verifico se somma è pari o dispari e memorizzo il risultato
+if(somma % 2 === 0){
+    pariodisp = "pari";
+} else {
+   pariodisp = "dispari";
+}
 
 
-
-// //EX QUANDO SEI NATO?
-// var eta = prompt("quanti anni hai? inserisci un numero");
-
-// var annonascita = saluto + " allora sei nato nel: " + (2019 - eta);
-
-// var htmlElement = document.getElementById('mioid');
-
-// console.log(htmlElement);
-
-// htmlElement.innerHTML = annonascita;
+// a seconda del risultato dico chi ha vinto
+    //la scelta dell'utente è uguale al valore della var pariodisp
+if( sceltauser === pariodisp ){
+    // ha vinto
+    console.log('hai vinto!'); 
+} else {
+    //ha vinto il pc
+    console.log('ha vinto il pc!');
+    
+}
 
 
 
@@ -70,45 +52,68 @@ htmlElement.innerHTML = outputfin;
 
 
 
-// // dichiarazione
-// var miaStringa, altrastringa; 
-// // var altrastringa;
-
-// var inputuser = prompt("inserisci un testo");
-
-// console.log("valore ritornato dal prompt", inputuser, typeof inputuser)
-
-// console.log("valore di variabile dichiarata ma non valorizzata", miaStringa);
-
-// // console.log("valore variabile nenanche dichiarata",miaStringa2);
-
-
-// miaStringa = 'true'; 
-// // alert(miaStringa);
-// console.log(miaStringa);
-
-
-// miaStringa = 4; 
-// // alert(miaStringa);
-// console.log(miaStringa);
-
-// miaStringa = '4'; 
-// // alert(miaStringa);
-
-// // console.log("qui ci aspettiamo un not defined",miastringa);
-
-// altrastringa = miaStringa + 5;
-
-// console.log(altrastringa);
 
 
 
 
-// // document.writeln('Hello World!');
-// // // alert('Hello World!');
-// //
-// document.getElementById('mioid').innerHTML = 'Hello "Word" 2!';
 
-// // console.log(document.querySelectorAll('.miaclass'));
 
-// // document.querySelectorAll('.miaclass')[0].innerHTML = 'questo contenuto si ripete in 2 blocchi';
+
+
+
+
+// Inserisci due parole, quale è la piu lunga?
+
+// l'utente inserisce 2 parole in input
+// var parola1 = prompt("inserisci la prima parola");
+// var parola2 = prompt("inserisci la seconda parola");
+
+// console.log(parola1, parola2);
+
+
+
+// capire come confrontarte la lunghezza di 2 stringhe
+// https://developer.mozilla.org/it/docs/Web/JavaScript/Reference/Global_Objects/String/length
+// console.log(parola1.length, parola2.length);
+// var nCharParola1 = parola1.length;
+// var nCharParola2 = parola2.length;
+
+// console.log(nCharParola1, nCharParola2);
+
+
+
+// confrontarle per dire in output qualle delle 2 è più lunga 
+// (dare come output la parola più lunga)
+
+
+// VERSIONE DI ESEMPIO
+// if (nCharParola1 > nCharParola2){
+//     document.getElementById('mioid').innerHTML = "la parola più lunga è " + parola1;
+//     console.log("la parola più lunga è " + parola1);
+    
+// }
+
+// if (nCharParola2 > nCharParola1) {
+//     document.getElementById('mioid').innerHTML = "la parola più lunga è " + parola2;
+//     console.log("la parola più lunga è " + parola2);
+    
+// } 
+
+// if (nCharParola2 == nCharParola1){
+//     document.getElementById('mioid').innerHTML = "le parole sono uguali in lunghezza";
+//     console.log("le parole sono uguali in lunghezza");
+// }
+
+// VERSIONE OTTIMIZZATA
+// if (nCharParola1 > nCharParola2){
+//     document.getElementById('mioid').innerHTML = "la parola più lunga è " + parola1;
+//     console.log("la parola più lunga è " + parola1);
+    
+// } else if (nCharParola2 > nCharParola1) {
+//     document.getElementById('mioid').innerHTML = "la parola più lunga è " + parola2;
+//     console.log("la parola più lunga è " + parola2);
+    
+// } else {
+//     document.getElementById('mioid').innerHTML = "le parole sono uguali in lunghezza";
+//     console.log("le parole sono uguali in lunghezza");
+// }
