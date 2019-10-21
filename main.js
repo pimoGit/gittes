@@ -1,119 +1,217 @@
-// Gioco: pari o dispari?
+// Crea un array di numeri, e crea un array nuovo contenente i numeri raddoppiati dell'originale 
 
-var pariodisp, sceltauser, numuser, numpc, somma;
+var nums = [1,4,7,9,5,2,8,9,10];
 
-
-// chiedo utente di scegliere tra pari o dispari
-sceltauser = prompt("scegli tra pari o dispari");
-console.log("hai scelto " + sceltauser);
+var numsDouble = [];
+var numx2;
 
 
-// chiedo utente numero da 1 a 5 (la sua puntata) [forzando il valore a numero]
-numuser = parseInt(prompt("scegli un numero tra 1 e 5"));
+for (var i = 0; i < nums.length; i++){
 
-// pc fa puntata numero random tra 1 e 5
-numpc = Math.floor(Math.random() * 5) +1 ;
+    // numsDouble[i] = nums[i] * 2;
 
-// console.log(numpc);
+    numx2 = nums[i] * 2;
 
+    numsDouble.push(numx2);
 
-// sommo i numeri delle puntate 
-somma = numuser + numpc;
-console.log(numuser, numpc, somma);
+    console.log(numsDouble);
+    
 
-// e verifico se somma è pari o dispari e memorizzo il risultato
-if(somma % 2 === 0){
-    pariodisp = "pari";
-} else {
-   pariodisp = "dispari";
 }
 
 
-// a seconda del risultato dico chi ha vinto
-    //la scelta dell'utente è uguale al valore della var pariodisp
-if( sceltauser === pariodisp ){
-    // ha vinto
-    console.log('hai vinto!'); 
-} else {
-    //ha vinto il pc
-    console.log('ha vinto il pc!');
+// console.log("l'array di partenza è: ",nums, "l'array nuovo è: ", numsDouble);
+
+
+
+
+/*
+// Crea un array di numeri, e crea un array nuovo contenente solo i numeri pari dell'array originale
+
+var nums = [1,4,7,9,5,2,8,9,10];
+
+var numpari = [];
+
+for (var i = 0; i < nums.length; i++){
+
+    var itemLoop = nums[i];
+
+    if(itemLoop % 2 == 0){
+        numpari.push(itemLoop);
+    }
+
+}
+
+console.log("l'array di partenza è: ",nums, "l'array nuovo è: ", numpari);
+
+
+*/
+
+
+
+/*
+// Crea un array di numeri, e stampa solo gli elementi in posizione dispari
+
+// var nums = [1,4,7,9,5,2,8,9,10];
+var nums = ["1", "5", "4", "3","8"];
+
+console.log("array: ", nums);
+
+
+// for (var i = 1; i < nums.length; i = i+2){
+//     console.log(nums[i]);
+    
+// }
+
+for (var i = 0; i < nums.length; i++){
+
+    if(i % 2 !==0){
+        console.log(nums[i]);
+    }
     
 }
 
+*/
 
 
 
 
 
+/*
+// Crea un array di numeri, e stampa solo i numeri dispari
 
 
+var nums = [1,4,7,9,5,2,8,9,10];
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Inserisci due parole, quale è la piu lunga?
-
-// l'utente inserisce 2 parole in input
-// var parola1 = prompt("inserisci la prima parola");
-// var parola2 = prompt("inserisci la seconda parola");
-
-// console.log(parola1, parola2);
-
-
-
-// capire come confrontarte la lunghezza di 2 stringhe
-// https://developer.mozilla.org/it/docs/Web/JavaScript/Reference/Global_Objects/String/length
-// console.log(parola1.length, parola2.length);
-// var nCharParola1 = parola1.length;
-// var nCharParola2 = parola2.length;
-
-// console.log(nCharParola1, nCharParola2);
-
-
-
-// confrontarle per dire in output qualle delle 2 è più lunga 
-// (dare come output la parola più lunga)
-
-
-// VERSIONE DI ESEMPIO
-// if (nCharParola1 > nCharParola2){
-//     document.getElementById('mioid').innerHTML = "la parola più lunga è " + parola1;
-//     console.log("la parola più lunga è " + parola1);
+for (var i = 0; i < nums.length; i++){
     
-// }
+    var arrayitemcilo = nums[i];
 
-// if (nCharParola2 > nCharParola1) {
-//     document.getElementById('mioid').innerHTML = "la parola più lunga è " + parola2;
-//     console.log("la parola più lunga è " + parola2);
+    if (arrayitemcilo % 2 !== 0){
+        console.log(arrayitemcilo);
+    }
     
-// } 
+}
 
-// if (nCharParola2 == nCharParola1){
-//     document.getElementById('mioid').innerHTML = "le parole sono uguali in lunghezza";
-//     console.log("le parole sono uguali in lunghezza");
-// }
+*/
 
-// VERSIONE OTTIMIZZATA
-// if (nCharParola1 > nCharParola2){
-//     document.getElementById('mioid').innerHTML = "la parola più lunga è " + parola1;
-//     console.log("la parola più lunga è " + parola1);
+
+
+/*
+
+// Crea un array contenente 5 nomi e stampali a schermo
+
+
+var nomi = ["Mario", "Pippo", "Remo", "Pluto","Paperino"];
+
+
+for (var i = 0; i < nomi.length; i++){
+    console.log(nomi[i]);
+}
+
+*/
+
+
+
+
+
+
+
+/*
+// Stampa tutti i numeri da 1000 a 0
+for (var i = 1000; i >=0; i--){
+    console.log(i);
     
-// } else if (nCharParola2 > nCharParola1) {
-//     document.getElementById('mioid').innerHTML = "la parola più lunga è " + parola2;
-//     console.log("la parola più lunga è " + parola2);
-    
+}
+
+console.log("siamo usciti dal ciclo", "e il valore di i é: " + i);
+
+*/
+
+
+/*
+// Stampa tutti i numeri da 0 a 1000
+
+for (var i = 0; i <=1000; i++){
+    console.log(i);  
+}
+
+console.log("siamo usciti dal ciclo", "e il valore di i é: " + i);
+
+
+// console.log(1);
+// console.log(2);
+// console.log(3);
+// ...
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Crea un array contenente 3 nomi. 
+// Chiedi un numero da 0 a 2 all’utente 
+// e stampa l’elemento dell’array corrispondente.
+
+/*
+var iscritti;
+
+// var iscritti = new Array();
+
+iscritti = ["Mario", "Filippo", "Giovanna", 1, ["arrayi nterno", 5, 4], 3, "stringa"];
+
+console.log("ouput di array con vari valori",iscritti[4][1]);
+
+
+// iscritti.push("Michele", "MARIANO");
+
+
+
+// MEGLIO NON FARLO PER NON CREARE BUCHI NELL'ARRAY
+// console.log(iscritti.length, iscritti);
+
+// iscritti[10] = "Simone";
+
+console.log("dopo ulteriore aggiunta", iscritti.length, iscritti);
+
+var lungarray = iscritti.length ;
+
+
+var num = parseInt(prompt("inserisci un numero tra 0 e " + lungarray));
+
+document.getElementById("mioid").innerHTML = iscritti[num];
+
+*/
+
+
+// if (num == 0) {
+//     document.getElementById("mioid").innerHTML = iscritti[0] ;
+// } else if (num == 1) {
+//     document.getElementById("mioid").innerHTML = iscritti[1] ;
 // } else {
-//     document.getElementById('mioid').innerHTML = "le parole sono uguali in lunghezza";
-//     console.log("le parole sono uguali in lunghezza");
+//     document.getElementById("mioid").innerHTML = iscritti[2] ;
 // }
+
+
+
+
+
+
+// Chiedi un numero all’utente e stampa in console il numero successivo.
+
+// var numero = parseInt(prompt("scrivi un numero"));
+
+// // var numplus = numero++;
+
+// document.getElementById("mioid").innerHTML = "il numero scelto è " + numero + " il numero successivo è " + (numero++);
+
+// console.log(numero);
