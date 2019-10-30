@@ -1,3 +1,56 @@
+var utente = {
+    nome : [];
+};
+
+var nomeinput = prompt("inserisci il nome dell'utente");
+var cognomeinput = prompt("inserisci il cognome dell'utente");
+var etainput = prompt("inserisci l'età dell'utente");
+
+utente.nome = nomeinput;
+utente.cognome = cognomeinput;
+utente.eta = etainput;
+
+console.log("stampo utente: ", utente);
+
+
+
+
+
+
+var palla = {
+    "pre-colore" : "giallo",
+    "tipo" : "supertele",
+    "diametro" : 5,
+    "caratteristiche": ["bella","tonda","leggiadra"],
+    "grafica" : {
+        "rombi" : 4,
+        "sfondo" : "#000"
+    },
+    "rotola" : function() {
+        console.log("sto rotolando");  
+    }
+};
+
+
+
+console.log("colore della palla: ", palla.colore, "diametro: ", palla.diametro);
+
+console.log("caratteristiche index 0: " + palla.caratteristiche[0]);
+
+
+
+for (var prop in palla){
+    console.log("le propietà dell'oggetto sono: " + prop + " e il valore è: " + palla[prop]);
+    
+}
+
+palla.peso = 50;
+
+palla.rotola();
+
+
+/*
+
 // Verifico attraverso una funzione se il numero passato dell’utente è pari o dispari
 
 var numutente = parseInt(prompt("inserisci un numero"));
@@ -23,6 +76,7 @@ function pariodispari(numpassato){
     return parodisp
 }
 
+*/
 
 
 /*
