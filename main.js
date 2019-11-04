@@ -1,134 +1,66 @@
-var utente = {
-    nome : [];
-};
+// Al click di un pulsante, deve apparire un alert con un numero random
 
-var nomeinput = prompt("inserisci il nome dell'utente");
-var cognomeinput = prompt("inserisci il cognome dell'utente");
-var etainput = prompt("inserisci l'età dell'utente");
 
-utente.nome = nomeinput;
-utente.cognome = cognomeinput;
-utente.eta = etainput;
+document.getElementById("mybutton").addEventListener("click",randnum);
 
-console.log("stampo utente: ", utente);
+
+function randnum (){
+    var num = Math.floor((Math.random() * 100) + 1);
+    alert(num);
+}
 
 
 
+/*
+// Ciao Visitatore!
+// Imposta il nome di colore rosso in vari modi:
+// ● Solo con HTML+CSS
+// ● Aggiungendo la classe con JS
+// ● Scrivendo su element.style
+
+var el = document.getElementById("messaggio");
+
+// Aggiungendo la classe con JS
+// el.className = el.classList + " rosso";
+
+// Scrivendo su element.style
+el.style.color = "red";
+*/
+
+/*
+// Simulare un countdown di 10 secondi che alla fine dice buon anno
+
+var secondi = 10;
+
+var myinterval = setInterval(countdown, 500);
 
 
+function countdown(){
 
-var palla = {
-    "pre-colore" : "giallo",
-    "tipo" : "supertele",
-    "diametro" : 5,
-    "caratteristiche": ["bella","tonda","leggiadra"],
-    "grafica" : {
-        "rombi" : 4,
-        "sfondo" : "#000"
-    },
-    "rotola" : function() {
-        console.log("sto rotolando");  
-    }
-};
-
-
-
-console.log("colore della palla: ", palla.colore, "diametro: ", palla.diametro);
-
-console.log("caratteristiche index 0: " + palla.caratteristiche[0]);
-
-
-
-for (var prop in palla){
-    console.log("le propietà dell'oggetto sono: " + prop + " e il valore è: " + palla[prop]);
+    secondi = secondi - 1;
     
-}
-
-palla.peso = 50;
-
-palla.rotola();
-
-
-/*
-
-// Verifico attraverso una funzione se il numero passato dell’utente è pari o dispari
-
-var numutente = parseInt(prompt("inserisci un numero"));
-
-var risultatocheck = pariodispari(numutente);
-
-console.log("risultato check numero utente = " + risultatocheck);
-
-
-console.log("10k righe dopo", pariodispari(15));
-
-
-// Blocco mie funzioni
-function pariodispari(numpassato){
-    var parodisp;
-    if(numpassato % 2 === 0){
-        parodisp = "pari";
-        // return "pari";
+    if(secondi == 0){
+        console.log("Buon Annoooo!!!"); 
+        clearInterval(myinterval);
     } else {
-        parodisp = "dispari";
-        // return "dispari";
+        console.log(secondi);
     }
-    return parodisp
-}
 
-*/
-
-
-/*
-// Genero 10 numeri random utilizzando una funzione
-var numgen;
-
-
-
-for (var i = 0; i < 10; i++){
-    numgen = randomGenerator(100, 20);
-    console.log(numgen);
-}
-
-
-
-
-// blocco funzioni
-
-function randomGenerator (max, min){
-    var intNUm = Math.floor(Math.random() * (max - min + 1)) + min;
-    return intNUm;
 }
 */
 
 
-
-
 /*
-var a = 0;
-var b = "buongiorno";
-var c = "ciao";
-var d;
+// Il programma chiede all’utente quanti secondi mancano alla cottura della pasta.
+// Dopo il tempo indicato, appare un alert()
 
-saluta();
+var tempo = parseInt(prompt("quanti secondi mancano alla cottura?"));
 
-console.log("a is " + a);
-console.log("b is " + b);
+setTimeout(pasta, tempo*1000);
 
-function saluta(){
-d = "asd"; 
-console.log("a is " + a); 
-var b = a + 1; 
-console.log("b is " + b); 
-console.log(c);
+
+
+ function pasta (){
+    alert("la pasta è prontaaaaa!");
 }
-
-
-function megasvcriptone(){
-
-    var dsfdsdsfdsf
-}
-
-megasvcriptone();
-
 */
