@@ -1,7 +1,13 @@
-/* #messaggio{
+.red {
   color: red;
-} */
+}
 
-.rosso {
-  color: red;
+.accordion {
+  font-size: 25px;
+  color: blue;
+  display: none;
+}
+
+.accordion.visible {
+  display: block;
 }
