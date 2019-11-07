@@ -3,88 +3,35 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gmail replica</title>
-    <!-- <link rel="stylesheet" href="lib/css/12bool.css"> -->
+    <title>Live coding</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
     <link rel="stylesheet"  href="style.css">
   </head>
   <body>
 
-      <!-- Creare una To do List. On click su un item verrà cancellata la riga. 
-      Una volta che l’item è nascosto, far comparire un modal: 
-      “Item Cancellato” e farlo scomparire subito dopo. -->
-
-
-
-      <div id="modal">
-          <h1>Item Cancellato</h1>
-      </div>
-
-      <ul>
-          <li>Fare la spesa <span class="delete">X</span></li>
-          <li>Seguire la lezione Boolean <span class="delete">X</span></li>
-          <li>Fare le esercitazioni <span class="delete">X</span></li>
-          <li>Guardare un film <span class="delete">X</span></li>
-      </ul>
-
-
-
-      <!-- Creare una piccola sezione FAQ. Tante domande che quando cliccate visualizzano la risposta corrispondente. -->
-
-      <!-- <div class="question">
-          <h2>Domanda 1</h2>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque, iure repudiandae. Quas praesentium iure possimus aspernatur doloribus reprehenderit, minima porro, accusantium culpa qui vel, iusto quos eaque exercitationem voluptates voluptatibus.</p>
-          <div>
-              <p>NON SONO LA RISPOSTA!!!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque, iure repudiandae. Quas praesentium iure possimus aspernatur doloribus reprehenderit, minima porro, accusantium culpa qui vel, iusto quos eaque exercitationem voluptates voluptatibus.</p>
+    <div class="container">
+      <div class="slider-wrapper">
+          <div class="prev">
+              <i class="fas fa-angle-left"></i>
+          </div>
+          <div class="images">
+              <img class="active first" src="https://images.pexels.com/photos/371633/pexels-photo-371633.jpeg?cs=srgb&dl=clouds-country-daylight-371633.jpg&fm=jpg" alt="">
+              <img src="https://static.photocdn.pt/images/articles/2017/04/28/iStock-646511634.jpg" alt="">
+              <img src="https://cdn.mos.cms.futurecdn.net/FUE7XiFApEqWZQ85wYcAfM.jpg" alt="">
+              <img class="last" src="https://static.photocdn.pt/images/articles/2017/04/28/iStock-546424192.jpg" alt="">
+          </div>
+          <div class="next">
+              <i class="fas fa-angle-right"></i>
+          </div>
+          <div class="nav">
+              <i class="fas fa-circle active first"></i>
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-circle last"></i>
           </div>
       </div>
-      <div class="question">
-          <h2>Domanda 2</h2>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque, iure repudiandae. Quas praesentium iure possimus aspernatur doloribus reprehenderit, minima porro, accusantium culpa qui vel, iusto quos eaque exercitationem voluptates voluptatibus.</p>
-      </div>
-      <div class="question">
-          <h2>Domanda 3</h2>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque, iure repudiandae. Quas praesentium iure possimus aspernatur doloribus reprehenderit, minima porro, accusantium culpa qui vel, iusto quos eaque exercitationem voluptates voluptatibus.</p>
-      </div>
-      <div class="question">
-          <h2>Domanda 4</h2>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque, iure repudiandae. Quas praesentium iure possimus aspernatur doloribus reprehenderit, minima porro, accusantium culpa qui vel, iusto quos eaque exercitationem voluptates voluptatibus.</p>
-      </div>
-      <div class="question">
-          <h2>Domanda 5</h2>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque, iure repudiandae. Quas praesentium iure possimus aspernatur doloribus reprehenderit, minima porro, accusantium culpa qui vel, iusto quos eaque exercitationem voluptates voluptatibus.</p>
-      </div> -->
-
-    <!-- <span id="idnome">
-      ciao sono un testo che non vedrai
-    </span>     -->
-
-    <!-- <a href="https://wwww.google.com" data-status="open">goooogla!</a>
-    
-    <div class="sipario"></div>
-    <button class="butsipario">apri sipario</button>
-
-    <div id="messaggio" class="altraclasse">
-      Ciao Visitatore!
     </div>
-
-    <button id="mybutton">cliccami!</button>
-
-    <h2 id="controller">CONTROLLA IL PARAGRAFO</h2>
-    <p class="accordion">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut laudantium ut, similique illo reprehenderit iure corporis sapiente odio nam inventore optio accusantium. Rerum cumque earum consectetur magni tenetur recusandae quo.
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi fugit repellendus tempore nesciunt quo dignissimos doloremque voluptates. Impedit, repellendus ut libero veniam qui sapiente magnam incidunt, consequatur, dicta laborum doloribus.
-    </p>
-
-    <p class="paragrafo">PRIMO PARAGRAFO.....Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia eveniet unde suscipit commodi, rem non! Voluptate, nam consectetur laborum velit odit recusandae a veritatis ipsam perferendis! Optio eligendi aut sapiente.</p>
-    <p class="paragrafo">SECONDO PARAGRAFO.....Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia eveniet unde suscipit commodi, rem non! Voluptate, nam consectetur laborum velit odit recusandae a veritatis ipsam perferendis! Optio eligendi aut sapiente.</p>
-    <p class="paragrafo">TERZO PARAGRAFO.....Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia eveniet unde suscipit commodi, rem non! Voluptate, nam consectetur laborum velit odit recusandae a veritatis ipsam perferendis! Optio eligendi aut sapiente.</p>
-    <p class="paragrafo">ULtiMO PARAGRAFO.....Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia eveniet unde suscipit commodi, rem non! Voluptate, nam consectetur laborum velit odit recusandae a veritatis ipsam perferendis! Optio eligendi aut sapiente.</p>
-
-    <div class="miaclasse"></div>
-    <span class="miaclasse"></span>
-    <h2 class="miaclasse"></h2>
- -->
-
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
