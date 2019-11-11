@@ -1,71 +1,24 @@
-/*regole generali di pagina*/
-* {
-  padding: 0;
+*{
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  font-size: 13px;
-  font-family: 'Lato', sans-serif;
-  color: #757575;
+header {
+  padding: 10px;
 }
 
-a {
-  text-decoration: none;
-  color: #757575;
+#container{
+  margin: 50px 20px;
 }
 
-
-/*parte della nav*/
-nav {
-  /* display: flex;
-  justify-content: flex-end;
-  flex-direction: row; */
+.msgsent {
+  background-color: chartreuse;
+  padding: 5px;
+  margin-top: 10px;
 }
 
-nav ul {
-  padding: 20px;
-  list-style-type: none;
-  display: flex;
-  justify-content: flex-end;
-}
-
-nav ul li {
-  margin-right: 20px;;
-}
-  /*dropdown*/
-.dropdown {
-  position: relative;
-}
-.dropdowncontent{
-  position: absolute;
-  top: 40px;
-  right: -50px;
+/* Parte di templating */
+#template {
   display: none;
-  width: 300px;
-  background-color: #fff;
-  box-shadow: 0 0 10px grey;
-}
-
-.dropdowncontent > ul {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.dropdowncontent > ul > li {
-   flex-basis: calc(100% / 3);
-   margin: 0;
-}
-
-.triangle {
-  width: 50px;
-  height: 50px;
-  border: solid 1px #000;
-  background-color: #ccc;
-  position: absolute;
-  top: -3px;
-  z-index: -1;
-  transform: rotate(45deg);
-  right: 29px;
 }

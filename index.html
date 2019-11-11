@@ -4,88 +4,30 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Live coding</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
     <link rel="stylesheet"  href="style.css">
   </head>
   <body>
 
-<!-- header -->
     <header>
-      <nav>
-        <ul>
-          <li>
-            <a href="#">Gmail</a>
-          </li>
-          <li>
-            <a href="#">Immagini</a>
-          </li>
-          <li class="dropdown">
-            <i class="fas fa-bars"></i>
-            <!-- dropdown menù -->
-            <div class="dropdowncontent">
-
-              <div class="triangle"></div>
-
-              <ul>
-                <li>
-                  <a href="#">
-                          <i class="fab fa-twitter"></i>
-                          Twitter
-                  </a>
-                </li>
-                <li>
-                    <a href="#">
-                            <i class="fab fa-twitter"></i>
-                            Twitter
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                            <i class="fab fa-twitter"></i>
-                            Twitter
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                            <i class="fab fa-twitter"></i>
-                            Twitter
-                    </a>
-                  </li>
-                  <li>
-                      <a href="#">
-                              <i class="fab fa-twitter"></i>
-                              Twitter
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#">
-                              <i class="fab fa-twitter"></i>
-                              Twitter
-                      </a>
-                  </li>    
-              </ul>
-            </div>
-          </li>
-          <li>
-            <a href="#">Altro</a>
-          </li>
-        </ul>
-      </nav>
+      <input type="text" class="message" >
+      <button class="sendmsg">manda messaggio</button>
     </header>
 
-    <!-- parte principale -->
-    <main>
+
+    <div id="container">
+      
 
 
+    </div>
 
+<!-- blocco template non visibile in pagina -->
+    <div id="template">
+      <div class='msgsent'>
+        <span class="testo"></span>
+        <span>10:10</span>
+      </div>
+    </div>
 
-    </main>
-
-<!-- footer -->
-    <footer>
-
-    </footer>
    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="main.js">
