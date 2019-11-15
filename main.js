@@ -13,21 +13,35 @@ $( document ).ready(function() {
         
         // cloniamo (facciamo una copia) del div con classe "msgsent" che sta dentro
         // un div con ID "template"
-        var elmentmsg = $("#template .msgsent").clone();
+        // var elmentmsg = $("#template .msgsent").clone();
+        // console.log(elmentmsg);
 
-        console.log(elmentmsg);
+        // var source   = document.getElementById("hb-template").innerHTML;
+        var sorgente   = $("#hb-template").html();
+        console.log(sorgente);
+
+        var sorgDigerita = Handlebars.compile(sorgente);
+
+
 
         // modifica questa copia di "msgsent" aggiungendogli il testo del messaggio
-        elmentmsg.find(".testo").text(messaggio);
+        // elmentmsg.find(".testo").text(messaggio);
+        
+
+        var objRef = {text: messaggio, orario: "10:15", classname: "msgsent"};
+
+        var elValorizzato    = sorgDigerita(objRef);
+
         
         // appendiamo una copia con testo valorizzato del div "msgsent"
-        $("#container").append(elmentmsg);
+        // $("#container").append(elmentmsg);
+        $("#container").append(elValorizzato);
 
         // ripuliamo il contenuto dell'input, per UX
         $(".message").val("");
 
 
-        })
+        });
 
         
 
