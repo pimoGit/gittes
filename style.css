@@ -3,22 +3,8 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-header {
-  padding: 10px;
-}
-
-#container{
-  margin: 50px 20px;
-}
-
-.msgsent {
-  background-color: chartreuse;
-  padding: 5px;
-  margin-top: 10px;
-}
-
-/* Parte di templating */
-#template {
-  display: none;
+#numrandom{
+  font-size: 50px;
+  color: red;
+  padding: 20px;
 }
