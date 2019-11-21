@@ -3,8 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
-#numrandom{
-  font-size: 50px;
+
+.festa {
   color: red;
-  padding: 20px;
+}
+
+div[data-date="2018-01-10"]{
+  background-color: green;
 }
