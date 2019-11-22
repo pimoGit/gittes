@@ -11,3 +11,8 @@
 div[data-date="2018-01-10"]{
   background-color: green;
 }
+
+#nav a {
+  margin: 20px;
+
+}
