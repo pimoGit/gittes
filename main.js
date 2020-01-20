@@ -60,8 +60,7 @@ function randMax(max) {
         display() {
             // TODO
           this.reels.forEach(function spinReel(reel){
-                //console.log(reel.display());
-              let reel3Stat = reel.display();
+              reel.display();
               reelsObj.statePrev += reelsObj.statePrev === "" ? reel.PrevSymbol : "|" + reel.PrevSymbol; 
               reelsObj.stateCurrent += reelsObj.stateCurrent === "" ? reel.currentSymbol : "|" + reel.currentSymbol; 
               reelsObj.stateNext += reelsObj.stateNext === "" ? reel.NextSymbol : "|" + reel.NextSymbol; 
