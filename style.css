@@ -1,17 +1,31 @@
-header{
-  background-color: grey;
-  border-bottom: solid 4px yellow;
-  text-align: center;
-  margin-bottom: 40px;
+*{
+  /* border: solid 1px red; */
 }
 
-#img-profile{
-  width: 100px;
-  height: 100%;
+header{
+  height: 200px;
+  background-color: green;
+  margin-bottom: 50px;
+  border: solid 1px red;
 }
+
+#search{
+  height: 150px;
+  background-color: red;
+  margin-bottom: 50px;
+  border: solid 1px red;
+}
+
+main{
+  height: 250px;
+  background-color: yellow;
+  margin-bottom: 50px;
+  border: solid 1px red;
+}
+
 
 footer{
-  border-top: solid 3px yellow;
-  margin-top: 20px;
-  padding-top: 10px;
+  height: 100px;
+  background-color: grey;
+  border: solid 1px red;
 }
