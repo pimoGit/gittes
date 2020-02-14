@@ -1,26 +1,44 @@
-.container{
-  background-color: red;
-  width: 45%;
-  height: 200px;
-  display: inline-block;
-  position: relative;
-}
+/* *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
 
-.blue{
-  background-color: blue;
-  width: 50px;
-  height: 50px;
-}
-
-#blocco_spostato.blue{
-  /* margin-left: 10px; */
-  position: relative;
+header{
+  position: fixed;
   top: 0;
-  left: 10px;
+  left: 0;
+  right: 0;
+  background-color: grey;
+  height: 100px;
 }
 
-#blocco_spostato2{
-  position: absolute;
-  bottom: 0;
-  right: 0;
+nav {
+  margin: 0 auto;
+  width: 60%;
+  border: solid 5px #000;
+}
+
+#logo{
+  width: 50px;
+  height: auto;
+  display: inline-block;
+}
+
+/* nav ul, nav ul li{
+  display: inline-block;
+} */
+
+nav ul {
+  display: inline-block;
+}
+
+nav ul li{
+  display: inline-block;
+
+
+}
+
+.principale{
+  margin-top: 100px;
 }
