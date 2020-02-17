@@ -4,41 +4,60 @@
   box-sizing: border-box;
 }
 
+
 header{
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-color: grey;
+  background-color: yellow;
+  height: 150px;
+}
+
+p {
+ font-size: 12px;
+ color: #FFF;
+ line-height: 150%;
+}
+
+main{
+
+  margin: 10px 0;
+}
+
+ main::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+img {
+  float: left;
+  /* position: relative;
+  left: 50px; */
+  margin-left: 50px;
+}
+
+aside{
+  /* debug rules */
+  background-color: pink;
+  height: 250px;
+  /* end debug rules */
+  width: 25%;
+  margin-right: 5%;
+  float: left;
+}
+
+
+section{
+  /* debug rules */
+  background-color: blue;
+  height: 400px;
+  /* end debug rules */
+  width: 70%;
+  float: left;
+}
+
+
+
+
+footer{
+  background-color: lightblue;
   height: 100px;
-}
-
-nav {
-  margin: 0 auto;
-  width: 60%;
-  border: solid 5px #000;
-}
-
-#logo{
-  width: 50px;
-  height: auto;
-  display: inline-block;
-}
-
-/* nav ul, nav ul li{
-  display: inline-block;
-} */
-
-nav ul {
-  display: inline-block;
-}
-
-nav ul li{
-  display: inline-block;
-
-
-}
-
-.principale{
-  margin-top: 100px;
 }
