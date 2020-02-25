@@ -4,27 +4,18 @@
   box-sizing: border-box;
 }
 
-.blu {
-  background-color: blue;
-  height: 100px;
+.pink{
+  background-color: pink;
   width: 100px;
-  margin-bottom: 10px;
+  height: 100px;
+
 }
 
-/* versione da tablet in su */
-@media screen and (min-width:479px){
+/* versione mobile */
+@media screen and (max-width:479px){
 
-  .clearfix::after {
-    clear: both;
-    content: "";
-    display: table;
-  }
-  .blu{
-    background-color: red;
-    /* display: inline-block; */
-    float: left;
-    margin-right: 10px;
-    margin-bottom: 0;
+  .pink{
+    border-radius: 100%;
   }
 
 }
