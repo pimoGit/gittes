@@ -1,6 +1,6 @@
  *{
   margin: 0;
-  /* padding: 0; */
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -10,39 +10,7 @@
 }
 
 
-@media screen and (min-width: 780px){
 
-  ul::after{
-    content: "";
-    display: table;
-    clear: both;
-  }
-
-  ul li{
-    background-color: red;
-    float: left;
-    list-style-type: none;
-    text-align: center;
-    padding: 0 10px;
-    margin-right: 10px;
-    width: calc(25% - 10px);
-  }
-
-  ul{
-    width: 50%;
-    margin: 0 auto;
-  }
-
-  ul li:last-child{
-    margin-right: 0;
-  }
-
-
-}
-
-
-
-/*
 header{
   background-color: yellow;
   height: 150px;
@@ -86,16 +54,62 @@ aside{
 section{
   /* debug rules */
   background-color: blue;
-  height: 400px;
+  /* height: 400px; */
   /* end debug rules */
   width: 70%;
   float: left;
 }
 
+section::after{
+  content: "";
+  display: table;
+  clear: both;
+}
 
+.text {
+  padding: 10px;
+  float: left;
+  width: 40%;
+}
 
 
 footer{
   background-color: lightblue;
   height: 100px;
-} */
+}
+
+
+/* tablet potrait version */
+
+@media screen and (max-width:768px){
+
+  img {
+    width: 60%;
+    margin-left: 0;
+  }
+
+
+}
+
+/* mobile version */
+
+@media screen and (max-width:568px){
+
+  main::after{
+   display: none;
+ }
+
+  aside{
+    float: none;
+    width: 100%;
+    height: 100px;
+  }
+
+  section{
+    float: none;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+
+}
