@@ -1,33 +1,40 @@
  *{
   margin: 0;
-  padding: 0;
+  /* padding: 0; */
   box-sizing: border-box;
 }
 
 .blocco{
-  background-color: blue;
-  width: 100px;
-  height: 100px;
+  background-color: grey;
 
 }
 
-/* versione mobile */
-@media screen and (max-width:479px){
 
-  .blocco{
-    background-color: orange;
+@media screen and (min-width: 780px){
+
+  ul::after{
+    content: "";
+    display: table;
+    clear: both;
   }
 
-}
-
-/* versione megascreen */
-@media screen and (min-width:1401px){
-
-  .blocco{
-    background-color: green;
+  ul li{
+    background-color: red;
+    float: left;
+    list-style-type: none;
+    text-align: center;
+    padding: 0 10px;
+    margin-right: 10px;
   }
 
+  ul{
+    width: 50%;
+    margin: 0 auto;
+  }
+
+
 }
+
 
 
 /*
