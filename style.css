@@ -4,8 +4,8 @@
   box-sizing: border-box;
 }
 
-.pink{
-  background-color: pink;
+.blocco{
+  background-color: blue;
   width: 100px;
   height: 100px;
 
@@ -14,8 +14,17 @@
 /* versione mobile */
 @media screen and (max-width:479px){
 
-  .pink{
-    border-radius: 100%;
+  .blocco{
+    background-color: orange;
+  }
+
+}
+
+/* versione megascreen */
+@media screen and (min-width:1401px){
+
+  .blocco{
+    background-color: green;
   }
 
 }
