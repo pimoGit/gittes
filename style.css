@@ -1,15 +1,14 @@
-
-/* DEBUG */
-
-[class*="col-"] {
-  background-color: pink;
-  min-height: 150px;
-  border: solid 1px #000;
+.container-flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 100vh;
 }
 
-/* regole generali di pagina */
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+
+.contenuto{
+  width: 200px;
+  height: 200px;
+  background-color: red;
 }
