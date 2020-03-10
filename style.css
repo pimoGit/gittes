@@ -1,14 +1,92 @@
-.container-flex{
+/* DEBUG */
+
+/* section{
+  background-color: pink;
+  height: 200px;
+} */
+
+footer {
+  background-color: blue;
+  height: 150px;
+}
+
+
+/* regole generali */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* regole header */
+header {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+}
+
+#header-cont {
+  height: 100%;
+  width: 70%;
+  margin: 0 15%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+#header-cont ul {
+  display: flex;
+  list-style-type: none;
+  /* justify-content: space-between; */
+
+}
+#header-cont ul li {
+  margin-right: 10px;
+}
+#header-cont ul li:last-child {
+  margin-right: 0;
+}
+
+
+/* regole main (sezioni) */
+.sezione-centrata {
+  /* box-sizing: content-box; */
+  width: 80%;
+  margin: 0 10%;
+}
+
+main{
+  margin-top: 70px;
+}
+
+/* sez jumbotron */
+#jumbotron{
+  background-image: url("img/landscapebg.jpg");
+  min-height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
-  height: 100vh;
+  text-align: center;
 }
 
 
-.contenuto{
-  width: 200px;
-  height: 200px;
-  background-color: red;
+/* sez product */
+#product{
+  display: flex;
+  min-height: 300px;
+  align-items: stretch;
+  justify-content: space-between;
+  margin: 50px auto;
 }
+
+.prodotto{
+  background-color: #ccc;
+  width: 45%;
+
+}
+
+/* regole footer */
