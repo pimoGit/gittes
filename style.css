@@ -3,11 +3,28 @@ div {
   width: 200px;
   height: 200px;
   background-color: blue;
-  -webkit-transition: background-color 2s ease;
-  -moz-transition: background-color 2s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation-name: muoviti;
+  animation-duration: 5s;
+  animation-iteration-count: 2;
 }
 
-div:hover{
-  background-color: red;
-  width: 300px;
+
+@keyframes muoviti {
+  0%   {top:0; left:0; transform: rotate(90deg);}
+  25%  {top:0; left:calc(100% - 200px); transform: rotate(180deg);}
+  50%  {top:calc(100% - 200px); left:calc(100% - 200px); transform: rotate(270deg);}
+  75%  {top:calc(100% - 200px); left:0; transform: rotate(360deg);}
+  100% {top:0; left: 0; transform: rotate(0);}
 }
+
+/* @keyframes muoviti {
+  0%   {top:0; left:0; right: none; bottom: none;}
+  25%  {top:0; left:none; right:0; bottom: none;}
+  50%  {top:none; bottom:0; right:0; left:none;}
+  75%  {bottom: 0; right: none; left: 0; top: none;}
+  100% {top:0; left: 0; bottom: none; right: none;}
+
+} */
