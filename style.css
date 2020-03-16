@@ -1,14 +1,19 @@
 div {
   display: flex;
+  justify-content: space-around;
+  align-content: space-between;
+  height:100vh;
   flex-wrap: wrap;
 }
 
 img {
-  flex-basis: 50%;
+  flex-basis: 40%;
   filter: grayscale(1);
-  transition: filter 0.3s ease-in 1s;
+  /* margin: 5px; */
+  transition: all 0.3s ease-in;
 }
 
 img:hover {
   filter: none;
+  /* flex-basis:100vh; */
 }
