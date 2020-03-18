@@ -1,13 +1,14 @@
-var stringa1, stringa2;
+// questo è u commento singolo
 
-stringa1 = "Rosso: 'bellissimo'";
-stringa2 = 'Acceso però spento';
+/*
+commento multilinea
+*/
+
+var somma = 4 + 4; // addizione, con il segno +
+var sottr = somma - 3; // sottrazione, con il segno -
+var divisione = somma / 2; // divisione, con il segno /
+var molt = sottr * 2; // moltiplicazione, con il segno*
+var tot = somma + (4 * 2);
 
 
-var miaStringa = stringa1 + "        " + stringa2;
-
-var altro = "1000";
-
-alert(miaStringa + altro);
-
-document.getElementById("mio_id").innerHTML = miaStringa;
+console.log("il valore di somma è: " + somma, sottr, divisione, molt, tot);
