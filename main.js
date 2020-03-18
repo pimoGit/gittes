@@ -1,18 +1,20 @@
-// Chiedere al visitatore il suo nome e salutarlo
+// Quanti anni hai? Allora sei nato nel.
 
 
-// creaimo var per memorizzare input utente
-var nomeUtente;
+// creaiamo var per memorizzare età
+var etaTizio;
 
-// chiediamo al visitatore il suo nome
-// e lo salviamo nella var creata
-nomeUtente = prompt("inserisci il tuo nome");
+// creaiamo var per anno corrente
+var annoCorrente = 2020;
 
+// creiamo var per anno di nascita
+var annoDiNascita;
 
+// chiedere l'età del tizio
+etaTizio = prompt("inserisci la tua età");
 
-// salutare il visitatore aggiungendo il suo nome
-document.getElementById('mio_id').innerHTML = "Ciao " + nomeUtente;
+// calcolare anno di nascita
+annoDiNascita = annoCorrente - etaTizio;
 
-nomeUtente = "Olmo";
-
-console.log(" in realtà caro" +  nomeUtente + "sei un pò str..");
+// output per tizio per suo anno di nascita
+document.getElementById('mio_id').innerHTML = "Allora sei nato nel: " + annoDiNascita;
