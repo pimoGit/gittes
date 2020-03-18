@@ -18,3 +18,6 @@ annoDiNascita = annoCorrente - etaTizio;
 
 // output per tizio per suo anno di nascita
 document.getElementById('mio_id').innerHTML = "Allora sei nato nel: " + annoDiNascita;
+
+// utilizzo debug
+console.log("messaggio");
