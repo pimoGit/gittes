@@ -1,14 +1,16 @@
-// questo è u commento singolo
-
-/*
-commento multilinea
-*/
-
-var somma = 4 + 4; // addizione, con il segno +
-var sottr = somma - 3; // sottrazione, con il segno -
-var divisione = somma / 2; // divisione, con il segno /
-var molt = sottr * 2; // moltiplicazione, con il segno*
-var tot = somma + (4 * 2);
+// Chiedere al visitatore il suo nome e salutarlo
 
 
-console.log("il valore di somma è: " + somma, sottr, divisione, molt, tot);
+// creaimo var per memorizzare input utente
+var nomeUtente;
+
+// chiediamo al visitatore il suo nome
+// e lo salviamo nella var creata
+nomeUtente = prompt("inserisci il tuo nome");
+
+
+
+// salutare il visitatore aggiungendo il suo nome
+document.getElementById('mio_id').innerHTML = "Ciao " + nomeUtente;
+
+console.log(" in realtà caro" +  nomeUtente + "sei un pò str..");
