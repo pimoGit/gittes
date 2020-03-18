@@ -1,21 +1,13 @@
-// document.writeln('Hello World!');
-//  alert('Hello World!');
+var stringa1, stringa2;
 
-// dichiarazione variabile
-var miaStringa;
+stringa1 = "Rosso: 'bellissimo'";
+stringa2 = 'Acceso però spento';
 
-alert(miaStringa);
 
-// assegnazione primo valore alla var
-miaStringa = 'ciao';
-// utilizzo e richiamo del valore associato al momento alla var
-// alert(miaStringa);
-console.log("la variabile a linea 13 vale", miaStringa);
+var miaStringa = stringa1 + "        " + stringa2;
 
-// riassegno nuovo valore a var
-miaStringa = 'arrivederci';
-// richiamo nuovamente valore var (cambiato)
-alert(miaStringa);
+var altro = "1000";
 
-document.getElementById('mio_id').innerHTML='Hello World!';
-console.log("hey io sappaio in colnsole!");
+alert(miaStringa + altro);
+
+document.getElementById("mio_id").innerHTML = miaStringa;
