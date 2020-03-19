@@ -1,23 +1,24 @@
-// Quanti anni hai? Allora sei nato nel.
+// Inserisci due parole, quale è la piu lunga?
 
+var msg;
+// chiedo all'utente di inserire prima parola
+var parola1 = prompt("inserisci una parola");
 
-// creaiamo var per memorizzare età
-var etaTizio;
+// chiedo all'utente di inserire seconda parola
+var parola2 = prompt("inserisci un'altra parola");
 
-// creaiamo var per anno corrente
-var annoCorrente = 2020;
+console.log(parola1.length);
 
-// creiamo var per anno di nascita
-var annoDiNascita;
+//confronto la lunghezza delle stringhe
 
-// chiedere l'età del tizio
-etaTizio = prompt("inserisci la tua età");
+if(parola1.length > parola2.length){
+  msg = "la parola 1 è più lunga";
+} else if (parola2.length > parola1.length) {
+  msg = "la parola 2 è più lunga";
+} else {
+  msg = "le parola sono lunghe uguali";
+}
 
-// calcolare anno di nascita
-annoDiNascita = annoCorrente - etaTizio;
+document.getElementById('mio_id').innerHTML = msg;
 
-// output per tizio per suo anno di nascita
-document.getElementById('mio_id').innerHTML = "Allora sei nato nel: " + annoDiNascita;
-
-// utilizzo debug
-console.log("messaggio");
+// output per dire qual'è la più lunga
