@@ -1,24 +1,39 @@
-// Inserisci due parole, quale è la piu lunga?
+// Gioco: pari o dispari?
 
-var msg;
-// chiedo all'utente di inserire prima parola
-var parola1 = prompt("inserisci una parola");
+var result, msg;
 
-// chiedo all'utente di inserire seconda parola
-var parola2 = prompt("inserisci un'altra parola");
+// chiediamo all'utente di scegliere tra pari e dispari
+var userChoice = prompt("scegli se puntare su pari o dispari");
 
-console.log(parola1.length);
+// chiediamo all'utente di fare la sua puntatata (numero tra 1-5)
+var userNum = parseInt(prompt("scegli un numero tra 1 e 5"));
 
-//confronto la lunghezza delle stringhe
+// pc punta numero (numero tra 1-5)
+var pcNum = Math.floor(Math.random() * 5) + 1;
 
-if(parola1.length > parola2.length){
-  msg = "la parola 1 è più lunga";
-} else if (parola2.length > parola1.length) {
-  msg = "la parola 2 è più lunga";
+// faccio somma dei 2 numeri
+var sum = userNum + pcNum;
+
+console.log("numero utente= " +  userNum);
+console.log("numero PC= " +  pcNum);
+console.log("somma= " +  sum);
+
+
+// cerco di capire se la somma sia pari o dispari (mi salvo la cosa)
+if (sum % 2 === 0){
+  result = "pari";
 } else {
-  msg = "le parola sono lunghe uguali";
+  result = "dispari";
 }
 
-document.getElementById('mio_id').innerHTML = msg;
+// cerco di capire sulla base della valore di pari o disp di somma se ha vinto l'untete o il pc
+if (result === userChoice ){
+  msg = "Ha vinto lo user";
+} else if ( result !== userChoice){
+  msg = "Ha vinto il PC";
+}
 
-// output per dire qual'è la più lunga
+
+
+// dò output di chi ha vinto
+document.getElementById('mio_id').innerHTML = msg;
