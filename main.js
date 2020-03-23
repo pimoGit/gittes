@@ -1,43 +1,14 @@
-// Crea un array contenente 3 nomi.
-// Chiedi un numero da 0 a 2 all’utente e stampa l’elemento
-// dell’array corrispondente.
-
-var mioArray = ["Mario","Francesca","Lorella"];
-var miaStringa = "Hello";
-
-var numArray = [1,"strainga",5,true,miaStringa];
-
-var indice = parseInt(prompt("inserisci un numero da 0 a 2"));
+// Chiedi un numero all’utente e stampa in console il numero successivo.
 
 
-// prova varia di aggiunta, ritorno lunghezza
-console.log(mioArray);
-console.log("lunghezza iniziale", mioArray.length);
+var utente1 = parseInt(prompt("inserisci un numero"));
 
-var lunghezzaArr = mioArray.push("Gianfranco");
+utente1++;
+utente1 = utente1 + 1;
+utente1 += 1
 
-console.log("Il valore ritornato dal push è: ", lunghezzaArr);
+var utentePlus1 = utente1 + 1;
 
-console.log("lunghezza successiva al push", mioArray.length);
+document.getElementById('mio_id').innerHTML = utente1 ;
 
-console.log(mioArray);
-
-mioArray[mioArray.length] = "Simone";
-
-console.log("lunghezza successiva a inserimento manuale", mioArray.length);
-
-console.log(mioArray);
-
-mioArray[0] = "nomneCambiato";
-
-console.log("lunghezza successiva a inserimento manuale", mioArray.length);
-
-console.log(mioArray);
-
-
-
-
-
-var itemTrovato = mioArray[indice];
-
-document.getElementById('mio_id').innerHTML = itemTrovato;
+// console.log(utente1);
