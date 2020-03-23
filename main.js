@@ -5,7 +5,8 @@ var utente1 = parseInt(prompt("inserisci un numero"));
 
 utente1++;
 utente1 = utente1 + 1;
-utente1 += 1
+utente1 += 2;
+
 
 var utentePlus1 = utente1 + 1;
 
