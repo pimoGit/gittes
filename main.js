@@ -1,15 +1,17 @@
-// Chiedi un numero all’utente e stampa in console il numero successivo.
+// Stampa tutti i numeri da 0 a 1000
 
 
-var utente1 = parseInt(prompt("inserisci un numero"));
+for (var i = 1; i <= 1000; i++){
+  console.log(i);
+}
 
-utente1++;
-utente1 = utente1 + 1;
-utente1 += 2;
+console.log("fuori dal ciclo",i);
 
 
-var utentePlus1 = utente1 + 1;
 
-document.getElementById('mio_id').innerHTML = utente1 ;
+console.log("------------da 1000 a 0-------------");
+// Stampa tutti i numeri da 1000 a 0
 
-// console.log(utente1);
+for (var j = 1000; j >= 0; j--) {
+  console.log(j);
+}
