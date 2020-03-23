@@ -1,17 +1,31 @@
-// Stampa tutti i numeri da 0 a 1000
+// Crea un array contenente 5 nomi e stampali a schermo
 
 
-for (var i = 1; i <= 1000; i++){
-  console.log(i);
+// var nomi = ["nome1","nome2","nome3","nome4","nome5"];
+//
+// // console.log(nomi[0]);
+//
+//
+//
+// for (var i = 0; i < nomi.length; i++ ){
+//   var arrayItemN = nomi[i];
+//   console.log("l'item dell'array che ha indice" + i + " è: ", arrayItemN);
+// }
+
+
+
+// Crea un array di numeri, e stampa solo i numeri dispari
+
+var numeri = [2,5,6,3,4,8,9];
+var numI;
+
+for (var i = 0; i < numeri.length; i++){
+  numI = numeri[i];
+  if(numI % 2 !== 0){
+    console.log(numI);
+  }
+  // console.log(numI);
 }
 
-console.log("fuori dal ciclo",i);
 
-
-
-console.log("------------da 1000 a 0-------------");
-// Stampa tutti i numeri da 1000 a 0
-
-for (var j = 1000; j >= 0; j--) {
-  console.log(j);
-}
+console.log(numI);
