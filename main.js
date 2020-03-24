@@ -1,27 +1,18 @@
 
 
-var nomi = ["nome0","nome1","nome2","nome3","nome4"];
+var listaSpesa = ["pane", "latte", "uova", "carta Igienica", "birra"];
 
+var itemN, contenutoPrecedente;
 
+for (var i = 0; i < listaSpesa.length; i++) {
+  itemN = listaSpesa[i];
+  // console.log(itemN);
+  contenutoPrecedente = document.getElementById('mio_id').innerHTML;
 
-// for (var i = 0; i < nomi.length; i++) {
-//   console.log(nomi[i]);
-// }
+  console.log("iterazione numero: " + i + contenutoPrecedente);
 
-
-
-var i = 0;
-
-while (i < nomi.length) {
-
-  console.log(nomi[i]);
-  i++;
-
+  document.getElementById('mio_id').innerHTML = contenutoPrecedente + "<li>" + itemN + "</li>";
 }
 
 
-// var i = 0;
-// do{
-//   console.log(nomi[i]);
-//   i++;
-// } while (i < nomi.length);
+// document.getElementById('mio_id').innerHTML = "<span class='nomeClasse'>Hey sono dentro un tag inserito dinamicamente da js </span>";
