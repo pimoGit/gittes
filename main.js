@@ -4,14 +4,9 @@ var nomi = ["nome0","nome1","nome2","nome3","nome4"];
 
 
 
-
-
 // for (var i = 0; i < nomi.length; i++) {
 //   console.log(nomi[i]);
 // }
-
-
-
 
 
 
@@ -23,3 +18,10 @@ while (i < nomi.length) {
   i++;
 
 }
+
+
+// var i = 0;
+// do{
+//   console.log(nomi[i]);
+//   i++;
+// } while (i < nomi.length);
