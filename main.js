@@ -1,15 +1,21 @@
-
- // Al click di un pulsante,
- // deve apparire un alert con un numero random
-
-
- var bottone = document.getElementById('mioButton');
-
+// Il software deve chiedere all’utente il suo nome
+// e il sesso con due prompt diversi.
+// Sulla pagina html deve apparire “Ciao <nome>”,
+// il colore del nome deve essere azzurro
+// o rosa a seconda del sesso inserito
 
 
-bottone.addEventListener("click",
-  function(){
-    var random = Math.floor(Math.random() * 10 ) +1;
-    alert(random);
-  }
-)
+var nome = prompt("nome");
+var sesso = prompt("sesso");
+
+var elm = document.getElementById('nome2');
+
+elm.innerHTML = nome;
+
+if (sesso === "m"){
+  // elm.style.color = "lightblue";
+  elm.className = "maschio";
+} else if (sesso === "f"){
+  // elm.style.color = "pink";
+  elm.className = "femmina";
+}
