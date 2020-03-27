@@ -1,18 +1,13 @@
+// Ciao Visitatore!
+// Imposta il nome di colore rosso in vari modi:
+// ● Solo con HTML+CSS
+// ● Scrivendo su element.style
+// ● Aggiungendo la classe con JS
 
+var element  = document.getElementById('rosso');
 
-var listaSpesa = ["pane", "latte", "uova", "carta Igienica", "birra"];
+console.log(element);
 
-var itemN, contenutoPrecedente;
+// element.style.color = "red";
 
-for (var i = 0; i < listaSpesa.length; i++) {
-  itemN = listaSpesa[i];
-  // console.log(itemN);
-  contenutoPrecedente = document.getElementById('mio_id').innerHTML;
-
-  console.log("iterazione numero: " + i + contenutoPrecedente);
-
-  document.getElementById('mio_id').innerHTML = contenutoPrecedente + "<li>" + itemN + "</li>";
-}
-
-
-// document.getElementById('mio_id').innerHTML = "<span class='nomeClasse'>Hey sono dentro un tag inserito dinamicamente da js </span>";
+element.className = "red";

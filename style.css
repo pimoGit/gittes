@@ -1,19 +1,7 @@
-div {
-  display: flex;
-  justify-content: space-around;
-  align-content: space-between;
-  height:100vh;
-  flex-wrap: wrap;
-}
+/* #rosso {
+  color: red;
+} */
 
-img {
-  flex-basis: 40%;
-  filter: grayscale(1);
-  /* margin: 5px; */
-  transition: all 0.3s ease-in;
-}
-
-img:hover {
-  filter: none;
-  /* flex-basis:100vh; */
+.red {
+  color: red;
 }
