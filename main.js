@@ -1,13 +1,15 @@
-// Ciao Visitatore!
-// Imposta il nome di colore rosso in vari modi:
-// ● Solo con HTML+CSS
-// ● Scrivendo su element.style
-// ● Aggiungendo la classe con JS
 
-var element  = document.getElementById('rosso');
+ // Al click di un pulsante,
+ // deve apparire un alert con un numero random
 
-console.log(element);
 
-// element.style.color = "red";
+ var bottone = document.getElementById('mioButton');
 
-element.className = "red";
+
+
+bottone.addEventListener("click",
+  function(){
+    var random = Math.floor(Math.random() * 10 ) +1;
+    alert(random);
+  }
+)
