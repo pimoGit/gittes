@@ -1,21 +1,32 @@
-// Il software deve chiedere all’utente il suo nome
-// e il sesso con due prompt diversi.
-// Sulla pagina html deve apparire “Ciao <nome>”,
-// il colore del nome deve essere azzurro
-// o rosa a seconda del sesso inserito
+var valnome, valkm, valeta;
 
 
-var nome = prompt("nome");
-var sesso = prompt("sesso");
+// input nome utente
+var nomeU = document.getElementById('nome');
+// input km utente
+var kmU = document.getElementById('km');
+// input età utente
+var etaU = document.getElementById('eta');
 
-var elm = document.getElementById('nome2');
+// bottoner genera
+var generaButton = document.getElementById('genera');
 
-elm.innerHTML = nome;
 
-if (sesso === "m"){
-  // elm.style.color = "lightblue";
-  elm.className = "maschio";
-} else if (sesso === "f"){
-  // elm.style.color = "pink";
-  elm.className = "femmina";
-}
+// console.log(nomeU);
+
+// catturo il click sul bottoner
+generaButton.addEventListener("click",
+
+  function(){
+    // sul click salvo i valori degli input
+    valnome = nomeU.value;
+    valkm = kmU.value;
+    valeta = etaU.value;
+
+    //reciclo codice js per calcolo biglietto altro EX
+
+    // // li stampo in console
+    console.log(valnome, valkm, valeta);
+  }
+
+);
