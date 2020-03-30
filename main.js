@@ -1,32 +1,19 @@
-var valnome, valkm, valeta;
+for (var i = 0; i < 10; i++){
+    var newNumber = getRandomNumber(1, 100);
+
+    console.log(newNumber);
+}
+
+function getRandomNumber(min, max){
+    var totale = Math.floor(Math.random() * (max - min + 1) + min);
+     return totale;
+}
 
 
-// input nome utente
-var nomeU = document.getElementById('nome');
-// input km utente
-var kmU = document.getElementById('km');
-// input età utente
-var etaU = document.getElementById('eta');
 
-// bottoner genera
-var generaButton = document.getElementById('genera');
-
-
-// console.log(nomeU);
-
-// catturo il click sul bottoner
-generaButton.addEventListener("click",
-
-  function(){
-    // sul click salvo i valori degli input
-    valnome = nomeU.value;
-    valkm = kmU.value;
-    valeta = etaU.value;
-
-    //reciclo codice js per calcolo biglietto altro EX
-
-    // // li stampo in console
-    console.log(valnome, valkm, valeta);
-  }
-
-);
+ // Math.floor(Math.random() * (100 - 50 + 1) + 50);
+//
+// Math.floor(Math.random() * (20 - 5 + 1) + 5);
+//
+// getRandomNumber(50, 100);
+ getRandomNumber(5, 20);
