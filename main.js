@@ -1,31 +1,19 @@
-// Creare un bottone che on hover aggiunga una classe
-// che cambia il colore del testo
-// e la toglie quando il mouse esce dal bottone.
-// Con il doppio click cambio il testo in “cliccato”.
-// Con un click solo non fa niente
+ // Creare il titolo di un paragrafo
+ // e un bottone che permette di espandere
+ // il testo inizialmente nascosto
 
+ $('p').hide();
 
-var bottone =  $('.bottone');
+var stateP = "hidden";
 
-bottone.on({
-  mouseenter: function(){
-      bottone.addClass('classToAdd');
-  },
-  mouseleave: function(){
-      bottone.removeClass('classToAdd');
-  },
-  dblclick: function(){
-      bottone.text('cliccato');
-  }
-});
-
-// bottone.mouseenter(
-//     function(){
-//       bottone.addClass('classToAdd');
-//     }
-//   );
-//   bottone.mouseleave(
-//       function(){
-//         bottone.removeClass('classToAdd');
-//       }
-//     );
+ $('button').click(
+   function(){
+     if(stateP === "hidden"){
+       $('p').fadeIn(2000);
+       stateP = "visible";
+     } else {
+       $('p').fadeOut(2000);
+       stateP = "hidden";
+     }
+   }
+ );
