@@ -1,19 +1,15 @@
-for (var i = 0; i < 10; i++){
-    var newNumber = getRandomNumber(1, 100);
+// Data una struttura html selezionare gli elementi indicati e
+// applicare loro una class con addClass
 
-    console.log(newNumber);
-}
+var titolo = $('h1');
 
-function getRandomNumber(min, max){
-    var totale = Math.floor(Math.random() * (max - min + 1) + min);
-     return totale;
-}
+var par = $('p, p.pclass');
+
+console.log(titolo);
+
+titolo.addClass('classToAdd');
+
+par.addClass('classToAdd');
 
 
-
- // Math.floor(Math.random() * (100 - 50 + 1) + 50);
-//
-// Math.floor(Math.random() * (20 - 5 + 1) + 5);
-//
-// getRandomNumber(50, 100);
- getRandomNumber(5, 20);
+$('#divId').addClass('classToAdd');
