@@ -1,21 +1,22 @@
- // Creare un bottone
- // che faccia aprire e chiudere un sipario.
+ // Creare una piccola sezione FAQ.
+ // Tante domande che quando cliccate visualizzano
+ // la risposta corrispondente.
+
+
+
 $(document).ready(function(){
 
-  $('button').click(
-    function(){
-      $('.sipario').slideToggle(2000,
-        cbSlide
-      );
-    }
-  )
+    // rendo i p non visibili
+    $('p').hide();
 
-
-  function cbSlide() {
-    alert("ho finito l'animazione!");
-  }
-
-  // cbSlide();
-
+    //gestire l'evento click per nascondere
+    //o visualizzare la risposta relativa alla domanda cliccata
+    $('.faq h2').click(
+      function(){
+        // $('p').toggle();
+        $(this).siblings('p').toggle();
+        //$('.faq h2').siblings('p').toggle();
+      }
+    );
 
 });
