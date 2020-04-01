@@ -1,35 +1,21 @@
- // Creare il titolo di un paragrafo
- // e un bottone che permette di espandere
- // il testo inizialmente nascosto
-
+ // Creare un bottone
+ // che faccia aprire e chiudere un sipario.
 $(document).ready(function(){
 
+  $('button').click(
+    function(){
+      $('.sipario').slideToggle(2000,
+        cbSlide
+      );
+    }
+  )
 
 
-  $('p').hide();
+  function cbSlide() {
+    alert("ho finito l'animazione!");
+  }
 
-  // var stateP = "hidden";
-  //
-  //  $('button').click(
-  //    function(){
-  //      if(stateP === "hidden"){
-  //        $('p').fadeIn(2000);
-  //        stateP = "visible";
-  //      } else {
-  //        $('p').fadeOut(2000);
-  //        stateP = "hidden";
-  //      }
-  //    }
-  //  );
+  // cbSlide();
 
 
-
-   $('button').click(
-     function(){
-       $('p').fadeToggle(2000);
-     }
-   )
-
-
-
- });
+});
