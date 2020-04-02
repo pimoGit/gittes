@@ -1,12 +1,52 @@
-.sipario {
-  background-color: red;
-  height: 100vh;
-  /* transform: rotate(-90deg); */
+ /* regole generali */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-button {
+
+
+
+/* regole generali blocco slider */
+.slider-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  overflow: hidden;
+  height: 80vh;
+}
+
+/* regole del blocco imgs */
+
+
+
+.images {
+  width: 80%;
+
+}
+
+
+.images img {
+  width: 100%;
+  display: none;
+}
+
+.images img.active {
+  display: inline-block;
+}
+
+/* regole navigazione */
+
+.prev i, .next i{
+  font-size: 40px;
+}
+
+.nav {
   position: absolute;
-  top: 10px;
-  left: 45%;
-  z-index: 999;
+  bottom: 20px;
+  left: 40%;
+}
+.nav i.active {
+  color: red;
 }

@@ -1,22 +1,70 @@
- // Creare una piccola sezione FAQ.
- // Tante domande che quando cliccate visualizzano
- // la risposta corrispondente.
-
-
-
+ // creare uno slider
 $(document).ready(function(){
 
-    // rendo i p non visibili
-    $('p').hide();
 
-    //gestire l'evento click per nascondere
-    //o visualizzare la risposta relativa alla domanda cliccata
-    $('.faq h2').click(
-      function(){
-        // $('p').toggle();
-        $(this).siblings('p').toggle();
-        //$('.faq h2').siblings('p').toggle();
-      }
-    );
+// gestione evento sul prev
+  $('.prev').click(
+    //funzione di CB
+      prevImg
+  );
+
+// gestione evento sul next
+  $('.next').click(
+    //funzione di CB
+      nextImg
+  );
+
+
+  // funzione next
+function nextImg() {
+
+    // salvo ref a img attiva al momento del click
+    var imgActive = $('.images img.active');
+    // console.log(imgActive);
+
+    // salvo il pallino attivo
+    var ballActive = $('.nav i.active');
+
+    // tolgo la classe active all'img selezionata
+    imgActive.removeClass('active');
+
+    // tolgo la classe active al pallino selezionato
+    ballActive.removeClass('active');
+
+
+
+    // verifico se questa img era l'ultima
+    if(imgActive.hasClass('last')){
+      $('.images img.first').addClass('active');
+      $('.nav i.first').addClass('active');
+    } else {
+      // applica classe active alla prox img
+      imgActive.next().addClass('active');
+      ballActive.next().addClass('active');
+      // console.log(imgActive.next());
+  }
+}
+
+// funzione prevImg
+ function prevImg() {
+
+   // salvo ref a img attiva al momento del click
+   var imgActive = $('.images img.active');
+   // tolgo la classe active all'img selezionata
+   imgActive.removeClass('active');
+
+   // verifico se questa img era la prima
+   if(imgActive.hasClass('first')){
+     $('.images img.last').addClass('active');
+   } else {
+     // applica classe active alla prox img
+     imgActive.prev().addClass('active');
+     // console.log(imgActive.next());
+   }
+
+ }
+
+
+
 
 });
