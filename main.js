@@ -1,68 +1,30 @@
- // creare uno slider
+// Creare in HTML una griglia formata da 8x8 rettangolini tutti bianchi.
+// 15 di questi rettangolini (scelti a caso all’inizio) se cliccati diventano rossi, gli altri diventano verdi
+
+
 $(document).ready(function(){
 
+  // tenere il punteggio dei Verdi VS Rossi
+var redPoint = 0, greenPoint = 0;
 
-// gestione evento sul prev
-  $('.prev').click(
-    //funzione di CB
-      prevImg
+  // faccio cose
+  $('.square').click(
+    function () {
+      if($(this).hasClass('redWannabe')){
+        $(this).css('background', 'red');
+        redPoint++;
+        // redPoint = redPoint + 1;
+        console.log("punteggio rosso: " + redPoint);
+        $('.prossa').html("punteggio rosso: " + redPoint);
+      } else {
+        $(this).css('background', 'green');
+        greenPoint++;
+        console.log("punteggio verde: " + greenPoint);
+        $('.pverde').html("punteggio verde: " + greenPoint);
+      }
+    }
   );
 
-// gestione evento sul next
-  $('.next').click(
-    //funzione di CB
-      nextImg
-  );
-
-
-  // funzione next
-function nextImg() {
-
-    // salvo ref a img attiva al momento del click
-    var imgActive = $('.images img.active');
-    // console.log(imgActive);
-
-    // salvo il pallino attivo
-    var ballActive = $('.nav i.active');
-
-    // tolgo la classe active all'img selezionata
-    imgActive.removeClass('active');
-
-    // tolgo la classe active al pallino selezionato
-    ballActive.removeClass('active');
-
-
-
-    // verifico se questa img era l'ultima
-    if(imgActive.hasClass('last')){
-      $('.images img.first').addClass('active');
-      $('.nav i.first').addClass('active');
-    } else {
-      // applica classe active alla prox img
-      imgActive.next().addClass('active');
-      ballActive.next().addClass('active');
-      // console.log(imgActive.next());
-  }
-}
-
-// funzione prevImg
- function prevImg() {
-
-   // salvo ref a img attiva al momento del click
-   var imgActive = $('.images img.active');
-   // tolgo la classe active all'img selezionata
-   imgActive.removeClass('active');
-
-   // verifico se questa img era la prima
-   if(imgActive.hasClass('first')){
-     $('.images img.last').addClass('active');
-   } else {
-     // applica classe active alla prox img
-     imgActive.prev().addClass('active');
-     // console.log(imgActive.next());
-   }
-
- }
 
 
 

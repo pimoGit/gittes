@@ -1,52 +1,38 @@
- /* regole generali */
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-
-
-
-/* regole generali blocco slider */
-.slider-wrapper{
+.container{
+  width: 100vw;
+  height: 100vh;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  justify-content: space-around;
-  overflow: hidden;
-  height: 80vh;
 }
 
-/* regole del blocco imgs */
+.punteggio{
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+}
 
-
-
-.images {
+.tablecontainer{
   width: 80%;
-
+  height: 80%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 
-.images img {
-  width: 100%;
-  display: none;
+.square {
+  border:  1px solid black;
+  width: calc(100% / 8);
+  height: calc(100% / 8);
 }
 
-.images img.active {
-  display: inline-block;
-}
-
-/* regole navigazione */
-
-.prev i, .next i{
-  font-size: 40px;
-}
-
-.nav {
-  position: absolute;
-  bottom: 20px;
-  left: 40%;
-}
-.nav i.active {
-  color: red;
+.redWannabe{
+  /* background-color: red; */
 }
