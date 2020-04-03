@@ -8,17 +8,38 @@ $(document).ready(function(){
 var redPoint = 0, greenPoint = 0;
 
   // faccio cose
+  // $('.square').click(
+  //   function () {
+  //     if($(this).hasClass('redWannabe')){
+  //       $(this).css('background', 'red');
+  //       redPoint++;
+  //       console.log("punteggio rosso: " + redPoint);
+  //       $('.prossa').html("punteggio rosso: " + redPoint);
+  //     } else {
+  //       $(this).css('background', 'green');
+  //       greenPoint++;
+  //       console.log("punteggio verde: " + greenPoint);
+  //       $('.pverde').html("punteggio verde: " + greenPoint);
+  //     }
+  //   }
+  // );
+
+
   $('.square').click(
     function () {
-      if($(this).hasClass('redWannabe')){
+      if($(this).hasClass('active')){
+        console.log("OH! l'hai già cliccato!");
+      } else if($(this).hasClass('redWannabe')){
         $(this).css('background', 'red');
         redPoint++;
-        // redPoint = redPoint + 1;
+        $(this).addClass('active');
+        // $(this).attr('active', 'vero');
         console.log("punteggio rosso: " + redPoint);
         $('.prossa').html("punteggio rosso: " + redPoint);
       } else {
         $(this).css('background', 'green');
         greenPoint++;
+        $(this).addClass('active');
         console.log("punteggio verde: " + greenPoint);
         $('.pverde').html("punteggio verde: " + greenPoint);
       }
