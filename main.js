@@ -2,26 +2,20 @@
 
 $(document).ready(function(){
 
+ var contenitore = $('ul');
 
-var tempo = 10;
+ var bottone = $('button');
 
-var interval = setInterval(buonAnno, 200);
-var elemento = $('h1');
+ bottone.click(
 
-function buonAnno() {
+   function () {
+     var input = $('input').val();
+     // console.log(input);
+     contenitore.append("<li>" + input + "</li>");
+     $('input').val("");
+   }
 
-  if (tempo === 0){
-    elemento.html("Buon Anno!");
-    clearInterval(interval);
-  } else {
-    elemento.html(tempo);
-    tempo--;
-  }
-
-
-
-}
-
+ );
 
 
 });
