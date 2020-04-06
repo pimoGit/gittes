@@ -1,20 +1,27 @@
-// Il programma chiede all’utente quanti secondi mancano alla cottura della pasta.
-// Dopo il tempo indicato, appare un alert()
+ // Simulare un countdown di 10 secondi che alla fine dice buon anno
 
 $(document).ready(function(){
 
-  var tempo = parseInt(prompt("inserisci i secondi mancanti"));
 
+var tempo = 10;
 
-  setTimeout(pasta, tempo * 1000);
+var interval = setInterval(buonAnno, 200);
+var elemento = $('h1');
 
+function buonAnno() {
 
-
-
-  function pasta() {
-    // alert("la pasta è pronta!");
-    $('h1').html("la pasta è pronta!");
+  if (tempo === 0){
+    elemento.html("Buon Anno!");
+    clearInterval(interval);
+  } else {
+    elemento.html(tempo);
+    tempo--;
   }
+
+
+
+}
+
 
 
 });
