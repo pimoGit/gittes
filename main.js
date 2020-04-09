@@ -52,4 +52,24 @@ $(document).ready(function(){
     });
   });
 
+
+  //Click sul contatto mostra la conversazione del contatto cliccato
+    // click sul contatto che ha data-attr che corrisponde a stesso data-attr in chat
+    // salvo il valore dell'attr e lo usso per dire quale chat è attiva
+
+
+  // è possibile inserire nuovi messaggi per ogni conversazione [attiva]
+
+
+  // Cancella messaggio: cliccando sul messaggio appare un menu a tendina che permette di cancellare il messaggio selezionato
+    // son riuascito ad agganciarte l'evento sul "delete" potrò dirgli una roba tipo this.padre.cancella();
+    $('.right-messages').on("click", ".message",
+       function () {
+      //   alert("hai cliccato su di me!");
+        $(this).hide();
+       }
+
+    );
+
+
 });
