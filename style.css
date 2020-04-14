@@ -263,6 +263,7 @@ body {
 }
 .right .right-messages .message .message-options-panel.active {
 	display: block;
+	z-index: 999;
 }
 .right .right-messages .message .message-options-panel > div {
 	cursor: pointer;
