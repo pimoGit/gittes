@@ -7,6 +7,10 @@ $(document).ready(function(){
   var buttonSend = $('.right-footer-icon.f-right');
   var contatti = $('.contact');
 
+  // inizializzazione template handlebars msg (in function invioMsg)
+  var source = $('#msg-template').html();
+  var template = Handlebars.compile(source);
+
   //gestisco evento su bottone di invio
   buttonSend.click(invioMsg);
 
@@ -38,7 +42,13 @@ function invioMsg () {
 
   var msg = inputMsg.val();
   // console.log(msg);
-  chatWinActive.append('<div class="message sent"><span class="message-text">' + msg + '</span><i class="fa fa-chevron-down f-right message-options"></i><span class="message-time">23:26</span><div class="message-options-panel"><div class="message-destroy">Cancella messaggio</div></div></div>');
+
+  //Handlebars operations
+  var context = { "msgPH": msg};
+  var html = template(context);
+
+  chatWinActive.append(html);
+  // chatWinActive.append('<div class="message sent"><span class="message-text">' + msg + '</span><i class="fa fa-chevron-down f-right message-options"></i><span class="message-time">23:26</span><div class="message-options-panel"><div class="message-destroy">Cancella messaggio</div></div></div>');
   inputMsg.val("");
 
   //dopo un secondo
