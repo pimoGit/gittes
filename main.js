@@ -44,17 +44,21 @@ function invioMsg () {
   // console.log(msg);
 
   //Handlebars operations
-  var context = { "msgPH": msg};
-  var html = template(context);
+  var dataSend = { "msgPH": msg, "classPH": "sent"};
+  var htmlSend = template(dataSend);
 
-  chatWinActive.append(html);
+  chatWinActive.append(htmlSend);
   // chatWinActive.append('<div class="message sent"><span class="message-text">' + msg + '</span><i class="fa fa-chevron-down f-right message-options"></i><span class="message-time">23:26</span><div class="message-options-panel"><div class="message-destroy">Cancella messaggio</div></div></div>');
   inputMsg.val("");
 
   //dopo un secondo
   setTimeout(
     function(){
-      chatWinActive.append('<div class="message received"><span class="message-text">OK!</span><i class="fa fa-chevron-down f-right message-options"></i><span class="message-time">23:26</span><div class="message-options-panel"><div class="message-destroy">Cancella messaggio</div></div></div>');
+      var dataRecieved = { "msgPH": "OK!", "classPH": "received"};
+      var htmlRecieved = template(dataRecieved);
+
+      chatWinActive.append(htmlRecieved);
+      // chatWinActive.append('<div class="message received"><span class="message-text">OK!</span><i class="fa fa-chevron-down f-right message-options"></i><span class="message-time">23:26</span><div class="message-options-panel"><div class="message-destroy">Cancella messaggio</div></div></div>');
     }
     ,1000);
   // deve apparire un nuovo msg con un testo sempre uguale (statico)

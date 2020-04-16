@@ -6,8 +6,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 		<link rel="stylesheet" href="style.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+
 	</head>
 	<body>
 		<div class="container">
@@ -223,7 +222,7 @@
 
 		<!-- TEMAPLATE msg -->
 		<script id="msg-template" type="text/x-handlebars-template">
-			<div class="message sent">
+			<div class="message {{classPH}}">
 				<span class="message-text">{{msgPH}}</span>
 				<i class="fa fa-chevron-down f-right message-options"></i>
 				<span class="message-time">23:26</span>
@@ -235,7 +234,8 @@
 
 
 
-
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
 		<script src="main.js"></script>
 	</body>
 </html>
