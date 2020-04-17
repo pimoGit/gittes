@@ -28,10 +28,15 @@ var studenti = [
   }
 ];
 
+var nomeStudente = prompt("inserisci nome");
+var cognomeStudente = prompt("inserisci cognome");
+var etaStudente = parseInt(prompt("inserisci eta"));
+
+
 studenti.push({
-  "nome": "Alessandro",
-  "cognome": "Fratelli",
-  "eta": 26
+  "nome": nomeStudente,
+  "cognome": cognomeStudente,
+  "eta": etaStudente
 });
 // console.log("l'array completo è: ", studenti);
 
@@ -48,3 +53,31 @@ for (var i = 0; i < studenti.length; i++){
   //   console.log(key + " " + oggettoI[key]);
   // }
 }
+
+
+
+
+// var studenti = [
+//   [{
+//     "nome": "Luca",
+//     "cognome": "Marini",
+//     "eta": 20
+//   },
+//   {
+//     "nome": "Filippo",
+//     "cognome": "Giangiacomi",
+//     "eta": 22
+//   }],
+//   ["{
+//     "nome": "Luca",
+//     "cognome": "Marini",
+//     "eta": 20
+//   }",
+//   {
+//     "nome": "Filippo",
+//     "cognome": "Giangiacomi",
+//     "eta": 22
+//   }]
+// ];
+//
+// console.log(studenti[0][1]);
