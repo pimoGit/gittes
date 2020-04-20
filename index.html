@@ -2,24 +2,33 @@
 <html lang="en" dir="ltr">
 	<head>
 		<meta charset="utf-8">
-		<title>BoolzApp</title>
-		<!-- <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet"> -->
-		<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"> -->
 		<link rel="stylesheet" href="style.css">
-
+		<title></title>
 	</head>
 	<body>
 
-		<div class="container">
-			<div class="square"></div>
-			<div class="square"></div>
-			<div class="square"></div>
-			<div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div>
+		<div class="box">
+
 		</div>
+
+		<script class="album-template" type="text/x-handlebars-template">  
+				<div class="container">
+					<div class="album">
+						<img src="{{cover}}" />
+					</div>
+					<div class="titolo">
+						<h3>{{title}}</h3>
+						<p>{{artist}}</p>
+						<p>{{year}}</p>
+					</div>
+				</div>
+		</script>
+
+
 
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-		<!-- <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script> -->
-		<script src="main.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+		<script type="text/javascript" src="main.js"></script>
 	</body>
 </html>
