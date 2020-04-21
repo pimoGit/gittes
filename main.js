@@ -6,10 +6,18 @@ $(document).ready(function () {
   var source = $('.album-template').html();
   var template = Handlebars.compile(source);
 
+  // salvo input utente
+  //var variabileName = //quello che devo salvare;
 
   $.ajax({
     url: "https://flynn.boolean.careers/exercises/api/array/music",
     method: "GET",
+    // utilizzo data object per aggiungere query a request API
+    // data: {
+    //   api_key: diuewghfiugwefkjgewkf,
+    //   language: "it-IT",
+    //   query: variabileName
+    // },
     success: function(data,stato) {
       var album = data.response;
       console.log(album);
