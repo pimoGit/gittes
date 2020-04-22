@@ -7,20 +7,23 @@
 	</head>
 	<body>
 
+		<div class="serchbar">
+			<input id="queryString" type="text" name="" value="">
+			<button id="invioQuery" type="button" name="button">
+				invia richiesta
+			</button>
+		</div>
+
 		<div class="box">
 
 		</div>
 
-		<script class="album-template" type="text/x-handlebars-template">  
-				<div class="container">
-					<div class="album">
-						<img src="{{cover}}" />
-					</div>
-					<div class="titolo">
-						<h3>{{title}}</h3>
-						<p>{{artist}}</p>
-						<p>{{year}}</p>
-					</div>
+		<script id="movie-template" type="text/x-handlebars-template">  
+				<div class="movie">
+					<span>Titolo del film: {{titolo}}</span>
+					<span>Titolo originale: {{titoloOriginale}}</span>
+					<span>Lingua: {{lingua}}</span>
+					<span>Voto: {{voto}}</span>
 				</div>
 		</script>
 

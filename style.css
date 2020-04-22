@@ -9,41 +9,16 @@
 	margin: 0 auto;
 	/* height: 100vh; */
 	width: 80%;
-	display: flex;
+	/* display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-wrap: wrap;
+	flex-wrap: wrap; */
 }
 
-.container{
-	width: calc((100% / 4) - 4%);
-	height: 250px;
-	border: solid 1px #000;
-	margin: 2%;
-	padding: 5px;
-	text-align: center;
-	background: rgb(46, 58, 70);
+.movie {
+	margin-bottom: 50px;
 }
 
-.album{
-	/* height: 50%; */
-	width: 100%;
-}
-
-.album img{
-	height: auto;
-	width: 60%;
-}
-
-.titolo{
-	height: 50%;
-}
-
-h3{
-	font-size: 15px;
-	color: white;
-}
-
-.titolo p{
-	color: gray;
+.movie span {
+	display: block;
 }
