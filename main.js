@@ -59,6 +59,11 @@ $(document).ready(function () {
    for (var i = 0; i < listaOggetti.length; i++) {
      var movie = listaOggetti[i];
 
+     // se tipo è movie
+     // allora var titoloGenerato = movie.title
+     // se tipo è tv
+     // var titoloGenerato = movie.name
+
      var context = {
        titolo: movie.title,
        titoloOriginale: movie.original_title,
