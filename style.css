@@ -5,7 +5,7 @@
 }
 
 .box{
-	background-color: red;
+	background-color: green;
 	margin: 0 auto;
 	/* height: 100vh; */
 	width: 80%;
@@ -21,4 +21,9 @@
 
 .movie span {
 	display: block;
+}
+
+.flags {
+	width: 30px;
+	height: auto;
 }
