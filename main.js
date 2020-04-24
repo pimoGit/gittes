@@ -4,6 +4,7 @@
 $(document).ready(function () {
 
   var contPage = $('.box');
+  var apiKeyVar = "e99307154c6dfb0b4750f6603256716d";
 
   // inizializzazione template handlebars
   var source = $('#movie-template').html();
@@ -13,61 +14,17 @@ $(document).ready(function () {
   //var variabileName = //quello che devo salvare;
 
   $('#invioQuery').click(function () {
-
     // reset di pagina
     contPage.html("");
 
+    // salvo valore input
     var stringaRichiesta = $('#queryString').val();
 
-    // console.log(stringaRichiesta);
-
     // richiesta film
-    $.ajax({
-      url: "https://api.themoviedb.org/3/search/movie",
-      method: "GET",
-      // utilizzo data object per aggiungere query a request API
-      data: {
-        api_key: "e99307154c6dfb0b4750f6603256716d",
-        language: "it-IT",
-        query: stringaRichiesta
-      },
-      success: function(data,stato) {
-        // console.log(data);
-        var movieList = data.results;
-        console.log(movieList);
-
-        generaOutput(movieList, "film");
-
-      },
-      error: function(richiesta,stato,errore){
-        alert("Chiamata fallita!!!");
-      }
-    });
+    inviaChiamataAjax("film",apiKeyVar,stringaRichiesta,"https://api.themoviedb.org/3/search/movie");
 
     // richiesta serie TV
-    $.ajax({
-      url: "https://api.themoviedb.org/3/search/tv",
-      method: "GET",
-      // utilizzo data object per aggiungere query a request API
-      data: {
-        api_key: "e99307154c6dfb0b4750f6603256716d",
-        language: "it-IT",
-        query: stringaRichiesta
-      },
-      success: function(data,stato) {
-        // console.log(data);
-        var movieList = data.results;
-        console.log(movieList);
-
-        generaOutput(movieList, "tv");
-
-      },
-      error: function(richiesta,stato,errore){
-        alert("Chiamata fallita!!!");
-      }
-    });
-
-
+    inviaChiamataAjax("tv",apiKeyVar,stringaRichiesta,"https://api.themoviedb.org/3/search/tv");
 
   });
 
@@ -105,7 +62,8 @@ $(document).ready(function () {
        titoloOriginale: orgiginalTitle,
        lingua: flagGenerator(movie.original_language),
        voto: votoStelle(movie.vote_average),
-       tipoRichiesta: tipo
+       tipoRichiesta: tipo,
+       poster: posterGenerator(movie.poster_path)
      };
 
      var html = template(context);
@@ -149,6 +107,48 @@ $(document).ready(function () {
     return codiceLang;
   }
 
+  // funzione di output poster img
+  function posterGenerator(endUrlImg) {
+    var risultato;
+
+    if(endUrlImg){
+      var urlImg = "https://image.tmdb.org/t/p/w92" + endUrlImg;
+      risultato = '<img src="' + urlImg + '" alt="immagine poster" class="poster" >';
+    } else {
+      risultato = "poster non disponibile"
+    }
+
+    return risultato;
+  }
+
+
+
+  // funzione chiamate ajax
+  function inviaChiamataAjax(tipo,apikey,queryArg,url) {
+
+    $.ajax({
+      url: url,
+      method: "GET",
+      // utilizzo data object per aggiungere query a request API
+      data: {
+        api_key: apikey,
+        language: "it-IT",
+        query: queryArg
+      },
+      success: function(data,stato) {
+        // console.log(data);
+        var movieList = data.results;
+        // console.log(movieList);
+
+        generaOutput(movieList, tipo);
+
+      },
+      error: function(richiesta,stato,errore){
+        alert("Chiamata fallita!!!");
+      }
+    });
+
+  }
 
 
 
