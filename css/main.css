@@ -1,19 +1,6 @@
 /*  questo è un commento css */
-
-body{
-  background-color: red;
-}
-
-header{
-  background-color: green;
-  border: solid 10px black;
-  width: 50%;
-}
-
-#sezione-zucchine {
-  background: blue;
-}
-
-.testogiallo{
-  color: yellow;
+#intestazione{
+  background-color: grey;
+  text-align: center;
+  border-bottom: solid 5px orange;
 }
