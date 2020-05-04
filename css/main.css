@@ -4,3 +4,21 @@
   text-align: center;
   border-bottom: solid 5px orange;
 }
+
+h2 {
+  color: orange;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+p {
+  font-size: 14px;
+}
+
+hr {
+  color: orange;
+}
