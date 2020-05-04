@@ -1,24 +1,37 @@
 /*  questo è un commento css */
-#intestazione{
-  background-color: grey;
-  text-align: center;
-  border-bottom: solid 5px orange;
+/* @import url('https://fonts.googleapis.com/css2?family=Jost:wght@100&family=Roboto:ital,wght@0,100;0,400;1,300;1,700&display=swap'); */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-h2 {
-  color: orange;
-  font-size: 18px;
-  font-weight: normal;
+body {
+  background-image: url("../img/landscapebg.jpg");
 }
 
-h4 {
-  font-size: 16px;
+
+#container {
+  width: 80%;
+  margin: 0 auto;
+  /* background-color: pink;
+  height: 100px; */
 }
 
-p {
-  font-size: 14px;
+header {
+  color: white;
+  font-size: 20px;
 }
 
-hr {
-  color: orange;
+#logo {
+  height: 100px;
+  vertical-align: middle;
+}
+
+.cerchioArancio {
+  display: inline-block;
+  background-color: orange;
+  width: 20px;
+  height: 20px;
 }
