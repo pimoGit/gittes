@@ -5,9 +5,8 @@
 		<title>LC CV</title>
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,300;1,700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="css/main.css">
-		<!-- <link rel="stylesheet" href="/css/master.css"> -->
 	</head>
-	<body id="corpo">
+	<body>
 
 <!-- contenitore di centratura globale blocco pagina -->
 		<div id="container">
@@ -15,27 +14,59 @@
 			<header>
 				<img id="logo" src="img/gmail.png" alt="logo gmail">
 				<span>Gmail</span>
-				<hr>
 			</header>
 
 			<!-- blocco di ricerca -->
 			<div id="search">
 				<div class="">
-					<input type="text" name="" value="">
+					<input type="text" name="" value="" placeholder="search">
 					<button type="button" name="button">VAI</button>
 				</div>
-				<div class="">
+				<div class="search-result">
 					you have <span class="cerchioArancio">30</span> unread
 				</div>
 			</div>
 
 			<!-- main -->
 			<main>
+				<!-- blocco mail -->
 				<div class="mail unread">
 					<input type="checkbox" name="" value="">
 					<!-- stellina -->
-					<span>Oggetto mail</span>
-					<span>testo della mail....</span>
+					<!-- &starf; -->
+					<span class="star"></span>
+					<strong>Oggetto mail</strong>
+					<span class="text-mail">- testo della mail....</span>
+				</div>
+
+				<!-- blocco mail -->
+				<div class="mail read">
+					<input type="checkbox" name="" value="">
+					<!-- stellina -->
+					<!-- &starf; -->
+					<span class="star"></span>
+					<strong>Oggetto mail</strong>
+					<span class="text-mail">- testo della mail....</span>
+				</div>
+
+				<!-- blocco mail -->
+				<div class="mail unread">
+					<input type="checkbox" name="" value="">
+					<!-- stellina -->
+					<!-- &starf; -->
+					<span class="star"></span>
+					<strong>Oggetto mail</strong>
+					<span class="text-mail">- testo della mail....</span>
+				</div>
+
+				<!-- blocco mail -->
+				<div class="mail unread">
+					<input type="checkbox" name="" value="">
+					<!-- stellina -->
+					<!-- &starf; -->
+					<span class="star"></span>
+					<strong>Oggetto mail</strong>
+					<span class="text-mail">- testo della mail....</span>
 				</div>
 
 			</main>
@@ -43,7 +74,7 @@
 
 			<!-- <footer> -->
 			<footer>
-
+				GMAIL <span class="small">powered by Boolean</span>
 			</footer>
 
 

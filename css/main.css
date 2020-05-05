@@ -1,6 +1,7 @@
 /*  questo è un commento css */
 /* @import url('https://fonts.googleapis.com/css2?family=Jost:wght@100&family=Roboto:ital,wght@0,100;0,400;1,300;1,700&display=swap'); */
 
+/* regole generali */
 *{
   margin: 0;
   padding: 0;
@@ -8,7 +9,7 @@
 }
 
 body {
-  background-image: url("../img/landscapebg.jpg");
+  background-image: url("https://ssl.gstatic.com/ui/v1/icons/mail/themes/desk/bg2_1920x1200.jpg");
 }
 
 
@@ -19,9 +20,13 @@ body {
   height: 100px; */
 }
 
+/* header */
+
 header {
   color: white;
   font-size: 20px;
+  border-bottom: solid 1px #fff;
+  padding-bottom: 7px;
 }
 
 #logo {
@@ -29,9 +34,70 @@ header {
   vertical-align: middle;
 }
 
+
+/* sezione searchbar */
+
+#search{
+  border-bottom: solid 1px #fff;
+  padding: 7px 0;
+}
+
+.search-result {
+  font-size: 30px;
+  color: #fff;
+  margin-top: 10px;
+}
+
 .cerchioArancio {
   display: inline-block;
   background-color: orange;
-  width: 20px;
-  height: 20px;
+  /* width: 50px;
+  height: 50px; */
+  padding: 5px 7px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+
+/* parte di corpo principale */
+
+main {
+  border-bottom: solid 1px #fff;
+  padding: 7px 0;
+}
+
+.mail {
+  font-size: 15px;
+  color: #000;
+  padding: 5px;
+  border-top: solid 2px #000;
+}
+
+.read {
+  background-color: gray;
+}
+
+.unread {
+  background-color: lightgray;
+}
+
+.text-mail {
+  color: #666;
+}
+
+.star::after {
+  content: "\02605";
+}
+
+
+/* footer */
+footer{
+  padding: 15px 0;
+  text-align: center;
+  font-size: 20px;
+  color:  #fff;
+}
+
+.small {
+  font-size: 12px;
 }
