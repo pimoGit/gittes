@@ -32,3 +32,14 @@
   position: relative;
   left: 20px;
 }
+
+/* Pseudo codice gestione figlio sull'hover del padre
+bloccoPadre cuore {
+  display: none;
+}
+
+bloccoPadre:hover cuore {
+  display: block;
+
+}
+*/
