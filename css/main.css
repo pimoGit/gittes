@@ -8,30 +8,55 @@
   box-sizing: border-box;
 }
 
-.blue {
-  background-color: blue;
-  width: 300px;
-  height: 300px;
+#contenitore {
+  width: 912px;
+  margin: 10px auto;
+}
+
+/* parte centrale shop */
+.riga {
+  margin-bottom: 30px;
+}
+
+/* regole blocco prodotto */
+.prodotto {
   display: inline-block;
   position: relative;
 }
 
-.red {
-  background-color: red;
-  width: 50px;
-  height: 50px;
-}
-
-.blue:first-child .red:last-child {
+.prodotto .sconto {
   position: absolute;
-  bottom: 0;
+  top: 0;
   right: 0;
+  padding: 3px;
+  background-color: green;
 }
 
-.blue:last-child .red:last-child {
-  position: relative;
-  left: 20px;
+.prodotto .sconto.rosso {
+  background-color: red;
 }
+
+.prodotto .cuore {
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: red;
+  font-size: 20px;
+  display: none;
+}
+
+.prodotto:hover .cuore {
+  display: inline-block;
+}
+
+.prodotto:hover  {
+  cursor: pointer;
+}
+
+
+
 
 /* Pseudo codice gestione figlio sull'hover del padre
 bloccoPadre cuore {
