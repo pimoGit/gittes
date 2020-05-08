@@ -8,84 +8,36 @@
   box-sizing: border-box;
 }
 
-#contenitore {
-  width: 912px;
-  margin: 50px auto 10px;
+
+body {
+  background-color: blue;
 }
 
-/* header */
-
-header {
-  background-color: #ccc;
-  padding: 10px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  width: 100vw;
-}
-
-header ul {
-  text-align: center;
-}
-
-li {
-  display: inline-block;
-  margin-right: 5px;
-}
-
-/* parte centrale shop */
-.riga {
-  margin-bottom: 30px;
-}
-
-/* regole blocco prodotto */
-.prodotto {
-  display: inline-block;
+#player {
   position: relative;
-}
-
-.prodotto .sconto {
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 3px;
-  background-color: green;
-}
-
-.prodotto .sconto.rosso {
-  background-color: red;
-}
-
-.prodotto .cuore {
-  position: absolute;
-  bottom: 15px;
-  left: 0;
-  width: 100%;
+  margin: 10px auto;
+  width: 500px;
+  height: 400px;
   text-align: center;
-  color: red;
-  font-size: 20px;
-  display: none;
+  background-color: #ccc;
+  background-image: url("../img/piselli.png");
+  background-size: cover;
+  background-position: 50% 50%;
 }
 
-.prodotto:hover .cuore {
-  display: inline-block;
+#navigation {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100px;
+  width: 100%;
+  border-top: solid 5px red;
+  font-size: 50px;
+  color: #fff;
 }
 
-.prodotto:hover  {
-  cursor: pointer;
+#navigation > span {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
 }
-
-
-
-
-/* Pseudo codice gestione figlio sull'hover del padre
-bloccoPadre cuore {
-  display: none;
-}
-
-bloccoPadre:hover cuore {
-  display: block;
-
-}
-*/
