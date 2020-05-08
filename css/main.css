@@ -10,7 +10,28 @@
 
 #contenitore {
   width: 912px;
-  margin: 10px auto;
+  margin: 50px auto 10px;
+}
+
+/* header */
+
+header {
+  background-color: #ccc;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100vw;
+}
+
+header ul {
+  text-align: center;
+}
+
+li {
+  display: inline-block;
+  margin-right: 5px;
 }
 
 /* parte centrale shop */
