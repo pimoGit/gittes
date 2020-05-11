@@ -10,43 +10,47 @@
 
 
 header {
-  height: 200px;
+  height: 150px;
+  width: 100%;
   background-color: yellow;
 }
 
-.container {
-  margin: 30px 0;
-}
+/* parte principale */
 
-.container::after {
+.sezione1::after {
   content: "";
   display: table;
   clear: both;
 }
 
-.partesx {
-  /* display: inline-block; */
+.left, .right {
   float: left;
-  width: 30%;
-  margin-right: 5%;
-}
-
-.partesx section {
-  margin-bottom: 20px;
-  background-color: pink;
-}
-
-
-.partemain {
-  /* display: inline-block; */
-  float: right;
-  width: 65%;
+  /* debug */
+  height: 70px;
   background-color: green;
 }
 
+.left {
+  width: 15%;
+}
 
+.right {
+  width: 25%;
+}
+
+.middle {
+  width: 50%;
+  float: left;
+  margin: 0 5%;
+
+}
+
+
+
+/* footer */
 
 footer {
   height: 150px;
-  background-color: lightblue;
+  width: 100%;
+  background-color: red;
 }
