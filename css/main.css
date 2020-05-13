@@ -8,11 +8,14 @@
   box-sizing: border-box;
 }
 
-#container {
+.container {
   width: 80%;
   margin: 0 auto;
 }
 
+.centratura {
+  padding: 0 5%;
+}
 
 header {
 
@@ -22,40 +25,12 @@ header {
 }
 
 /* parte principale */
-
-.riga {
-  margin: 20px 0;
-}
-.riga::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-
-
 main {
-  float: left;
-  width: 50%;
-  margin: 0 5%;
   /* debug */
   height: 300px;
-  background-color: blue;
-}
-
-/* contenuti di contorno */
-aside {
-  float: left;
-  width: 20%;
-  /* debug */
   background-color: green;
 }
 
-.widget {
-  margin-bottom: 20px;
-  background-color: white;
-
-}
 
 /* footer */
 
