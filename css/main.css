@@ -1,6 +1,29 @@
 /*  questo è un commento css */
 /* @import url('https://fonts.googleapis.com/css2?family=Jost:wght@100&family=Roboto:ital,wght@0,100;0,400;1,300;1,700&display=swap'); */
 
+/* debug */
+/* header {
+  background-color: red;
+}
+
+header div {
+  height: 100px;
+  border: solid 1px #000;
+} */
+
+#sezione-info div {
+  height: 100px;
+  border: solid 1px #000;
+  margin-bottom: 20px;
+}
+
+[class*="col-"] {
+  border: solid 1px #000;
+  height: 60px;
+}
+
+
+
 /* regole generali */
 * {
   margin: 0;
@@ -8,124 +31,110 @@
   box-sizing: border-box;
 }
 
-.container {
-  width: 80%;
-  margin: 0 auto;
-}
-
 .centratura {
-  padding: 0 5%;
+  padding: 0 10%;
 }
 
-.button-green {
-  display: inline-block;
-  background-color: green;
-  padding: 10px;
-  border-radius: 3px;
-}
-
-/* regole di griglia */
 .riga::after {
   content: "";
   display: table;
   clear: both;
 }
 
-.colonna15 {
-  width: 15%;
+[class*="col-"] {
   float: left;
-
 }
 
-.colonna33 {
-  width: calc(100% / 3);
-  float: left;
-  /* debug */
-  background-color: red;
-  height: 100px;
-  border: solid 1px #000;
+.small {
+  font-size: 10px;
+  display: block;
 }
 
-.colonna40 {
-  width: 40%;
-  float: left;
-
-}
-
-.colonna45 {
-  width: 45%;
-  float: left;
-
-}
-
-.colonna50 {
-  width: 50%;
-  float: left;
-  /* debug */
-  background-color: red;
-  height: 100px;
-  border: solid 1px #000;
-}
-
-
-
-/* header */
-
+/* parte di intestazione */
 header {
-  color: #fff;
-  background: #0c325a url('../img/fluentify-jumbo.png') no-repeat;
-  background-size: 50%;
-  background-position: 117% bottom;
-  /* debug */
-  min-height: 400px;
+  min-height: 600px;
+  background-image: url("../img/jumbotron.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
 
+header li {
+  display: inline-block;
+}
+
+.navdx {
+  text-align: right;
+}
+
+/* menu fisso */
+#menufixed {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  top: 0;
+  left: 0;
+  background-color: #f4f9fd;
+}
+
+#menufixed .col-1, #menufixed .col-2 {
+  width: 50%;
+}
+
+/* menutop */
+#menutop {
+  margin-top: 60px;
+  height: 60px;
+  line-height: 60px;
+  background-color: #fff;
 }
 
 #logo {
   margin-top: 15px;
 }
 
-header a {
-  color: #fff;
-  text-decoration: none;
+#menutop .col-1 {
+  width: 15%;
 }
-
-.main-nav{
-  height: 80px;
-  line-height: 80px;
-}
-
-.main-nav ul li {
-  display: inline-block;
-  padding-right: 10px;
-  /* list-style: none; */
+#menutop .col-2 {
+  width: 85%;
 }
 
 #jumbo {
+  width: 50%;
   margin: 60px 0;
 }
 
-#jumbo h1 {
-  font-size: 40px;
-  margin-bottom: 10px;
-}
 
+/* parte di contenuto */
 
-/* parte principale */
-main {
-  /* debug */
+#sezione-info {
+  /* background-color: #f5f8fa; */
   background-color: green;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
-section{
-  margin-bottom: 30px;
+#subsez-crm .col-1 {
+  width: 20%;
 }
 
-/* sezione 1 */
-#sezione1 {
-  background-color: #ccc;
-  /* debug */
-  height: 100px;
+#subsez-crm .col-2 {
+  width: 80%;
 }
 
-/* sezioone2 */
+#subsez-hubs .col-1 {
+  width: 30%;
+}
+#subsez-hubs .col-2 {
+  width: 30%;
+  margin: 0 5%;
+}
+
+.blocco-sez-info {
+  background-color: #fff;
+  border-radius: 4px;
+  height: 50px;
+}
