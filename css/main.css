@@ -56,7 +56,7 @@ header {
   background-image: url("../img/jumbotron.png");
   background-size: 100%;
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: 0 60px;
 }
 
 header li {
