@@ -1,44 +1,16 @@
-/* desktop first */
+.shape {
+  background-color: pink;
 
-.riga::after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
-.square {
-   float: left;
-   width: calc(100% / 3);
-}
+@media screen and (min-width: 780px) {
 
-.square  img {
-  max-width: 100%;
-  height: auto;
-}
-
-
-
-/*  tablet vesrion */
-@media screen and (max-width: 780px) {
-  .square {
-     width: 50%;
-  }
-  .square:last-child {
-    float: none;
-    margin: 0 auto;
-  }
-}
-
-/* smartphone version */
-@media screen and (max-width: 568px) {
-  .square {
-     float: none;
-     width: 100%;
-  }
-  .riga::after {
-    display: none;
+  .shape {
+    text-align: center;
   }
 
+  .shape ul li {
+    display: inline-block;
+    background-color: gray;
+  }
 }
-
-/* parte mia */
