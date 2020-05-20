@@ -1,35 +1,42 @@
-/* mobile first */
+/* desktop first */
+
+.riga::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .square {
-   background-color: blue;
-   height: 100px;
-   margin-bottom: 20px;
+   float: left;
+   width: calc(100% / 3);
+}
+
+.square  img {
+  max-width: 100%;
+  height: auto;
 }
 
 
-@media screen and (min-width: 479px) {
-   .square {
-     background-color: red;
-     float: left;
-     width: 45%;
-     margin:0 2%;
-   }
-   .riga::after{
-     content: "";
-     display: table;
-     clear: both;
-   }
 
-}
-
-/* @media screen and (max-width: 480px) {
-  body {
-    background-color: lightgreen;
+/*  tablet vesrion */
+@media screen and (max-width: 780px) {
+  .square {
+     width: 50%;
+  }
+  .square:last-child {
+    float: none;
+    margin: 0 auto;
   }
 }
 
-
-@media screen and (min-width: 800px) {
-  body {
-    background-color: blue;
+/* smartphone version */
+@media screen and (max-width: 568px) {
+  .square {
+     float: none;
+     width: 100%;
   }
-} */
+  .riga::after {
+    display: none;
+  }
+
+}
