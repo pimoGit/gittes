@@ -1,16 +1,20 @@
-.shape {
-  background-color: pink;
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media screen and (min-width: 780px) {
+/* regole di debug */
+[class*="col-"] {
+  height: 150px;
+  border: solid 1px #000;
+}
 
-  .shape {
-    text-align: center;
-  }
+header {
+  background-color: #ccc;
+}
 
-  .shape ul li {
-    display: inline-block;
-    background-color: gray;
-  }
+section {
+  background-color: green;
 }

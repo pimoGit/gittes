@@ -1,0 +1,94 @@
+/* framework di griglia a 12 colonne  */
+
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* regole di colonna */
+[class*="col-"] {
+  float: left;
+}
+
+.col-1 {
+  width: calc((100% / 12) * 1);
+}
+.col-2 {
+  width: calc((100% / 12) * 2);
+}
+.col-3 {
+  width: calc((100% / 12) * 3);
+}
+.col-4 {
+  width: calc((100% / 12) * 4);
+}
+.col-5 {
+  width: calc((100% / 12) * 5);
+}
+.col-6 {
+  width: calc((100% / 12) * 6);
+}
+.col-7 {
+  width: calc((100% / 12) * 7);
+}
+.col-8 {
+  width: calc((100% / 12) * 8);
+}
+.col-9 {
+  width: calc((100% / 12) * 9);
+}
+.col-10 {
+  width: calc((100% / 12) * 10);
+}
+.col-11 {
+  width: calc((100% / 12) * 11);
+}
+.col-12 {
+  width: calc((100% / 12) * 12);
+}
+
+
+/* regole di offset */
+.col-offset-1 {
+  margin-left: calc((100% / 12) * 1);
+}
+.col-offset-2 {
+  margin-left: calc((100% / 12) * 2);
+}
+.col-offset-3 {
+  margin-left: calc((100% / 12) * 3);
+}
+.col-offset-4 {
+  margin-left: calc((100% / 12) * 4);
+}
+.col-offset-5 {
+  margin-left: calc((100% / 12) * 5);
+}
+.col-offset-6 {
+  margin-left: calc((100% / 12) * 6);
+}
+.col-offset-7 {
+  margin-left: calc((100% / 12) * 7);
+}
+.col-offset-8 {
+  margin-left: calc((100% / 12) * 8);
+}
+.col-offset-9 {
+  margin-left: calc((100% / 12) * 9);
+}
+.col-offset-10 {
+  margin-left: calc((100% / 12) * 10);
+}
+.col-offset-11 {
+  margin-left: calc((100% / 12) * 11);
+}
+.col-offset-12 {
+  margin-left: calc((100% / 12) * 12);
+}
