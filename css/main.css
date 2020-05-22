@@ -15,7 +15,6 @@
 
 .container{
   background-color: pink;
-  height: 150px;
 }
 
 .container:last-child {
@@ -28,4 +27,5 @@
 [class*="col-"] > .container > [class*="col-"] {
   background-color: lightcoral;
   border-color: #fff;
+  height: 150px;
 }
