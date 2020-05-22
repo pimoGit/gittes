@@ -7,14 +7,25 @@
 
 /* regole di debug */
 [class*="col-"] {
-  height: 150px;
+  height: 100%;
+  line-height: 150px;
   border: solid 1px #000;
+  text-align: center;
 }
 
-header {
-  background-color: #ccc;
+.container{
+  background-color: pink;
+  height: 150px;
 }
 
-section {
-  background-color: green;
+.container:last-child {
+  height: 100%;
+}
+.container:last-child > div {
+  padding: 5px;
+}
+
+[class*="col-"] > .container > [class*="col-"] {
+  background-color: lightcoral;
+  border-color: #fff;
 }
