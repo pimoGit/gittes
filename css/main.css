@@ -9,14 +9,42 @@
 [class*="col-"] {
   height: 100%;
   border: solid 1px #000;
+  height: 50px;
 }
 
 .row {
-  height: 100px;
   background-color: pink;
 }
 
 section {
   /* padding: 0 10%; */
-  margin-bottom: 40px;
+  margin: 40px 0;
+  background-color: blue;
+}
+
+header {
+  background-color: green;
+  /* height: 100px; */
+}
+
+footer {
+  background-color: red;
+  /* height: 100px; */
+}
+
+#contatti [class*="col-"] {
+  height: auto;;
+}
+
+/* sezione contatti */
+#contatti .form-group input,
+#contatti .form-group textarea {
+  border: none;
+  border-bottom: solid 1px #ccc;
+  background-color: pink;
+  box-shadow: none;
+}
+
+#contatti .btn-default {
+  color: green;
 }
