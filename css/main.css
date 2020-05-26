@@ -36,6 +36,21 @@ footer {
   height: auto;;
 }
 
+
+/* header */
+
+header .navbar-default .navbar-nav > li > a {
+  color: green;
+}
+
+header .navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover {
+  color: blue;
+}
+header .navbar-default {
+  background-color: transparent;
+}
+
 /* sezione contatti */
 #contatti .form-group input,
 #contatti .form-group textarea {
