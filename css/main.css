@@ -63,3 +63,11 @@ header .navbar-default {
 #contatti .btn-default {
   color: green;
 }
+
+/* dropdown */
+.dropdown {
+  display: none;
+}
+.mutendina:hover .dropdown {
+  display: block;
+}
