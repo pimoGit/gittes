@@ -21,7 +21,7 @@
   left:50px;
 } */
 
-.square {
+/* .square {
   width: 100px;
   height: 100px;
   background-color: red;
@@ -37,4 +37,13 @@
   50% { top:calc(100% - 100px); left: calc(100% - 100px);}
   85% {top:calc(100% - 100px); left: 0;}
   100% { top: 0; left: 0;}
+} */
+
+.square img {
+  filter: grayscale(0.5) blur(5px);
+  transition: all 2s;
+}
+
+.square:hover img {
+  filter: none;
 }
