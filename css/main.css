@@ -1,57 +1,129 @@
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+.centratura {
+  padding: 0 10%;
+}
 
-/* .square {
-  width: 100px;
-  height: 100px;
-  background-color: blue;
-  position: relative;
+
+/* header */
+
+header {
+  background-color: #ccc;
+  position: fixed;
+  top: 0;
   left: 0;
-  transition: all 2s;
-}
-
-.square:hover {
-  background-color: red;
   height: 80px;
-  left:50px;
-} */
-
-/* .square {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  position: absolute;
-  animation-name: muoviti;
-  animation-duration: 3s;
-}
-
-
-@keyframes muoviti {
-  0% { top: 0; left: 0;}
-  15% { top: 0; left: calc(100% - 100px);}
-  50% { top:calc(100% - 100px); left: calc(100% - 100px);}
-  85% {top:calc(100% - 100px); left: 0;}
-  100% { top: 0; left: 0;}
-} */
-
-#flex-container {
-  display: flex;
-  flex-direction: row;
   width: 100%;
-  height: 100vh;
-  justify-content: space-around;
+  z-index: 900;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
 }
 
-.square {
-  width: 30%;
-  min-width: 300px;
-  height: 100px;
-  background-color: red;
+#logo {
+  width: 200px;
+  height: auto;
+}
+
+header ul {
+  display: flex;
+  list-style-type: none;
+}
+
+header li {
+  padding-right: 12px;
+}
+
+.hamburger {
+  display: none;
+  position: relative;
+}
+
+.hamburger nav {
+  display: none;
+  position: absolute;
+  top:20px;
+  left: 0;
+}
+
+.hamburger:hover nav {
+  display: block;
+}
+
+
+@media all and (max-width: 768px) {
+
+  .hamburger {
+    display: block;
+  }
+
+  header .navlg {
+    display: none;
+  }
+
+}
+
+/* parte principale */
+main {
+  padding-top: 80px;
+}
+
+/* sezione jumbotron */
+#jumbotron {
+  display: flex;
+  background-color: blue;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#jumbotron .form {
+  background-color: #fff;
+  height: 150px;
+  border-radius: 5px;
+  flex-basis: 200px;
+  flex-grow: 1;
+  flex-shrink: 2;
+}
+
+#jumbotron .payoff {
+  flex-basis: 200px;
+  flex-grow: 2;
+  flex-shrink: 0;
+}
+
+/* sezione tech logos */
+#tech {
+  background-color: #F3F5F9;
+}
+
+#tech .logos ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+}
+#tech .logos ul li {
+  padding-right:10px;
+}
+
+#tech .logos ul li img {
+  min-width: 100px;
+  width: 100%;
+}
+
+@media all and (max-width: 767px) {
+
+  #tech .logos ul {
+    flex-wrap: wrap;
+  }
+
+
+  #tech .logos ul li {
+    width: 35%;
+  }
 }
