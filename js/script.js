@@ -1,6 +1,5 @@
 // RICHIESTA #1: Chiedere al visitatore il suo nome e salutarlo
 
-/*
 // chiedere il nome e salvarlo in una var
 var nome = prompt("inserisci il tuo nome:");
 
@@ -11,7 +10,6 @@ var saluto = "Ciao " + nome;
 
 // salutare l'utente
 document.getElementById('title').innerHTML = saluto;
-*/
 
 
 
