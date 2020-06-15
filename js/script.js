@@ -1,24 +1,31 @@
-// Chiedi all’utente il suo nome, poi chiedi il suo cognome,
-// poi chiedi il suo colore preferito
-// Infine scrivi sulla pagina nomecognomecolorepreferito19
+// Inserisci due parole, quale è la piu lunga?
+
+// dichiarazione variabili varie
+var parolaPiuLunga;
+
+// l'utente inserisce 2 parole di input
+var stringa1 = prompt("inserisci la prima parola");
+var stringa2 = prompt("inserisci la seconda parola");
+
+console.log(stringa1, stringa2);
+
+var lunghezzaStringa1 = stringa1.length;
+var lunghezzaStringa2 = stringa2.length;
+
+console.log(stringa1 + "è lunga: " + lunghezzaStringa1, stringa2 + "è lunga: " + lunghezzaStringa2);
 
 
 
+// verifico quale delle 2 è più lunga
+  // se è più lunga la prima comunico la cosa
+if ( lunghezzaStringa1 > lunghezzaStringa2) {
+  parolaPiuLunga = "la parola più lunga è la parola 1";
+  // se è più lunga la seconda comunico la cosa
+} else if (lunghezzaStringa2 > lunghezzaStringa1){
+  parolaPiuLunga = "la parola più lunga è la parola 2";
+  // se le parole sono lunghe uguali lo comunico
+} else {
+  parolaPiuLunga = "le parole sono lunghe uguali";
+}
 
-// Chiedi all’utente il suo nome
-var nome = prompt("inserisci il tuo nome");
-console.log(nome);
-
-// poi chiedi il suo cognome
-var cognome = prompt("inserisci il tuo cognome");
-
-
-// chiedi il suo colore preferito
-var colore = prompt("inserisci il tuo colore preferito");
-
-
-// creiamo la pwd: nomecognomecolorepreferito19
-var pwd = nome + cognome + colore + "19";
-
-// output in pagina
-document.getElementById('title').innerHTML = "la tua segretissima password è: " + pwd;
+document.getElementById('title').innerHTML = parolaPiuLunga;
