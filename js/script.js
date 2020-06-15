@@ -1,35 +1,18 @@
-// Gioco: pari o dispari? tra user e cpu
+//  Quanti minuti mancano alla fine dell’ora?
 
-var risultato;
 
-// chiediamo la scommessa all'utente [pari/dispari]
-var scommessa = prompt("cosa uscirà, pari o dispari?");
-console.log(scommessa);
-// chiediamo puntata del numero
-var numeroUtente = parseInt(prompt("inserisci un numero tra 1 e 5"), 10);
-console.log(numeroUtente);
-// var numeroUtenteNumero = parseInt(numeroUtente);
-// console.log("numero virato utente", numeroUtenteNumero);
-// la cpu sceglie un numero
-var numeroCpu = Math.floor(Math.random() * 5) + 1;
-console.log(numeroCpu);
 
-// faccio somma dei due numeri
-var somma = numeroUtente + numeroCpu;
-console.log(somma);
+// setto i minuti in un'ora
+var minutiInUnOra = 60;
 
-// verifico il risultato della somma, se è pari o dispari e salvo il dato
-if(somma % 2 === 0) {
-  risultato = "pari";
-} else {
-  risultato = "dispari";
-}
+// catturo i minuti attuali dalla macchina dell'utente
+var date = new Date();
+// console.log(m);
+var minutiAttuali = date.getMinutes();
+console.log(minutiAttuali);
 
-console.log(risultato);
+// sottraggo i imunito ricavati dai minuti in un'ora
+var minutiMancanti = minutiInUnOra - minutiAttuali;
 
-// confronto il risultato della somma con la scommessa dell'utente
-if (scommessa === risultato){
-  document.getElementById('title').innerHTML = "hai vinto caro utente";
-} else {
-  document.getElementById('title').innerHTML = "ha vinto la cpu, però sei stato molto bravo!";
-}
+// output
+document.getElementById('title').innerHTML = "alla fine della lezione mancano " + minutiMancanti + " minuti";
