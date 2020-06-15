@@ -1,28 +1,24 @@
-// RICHIESTA #1: Chiedere al visitatore il suo nome e salutarlo
-
-// chiedere il nome e salvarlo in una var
-var nome = prompt("inserisci il tuo nome:");
-
-console.log("hey io vengo dopo il prompt!!!");
-
-// creaimo il saluto completo
-var saluto = "Ciao " + nome;
-
-// salutare l'utente
-document.getElementById('title').innerHTML = saluto;
+// Chiedi all’utente il suo nome, poi chiedi il suo cognome,
+// poi chiedi il suo colore preferito
+// Infine scrivi sulla pagina nomecognomecolorepreferito19
 
 
 
-// RICHIESTA #2: Quanti anni hai? Allora sei nato nel...
 
-// chiedere all'utente la sua età
-var eta = prompt("Quanti anni hai?");
+// Chiedi all’utente il suo nome
+var nome = prompt("inserisci il tuo nome");
+console.log(nome);
 
-// tengo traccia dell'anno in cui sono adesso
-var annoCorrente = 2020;
+// poi chiedi il suo cognome
+var cognome = prompt("inserisci il tuo cognome");
 
-// calcolo l'anno di nascita
-var annoNascita = annoCorrente - eta;
 
-//  output per l'utente
-document.getElementById('title').innerHTML = "Sei nato presumibilmente nel: " + annoNascita;
+// chiedi il suo colore preferito
+var colore = prompt("inserisci il tuo colore preferito");
+
+
+// creiamo la pwd: nomecognomecolorepreferito19
+var pwd = nome + cognome + colore + "19";
+
+// output in pagina
+document.getElementById('title').innerHTML = "la tua segretissima password è: " + pwd;
