@@ -12,50 +12,61 @@
   clear: both;
 }
 
+
+/* pagina */
+#container {
+  width: 60%;
+  margin: 10px auto;
+  /* debug *
+  height: 200px;
+  background-color: red;
+  /* fine debug */
+}
+
+
 /* header */
 header {
   /* debug */
-  background-color: yellow;
   height: 200px;
+  background-color: green;
   /* fine debug */
 }
 
+/* parte principale */
 
-
-/* partte principale di pagina */
 main {
   /* debug */
-  background-color: green;
-  /* height: 200px; */
+  background-color: yellow;
   /* fine debug */
 }
-
 
 
 aside {
   float: left;
-  width: 25%;
+  width: 20%;
   /* debug */
-  background-color: pink;
   height: 200px;
+  background-color: lightblue;
   /* fine debug */
 }
 
 section {
   float: left;
-  width: 46%;
-  margin: 0 2%;
+  width: 50%;
+  margin: 0 5%;
   /* debug */
-  background-color: purple;
-  height: 300px;
+  height: 400px;
+  background-color: blue;
   /* fine debug */
 }
+
+
 
 
 /* footer */
 footer {
   /* debug */
-  background-color: lightblue;
   height: 100px;
+  background-color: red;
   /* fine debug */
 }
