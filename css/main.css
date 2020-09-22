@@ -12,6 +12,11 @@
   clear: both;
 }
 
+body {
+  background-color: brown;
+  font-family: Verdana, Arial;
+}
+
 
 /* pagina */
 #container {
@@ -26,6 +31,7 @@
 
 /* header */
 header {
+  margin-bottom: 20px;
   /* debug */
   height: 200px;
   background-color: green;
@@ -35,7 +41,7 @@ header {
 /* parte principale */
 
 main {
-  /* debug */
+  /* debug
   background-color: yellow;
   /* fine debug */
 }
@@ -44,7 +50,7 @@ main {
 aside {
   float: left;
   width: 20%;
-  /* debug */
+  /* debug
   height: 200px;
   background-color: lightblue;
   /* fine debug */
@@ -54,10 +60,19 @@ section {
   float: left;
   width: 50%;
   margin: 0 5%;
-  /* debug */
+  /* debug
   height: 400px;
   background-color: blue;
   /* fine debug */
+}
+
+.white-box {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 30px;
+  font-size: 14px;
+  color: #000;
 }
 
 
