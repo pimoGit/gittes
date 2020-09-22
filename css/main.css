@@ -1,133 +1,61 @@
+/* regole generali */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.centratura {
-  padding: 0 10%;
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
-
-body {
-  background-color: red;
-}
-
 
 /* header */
-
 header {
-  background-color: #ccc;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 80px;
-  width: 100%;
-  z-index: 900;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-#logo {
-  width: 200px;
-  height: auto;
-}
-
-header ul {
-  display: flex;
-  list-style-type: none;
-}
-
-header li {
-  padding-right: 12px;
-}
-
-.hamburger {
-  display: none;
-  position: relative;
-}
-
-.hamburger nav {
-  display: none;
-  position: absolute;
-  top:20px;
-  left: 0;
-}
-
-.hamburger:hover nav {
-  display: block;
+  /* debug */
+  background-color: yellow;
+  height: 200px;
+  /* fine debug */
 }
 
 
-@media all and (max-width: 768px) {
 
-  .hamburger {
-    display: block;
-  }
-
-  header .navlg {
-    display: none;
-  }
-
-}
-
-/* parte principale */
+/* partte principale di pagina */
 main {
-  padding-top: 80px;
+  /* debug */
+  background-color: green;
+  /* height: 200px; */
+  /* fine debug */
 }
 
-/* sezione jumbotron */
-#jumbotron {
-  display: flex;
-  background-color: blue;
-  align-items: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
+
+
+aside {
+  float: left;
+  width: 25%;
+  /* debug */
+  background-color: pink;
+  height: 200px;
+  /* fine debug */
 }
 
-#jumbotron .form {
-  background-color: #fff;
-  height: 150px;
-  border-radius: 5px;
-  flex-basis: 200px;
-  flex-grow: 1;
-  flex-shrink: 2;
+section {
+  float: left;
+  width: 46%;
+  margin: 0 2%;
+  /* debug */
+  background-color: purple;
+  height: 300px;
+  /* fine debug */
 }
 
-#jumbotron .payoff {
-  flex-basis: 200px;
-  flex-grow: 2;
-  flex-shrink: 0;
-}
 
-/* sezione tech logos */
-#tech {
-  background-color: #F3F5F9;
-}
-
-#tech .logos ul {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  list-style-type: none;
-}
-#tech .logos ul li {
-  padding-right:10px;
-}
-
-#tech .logos ul li img {
-  min-width: 100px;
-  width: 100%;
-}
-
-@media all and (max-width: 767px) {
-
-  #tech .logos ul {
-    flex-wrap: wrap;
-  }
-
-
-  #tech .logos ul li {
-    width: 35%;
-  }
+/* footer */
+footer {
+  /* debug */
+  background-color: lightblue;
+  height: 100px;
+  /* fine debug */
 }
