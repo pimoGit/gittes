@@ -20,7 +20,7 @@ body {
 
 /* pagina */
 #container {
-  width: 60%;
+  width: 80%;
   margin: 220px auto 10px auto;
   /* debug *
   height: 200px;
@@ -33,9 +33,10 @@ body {
 header {
   margin-bottom: 20px;
   position: fixed;
+  z-index: 100;
   top: 10px;
-  left: 20%;
-  width: 60%;
+  left: 10%;
+  width: 80%;
   /* debug */
   height: 200px;
   background-color: green;
@@ -45,41 +46,63 @@ header {
 /* parte principale */
 
 main {
+  margin-bottom: 10px;
   /* debug
   background-color: yellow;
   /* fine debug */
 }
 
-
-aside {
-  float: left;
-  width: 20%;
-  /* debug
-  height: 200px;
-  background-color: lightblue;
-  /* fine debug */
-}
-
-section {
-  float: left;
-  width: 50%;
-  margin: 0 5%;
-  /* debug
-  height: 400px;
-  background-color: blue;
-  /* fine debug */
-}
-
-.white-box {
-  background-color: #fff;
-  border-radius: 5px;
-  padding: 10px;
+.rowprod {
   margin-bottom: 30px;
-  font-size: 14px;
-  color: #000;
 }
 
+/* parte prodotti */
+.prodotto {
+  float: left;
+  width: calc((100% / 3) - 2px);
+  margin: 0 1px;
+  background-color: #ccc;
+  text-align: center;
+  position: relative;
+  /* debug */
+  min-height: 150px;
+  /* fine debug */
+}
 
+.prodotto:hover{
+  cursor: pointer;
+}
+
+.prodotto img {
+  max-width: 100%;
+  height: auto;
+}
+
+.sconto {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: green;
+  padding: 5px;
+}
+
+.sconto.plus {
+  background-color: red;
+}
+
+.cuore {
+  font-size: 40px;
+  color: red;
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  width: 100%;
+  display: none;
+}
+
+.prodotto:hover .cuore {
+  display: block;
+}
 
 
 /* footer */
