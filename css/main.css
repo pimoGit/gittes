@@ -21,7 +21,7 @@ body {
 /* pagina */
 #container {
   width: 60%;
-  margin: 10px auto;
+  margin: 220px auto 10px auto;
   /* debug *
   height: 200px;
   background-color: red;
@@ -32,6 +32,10 @@ body {
 /* header */
 header {
   margin-bottom: 20px;
+  position: fixed;
+  top: 10px;
+  left: 20%;
+  width: 60%;
   /* debug */
   height: 200px;
   background-color: green;
