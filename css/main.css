@@ -5,7 +5,10 @@ header {
   padding: 10px;
 }
 
+
+
 li a {
+  color: #000;
   text-decoration: none;
 }
 
