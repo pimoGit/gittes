@@ -6,109 +6,26 @@
   box-sizing: border-box;
 }
 
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-body {
-  background-color: brown;
-  font-family: Verdana, Arial;
-}
-
-
-/* pagina */
-#container {
-  width: 80%;
-  margin: 220px auto 10px auto;
-  /* debug *
+.blocco {
+  width: 200px;
   height: 200px;
-  background-color: red;
-  /* fine debug */
-}
-
-
-/* header */
-header {
-  margin-bottom: 20px;
-  position: fixed;
-  z-index: 100;
-  top: 10px;
-  left: 10%;
-  width: 80%;
-  /* debug */
-  height: 200px;
-  background-color: green;
-  /* fine debug */
-}
-
-/* parte principale */
-
-main {
+  background-color: blue;
   margin-bottom: 10px;
-  /* debug
-  background-color: yellow;
-  /* fine debug */
 }
 
-.rowprod {
-  margin-bottom: 30px;
-}
+@media screen and (min-width: 479px) {
 
-/* parte prodotti */
-.prodotto {
-  float: left;
-  width: calc((100% / 3) - 2px);
-  margin: 0 1px;
-  background-color: #ccc;
-  text-align: center;
-  position: relative;
-  /* debug */
-  min-height: 150px;
-  /* fine debug */
-}
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 
-.prodotto:hover{
-  cursor: pointer;
-}
+  .blocco {
+    background-color: red;
+    margin-bottom: 0;
+    margin-right: 10px;
+    float: left;
+  }
 
-.prodotto img {
-  max-width: 100%;
-  height: auto;
-}
-
-.sconto {
-  position: absolute;
-  top: 0;
-  right: 0;
-  background-color: green;
-  padding: 5px;
-}
-
-.sconto.plus {
-  background-color: red;
-}
-
-.cuore {
-  font-size: 40px;
-  color: red;
-  position: absolute;
-  bottom: 5px;
-  left: 0;
-  width: 100%;
-  display: none;
-}
-
-.prodotto:hover .cuore {
-  display: block;
-}
-
-
-/* footer */
-footer {
-  /* debug */
-  height: 100px;
-  background-color: red;
-  /* fine debug */
 }
