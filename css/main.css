@@ -7,7 +7,7 @@
 }
 
 .blocco {
-  width: 200px;
+  width: 100%;
   height: 200px;
   background-color: blue;
   margin-bottom: 10px;
@@ -22,6 +22,7 @@
   }
 
   .blocco {
+    width: calc(50% - 10px);
     background-color: red;
     margin-bottom: 0;
     margin-right: 10px;
