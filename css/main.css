@@ -1,36 +1,19 @@
 /* regole generali */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-header {
-  border: solid 3px #ccc;
-  padding: 10px;
+/* regole di debug */
+[class*="col-"] {
+  min-height: 100px;
+  background-color: lightgreen;
+  border: solid 1px  #000;
 }
 
 
-
-li a {
-  color: #000;
-  text-decoration: none;
-}
-
-
-@media screen and (min-width:780px) {
-
-  ul {
-    /* margin: auto; */
-    text-align: center;
-  }
-
-  li {
-    list-style: none;
-    display: inline-block;
-    background-color: lightgrey;
-    padding: 5px 20px;
-  }
-
-  li a {
-    color: #fff;
-    font-size: 25px;
-  }
-
-
+img {
+  max-width: 100%;
+  height: auto;
 }
