@@ -1,16 +1,19 @@
 /* Framework 12 bool per griglia a 12 unità */
 
 /* regole generali framework */
+
 .container {
   max-width: 1170px;
   margin: 0 auto;
 }
 
-.container::after {
+/* riga */
+.row::after {
   content: "";
   display: table;
   clear: both;
 }
+
 
 [class*="col-"] {
   float: left;
