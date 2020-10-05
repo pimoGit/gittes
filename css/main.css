@@ -27,35 +27,29 @@ img {
   border-color: #fff;
 }
 
-.centra-head-foot{
-  padding: 0 10%;
-}
-
-/* header */
-
-header {
-  padding-top: 100px;
-}
-
-#nav-large {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 900;
-}
-
-#nav-mobile {
-  display: none;
-}
-
-#jumbo {
-  padding-top: 50px;
-  min-height: 300px;
-}
 
 /* regole corpo pagina */
 
-.centra-sez1 {
-  padding: 0 5%;
+.centratura-page {
+  padding: 0 10%;
+}
+
+/* sezione1 */
+#sezione1 {
+  background-color: blue;
+}
+
+/* sezione2 */
+#sezione2 {
+
+}
+
+/* sezione3 */
+#sezione3 {
+  background-color: blue;
+}
+
+/* sezione4 */
+#sezione4{
+  
 }
