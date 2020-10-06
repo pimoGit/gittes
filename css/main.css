@@ -39,6 +39,20 @@ img {
   background-color: blue;
 }
 
+/* modifica componente navbar bootstrap */
+#sezione1 .navbar-default{
+  background-color: blue;
+}
+#sezione1 .navbar{
+  border: none;
+  margin-bottom: 0;
+}
+
+#sezione1 .navbar .container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 /* sezione2 */
 #sezione2 {
 
@@ -51,5 +65,5 @@ img {
 
 /* sezione4 */
 #sezione4{
-  
+
 }
