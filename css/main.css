@@ -6,64 +6,15 @@
 }
 
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-
-
-/* regole di debug */
-[class*="col-"] {
-  min-height: 100px;
-  background-color: lightgreen;
-  border: solid 1px  #000;
-  padding: 2px;
-}
-
-/* .row .col-6 div  */
-[class*="col-"] > .row > [class*="col-"]{
-  background-color: salmon;
-  border-color: #fff;
-}
-
-
-/* regole corpo pagina */
-
-.centratura-page {
-  padding: 0 10%;
-}
-
-/* sezione1 */
-#sezione1 {
+.blue {
+  width: 100px;
+  height: 100px;
+  margin-top: 50px auto;
   background-color: blue;
+  transition: all 2s ease-in;
 }
 
-/* modifica componente navbar bootstrap */
-#sezione1 .navbar-default{
-  background-color: blue;
-}
-#sezione1 .navbar{
-  border: none;
-  margin-bottom: 0;
-}
-
-#sezione1 .navbar .container-fluid {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-/* sezione2 */
-#sezione2 {
-
-}
-
-/* sezione3 */
-#sezione3 {
-  background-color: blue;
-}
-
-/* sezione4 */
-#sezione4{
-
+.blue:hover {
+  background-color: red;
+  cursor: pointer;
 }
