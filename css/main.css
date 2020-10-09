@@ -9,12 +9,18 @@
 .blue {
   width: 100px;
   height: 100px;
-  margin-top: 50px auto;
   background-color: blue;
-  transition: all 2s ease-in;
+  position: absolute;
+  animation-name: muoviti;
+  animation-duration: 5s;
+  animation-iteration-count: 2;
 }
 
-.blue:hover {
-  background-color: red;
-  cursor: pointer;
+@keyframes muoviti {
+  0%   { left:0; top:0; }
+  15%  { left: calc(80% - 100px); top:0;}
+  25%  { left: calc(100% - 100px); top:0;}
+  50%  { left: calc(100% - 100px); top:calc(100% - 100px);}
+  75%  { left: 0; top:calc(100% - 100px); }
+  100% { left:0; top:0; }
 }
