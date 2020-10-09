@@ -5,22 +5,29 @@
   box-sizing: border-box;
 }
 
-
-.blue {
-  width: 100px;
-  height: 100px;
-  background-color: blue;
-  position: absolute;
-  animation-name: muoviti;
-  animation-duration: 5s;
-  animation-iteration-count: 2;
+.row::after{
+  content: "";
+  display: table;
+  clear: both;
 }
 
-@keyframes muoviti {
-  0%   { left:0; top:0; }
-  15%  { left: calc(80% - 100px); top:0;}
-  25%  { left: calc(100% - 100px); top:0;}
-  50%  { left: calc(100% - 100px); top:calc(100% - 100px);}
-  75%  { left: 0; top:calc(100% - 100px); }
-  100% { left:0; top:0; }
+.col {
+  text-align: center;
+  min-height: 200px;
+  float: left;
+  width: 50%;
+  border: solid 1px #000;
+}
+
+
+img {
+  /* width: 100%; */
+  filter: grayscale(1) contrast(800%);
+  transition: filter 3s;
+}
+
+img:hover {
+  /* width: 150%; */
+  filter: grayscale(0) contrast(800%);
+  cursor: pointer;
 }
