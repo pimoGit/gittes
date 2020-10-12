@@ -6,17 +6,24 @@
 }
 
 
-.container-flex {
+.row {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  /* flex-direction: column; */
+  justify-content: space-around;
   align-items: center;
-  height: 100vh;
+  /* height: 100vh; */
+  margin-bottom: 10px;
 }
 
 
-.red {
-  width: 100px;
-  height: 100px;
+.col-4 {
+  width: 33%;
+  min-height: 100px;
+  background-color: red;
+}
+
+.col-6 {
+  width: 49%;
+  min-height: 100px;
   background-color: red;
 }
