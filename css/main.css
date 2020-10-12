@@ -5,29 +5,17 @@
   box-sizing: border-box;
 }
 
-.row::after{
-  content: "";
-  display: table;
-  clear: both;
-}
 
-.col {
-  text-align: center;
-  min-height: 200px;
-  float: left;
-  width: 50%;
-  border: solid 1px #000;
+.container-flex {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
 
 
-img {
-  /* width: 100%; */
-  filter: grayscale(1) contrast(800%);
-  transition: filter 3s;
-}
-
-img:hover {
-  /* width: 150%; */
-  filter: grayscale(0) contrast(800%);
-  cursor: pointer;
+.red {
+  width: 100px;
+  height: 100px;
+  background-color: red;
 }
