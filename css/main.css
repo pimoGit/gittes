@@ -17,6 +17,50 @@ header {
   background-color: pink;
 }
 
+/* sezione customer */
+
+#customer {
+  background-color: grey;
+  padding: 30px 10%;
+}
+
+.customer-logos {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+
+
+.payoff, .link {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.payoff {
+  font-size: 30px;
+  color: #ccc;
+}
+
+/* getione mobile customers */
+@media all and (max-width:1080px) {
+  .logoitem {
+    text-align: center;
+    width: 33%;
+  }
+}
+
+/* getione mobile customers */
+@media all and (max-width:555px) {
+   .logoitem {
+    width: 100%;
+  } 
+  .customer-logos {
+    display: block;
+  }
+
+}
+
 
 /* gestione menu versions */
 @media all and (max-width:768px){
