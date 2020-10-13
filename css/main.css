@@ -40,6 +40,8 @@ header {
 .payoff {
   font-size: 30px;
   color: #ccc;
+  height: 50px;
+  overflow: auto;
 }
 
 /* getione mobile customers */
@@ -54,7 +56,7 @@ header {
 @media all and (max-width:555px) {
    .logoitem {
     width: 100%;
-  } 
+  }
   .customer-logos {
     display: block;
   }
