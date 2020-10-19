@@ -3,12 +3,20 @@ commento
 multi riga
 */
 
-// esempio uno
-document.writeln('Hello World!');
+// dichiarazione variabili globali
+var miaStringa;
+
+console.log("valore prima di assegnazione", miaStringa);
+
+miaStringa = 'ciao';
+alert(miaStringa);
+
+console.log("valore dopo prima assegnazione", miaStringa);
+
+miaStringa = 5;
+alert(miaStringa);
+
+console.log("valore dopo seconda assegnazione", miaStringa);
 
 
-// esempio document
-alert("Hello World! in alert...");
-
-// esempio tre
-document.getElementById('titolo').innerHTML = "sono un titolo inserito dinamicamente da js, non è fantastico?";
+document.getElementById('titolo').innerHTML = miaStringa;
