@@ -1,14 +1,11 @@
-/*
-commento
-multi riga
-*/
+// chiedere all'utente quanti anni ha
+var eta = prompt("Scrivi quanti anni hai");
+var annoCorrente = 2020;
+var annoNascita;
+console.log(eta);
 
-// chiedo all'utente il suo nome
-var text = prompt("inserisci il tuo nome");
-var saluto = "Benvenuto ";
+annoNascita = annoCorrente - eta;
+console.log("l'output sarà ", annoNascita);
 
-console.log(text);
-
-
-// saluto l'utente
-document.getElementById('titolo').innerHTML = saluto + text;
+// dire all'utente in che anno è nato
+document.getElementById('titolo').innerHTML = "Allora sei nato nel " + annoNascita;
