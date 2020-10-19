@@ -4,19 +4,23 @@ multi riga
 */
 
 // dichiarazione variabili globali
-var miaStringa;
+var miaStringaUno, miaStringaDue, miaStringaTotale;
+var numeroUno, numeroDue, numeroTot;
 
-console.log("valore prima di assegnazione", miaStringa);
+// lavoriamo con le stringhe
+miaStringaUno = " socrate diceva che 'chi si fa i zzi suoi canmpa 100 nanni'  ";
+miaStringaDue = "10";
 
-miaStringa = 'ciao';
-alert(miaStringa);
+console.log(miaStringaUno, miaStringaDue);
 
-console.log("valore dopo prima assegnazione", miaStringa);
+miaStringaTotale = miaStringaUno + miaStringaDue;
 
-miaStringa = 5;
-alert(miaStringa);
+document.getElementById('titolo').innerHTML = miaStringaTotale;
 
-console.log("valore dopo seconda assegnazione", miaStringa);
+// lavoriamo con i numeri
 
+numeroUno = 10;
+numeroDue = 7;
+numeroTot = numeroUno + numeroDue;
 
-document.getElementById('titolo').innerHTML = miaStringa;
+document.getElementById('stampanumero').innerHTML = numeroTot;
