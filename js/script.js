@@ -3,24 +3,12 @@ commento
 multi riga
 */
 
-// dichiarazione variabili globali
-var miaStringaUno, miaStringaDue, miaStringaTotale;
-var numeroUno, numeroDue, numeroTot;
+// chiedo all'utente il suo nome
+var text = prompt("inserisci il tuo nome");
+var saluto = "Benvenuto ";
 
-// lavoriamo con le stringhe
-miaStringaUno = " socrate diceva che 'chi si fa i zzi suoi canmpa 100 nanni'  ";
-miaStringaDue = "10";
+console.log(text);
 
-console.log(miaStringaUno, miaStringaDue);
 
-miaStringaTotale = miaStringaUno + miaStringaDue;
-
-document.getElementById('titolo').innerHTML = miaStringaTotale;
-
-// lavoriamo con i numeri
-
-numeroUno = 10;
-numeroDue = 7;
-numeroTot = numeroUno + numeroDue;
-
-document.getElementById('stampanumero').innerHTML = numeroTot;
+// saluto l'utente
+document.getElementById('titolo').innerHTML = saluto + text;
