@@ -1,22 +1,24 @@
 //  DESCRIZIONE EX: Inserisci due parole, quale è la piu lunga?
 
 var msg;
+var elementoSelezione = document.getElementById('titolo');
 
 // input: utente inserisce  parola uno
 var parola1 = prompt("inserisci la prima parola");
-
+var lunghezzaParola1 = parola1.length;
 // input: utente inserisce  parola due
 var parola2 = prompt("inserisci la seconda parola");
+var lunghezzaParola2 = parola2.length;
 
 console.log(parola1.length, parola2.length);
 
 // verifico quale parola sia più lunga
   // se parola1 è più lunga
-  if (parola1.length > parola2.length){
+  if (lunghezzaParola1 > lunghezzaParola2){
     // creo messaggio corrispondente
     msg = "parola1 è più lunga";
     console.log("parola1 è più lunga");
-  } else if (parola2.length > parola1.length) { // se parola2 è più lunga
+  } else if (lunghezzaParola2 > lunghezzaParola1) { // se parola2 è più lunga
    //creo messaggio corrispondente
     msg = "parola2 è più lunga";
     console.log("parola2 è più lunga");
@@ -31,4 +33,4 @@ console.log(parola1.length, parola2.length);
 
 
 // output: per dire quale parola è più lunga
-document.getElementById('titolo').innerHTML = msg;
+elementoSelezione.innerHTML = msg;
