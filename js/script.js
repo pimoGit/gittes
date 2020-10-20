@@ -1,15 +1,29 @@
-// Chiedi all’utente il suo nome
-var nome = prompt("inserisci il tuo nome");
-
-// poi chiedi il suo cognome
-var cognome = prompt("inserisci il tuo cognome");
-
-// poi chiedi il suo colore preferito
-var colore = prompt("inserisci il tuo colore preferito");
-
-// creazione var di appoggio per uso pwd
-var pwd = nome + cognome + colore + "19";
+//  DESCRIZIONE EX: Inserisci due parole, quale è la piu lunga?
 
 
-// Infine scrivi sulla pagina nomecognomecolorepreferito19
-document.getElementById('titolo').innerHTML = "la tua inisicurissima password è: " + pwd;
+// input: utente inserisce  parola uno
+var parola1 = prompt("inserisci la prima parola");
+
+// input: utente inserisce  parola due
+var parola2 = prompt("inserisci la seconda parola");
+
+console.log(parola1.length, parola2.length);
+
+// verifico quale parola sia più lunga
+  // se parola1 è più lunga
+  if (parola1.length > parola2.length){
+    // creo messaggio corrispondente
+    console.log("parola1 è più lunga");
+  } else if (parola2.length > parola1.length) { // se parola2 è più lunga
+   //creo messaggio corrispondente
+   console.log("parola2 è più lunga");
+  } else { // altrimenti se sono ugulai
+     // creo messaggio corrispondente
+     console.log("le parole sono lunghe uguali");
+  }
+
+
+
+
+
+// output: per dire quale parola è più lunga
