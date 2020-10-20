@@ -1,12 +1,15 @@
-// chiedere all'utente quanti anni ha
-var eta = parseInt(prompt("Scrivi quanti anni hai"));
-var email = prompt("inserisci la tua email");
-var annoCorrente = 2020;
-var annoNascita;
-console.log(email, eta);
+// Chiedi all’utente il suo nome
+var nome = prompt("inserisci il tuo nome");
 
-annoNascita = annoCorrente - eta;
-console.log("l'output sarà ", annoNascita);
+// poi chiedi il suo cognome
+var cognome = prompt("inserisci il tuo cognome");
 
-// dire all'utente in che anno è nato
-document.getElementById('titolo').innerHTML = "Hai " + eta + " anni, allora sei nato nel " + annoNascita + " ti invieremo questo dato inaspettato alla mail: " + email;
+// poi chiedi il suo colore preferito
+var colore = prompt("inserisci il tuo colore preferito");
+
+// creazione var di appoggio per uso pwd
+var pwd = nome + cognome + colore + "19";
+
+
+// Infine scrivi sulla pagina nomecognomecolorepreferito19
+document.getElementById('titolo').innerHTML = "la tua inisicurissima password è: " + pwd;
