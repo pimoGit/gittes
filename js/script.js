@@ -1,15 +1,10 @@
-// Inserisci con due prompt l’età di due persone (persona1, persona2)
-// e stampa a schermo il numero più grande.
+var element = document.getElementById("titolo");
 
 
 
-var elemento = document.getElementById('nomeutente');
-
-var nome = prompt("inserisci il tuo nome");
-
-elemento.innerHTML = nome;
-
-
-elemento.style.color = "green";
-
-elemento.className = elemento.classList + " redText";
+element.addEventListener('click',
+ function() {
+   // codice
+   var numero = Math.random() * 10;
+   alert("il numero uscito è: " + numero);
+} );
