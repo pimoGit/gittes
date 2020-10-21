@@ -1,23 +1,11 @@
-// Il software deve chiedere all’utente il suo nome e il sesso
-// con due prompt diversi.
-// Sulla pagina html deve apparire “Ciao <nome>”,
-// il colore del nome deve essere azzurro o rosa a seconda del sesso inserito
+var titolo = document.getElementById('titolo');
+var campoInput = document.getElementById('campoTesto');
 
-// selezione elemento
-var el = document.getElementById('titolo');
+console.log(campoInput.value);
 
-// chiedo nome nomeutente
-var nome = prompt("inserisci il nome");
+var bottone = document.getElementById('mybutton');
 
-// chiedo sesso utente
-var sesso = prompt("inserisci il sesso M o F");
-
-// output nome in pagina
-el.innerHTML = "Ciao " + nome;
-
-// gestire colore output
-if (sesso === "M") {
-  el.className = "blu";
-} else {
-  el.className = "rosa";
-}
+bottone.addEventListener('click',
+ function() {
+   titolo.innerHTML = campoInput.value;
+} );
