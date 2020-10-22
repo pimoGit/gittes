@@ -2,5 +2,9 @@
 
 var numero = parseInt(prompt("numero grazie"));
 
-console.log(numero++);
+
+// numero = numero + 1; // versione estesa
+// numero++; // versione compatta
+
+console.log(++numero);
 console.log(numero);
