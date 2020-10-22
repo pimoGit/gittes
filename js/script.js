@@ -1,11 +1,6 @@
-var titolo = document.getElementById('titolo');
-var campoInput = document.getElementById('campoTesto');
+// Chiedi un numero all’utente e stampa in console il numero successivo.
 
-console.log(campoInput.value);
+var numero = parseInt(prompt("numero grazie"));
 
-var bottone = document.getElementById('mybutton');
-
-bottone.addEventListener('click',
- function() {
-   titolo.innerHTML = campoInput.value;
-} );
+console.log(numero++);
+console.log(numero);
