@@ -1,23 +1,21 @@
-
-var nomi = ["nome1","nome2","nome3","nome4","nome5"];
-
-/*
-for (var i = 0; i < nomi.length; i++){
-  console.log(nomi[i]);
-}
-*/
-
-var i = 10;
-while (i < nomi.length){
-  console.log(nomi[i]);
-
-   i++;
-}
+// Genero 10 numeri random utilizzando una funzione
 
 
-var i = 10;
-do {
-  console.log(nomi[i]);
 
-   i++;
-} while (i < nomi.length);
+
+ for (var i = 0; i < 10; i++) {
+   var numero = genramiUnNumeroRandom(10);
+   console.log(numero);
+ }
+
+
+
+ // gruppo utilities functions
+
+ function genramiUnNumeroRandom(massimoValore) {
+   if (massimoValore) {
+     return Math.floor(Math.random() * massimoValore) +1;
+   } else {
+     return "non hai inserito il valore dell'argomento";
+   }
+ }
