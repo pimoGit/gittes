@@ -1,21 +1,15 @@
-// Genero 10 numeri random utilizzando una funzione
+// Verifico attraverso una funzione se il numero passato dell’utente è pari o dispari
+
+var inputUser = parseInt(prompt("inserisci un numero"));
+
+console.log(verificaPariODispari(inputUser));
 
 
-
-
- for (var i = 0; i < 10; i++) {
-   var numero = genramiUnNumeroRandom(10);
-   console.log(numero);
- }
-
-
-
- // gruppo utilities functions
-
- function genramiUnNumeroRandom(massimoValore) {
-   if (massimoValore) {
-     return Math.floor(Math.random() * massimoValore) +1;
-   } else {
-     return "non hai inserito il valore dell'argomento";
-   }
- }
+//  definisco funzione
+function verificaPariODispari(numero) {
+  if(numero % 2 === 0){
+    return "pari";
+  } else {
+    return "dispari";
+  }
+}
