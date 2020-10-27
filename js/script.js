@@ -2,7 +2,9 @@
 
 var inputUser = parseInt(prompt("inserisci un numero"));
 
-console.log(verificaPariODispari(inputUser));
+var risultatoPariODispari = verificaPariODispari(inputUser);
+
+console.log(risultatoPariODispari);
 
 
 //  definisco funzione
