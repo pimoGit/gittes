@@ -1,21 +1,25 @@
-'use strict';
 
+var text;
+var fruits = prompt("inserisci un frutto");
 
-a = 0;
-b = "buongiorno";
-var c = "ciao";
+switch (fruits) {
+  case "Banana":
+    text = "Banana is good!";
+    break;
+  case "Orange":
+    text = "I am not a fan of orange.";
+   break;
+ default:
+    text = "I have never heard of that fruit.";
+  }
 
-saluta();
+// equivalente di quanto sopra
+  // if (fruits === "Banana"){
+  //     text = "Banana is good!";
+  // } else if (fruits === "Orange") {
+  //   text = "I am not a fan of orange.";
+  // } else {
+  //   text = "I have never heard of that fruit.";
+  // }
 
-console.log("a is " + a);
-console.log("b is " + b);
-
-function saluta() {
-  varGlob = 5;
-  var d = "asd";
-  console.log("a is " + a);
-  var b = a + 1;
-  b = b + 11;
-  console.log("b is " + b);
-  console.log(c);
-}
+console.log(text);
