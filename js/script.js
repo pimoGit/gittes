@@ -1,17 +1,26 @@
-// Verifico attraverso una funzione se il numero passato dell’utente è pari o dispari
+// a = 0;
+// b = "buongiorno";
+// var c = "ciao";
 
-var inputUser = parseInt(prompt("inserisci un numero"));
+var varGlobale = "mi vedono tutti";
 
-var risultatoPariODispari = verificaPariODispari(inputUser);
+console.log(saluta());
+// console.log("ilvalore ritornato dalla funzione è: ", valoreRitornato);
+//
+// console.log("a is " + a);
+// console.log("b is " + b);
 
-console.log(risultatoPariODispari);
+function saluta() {
+  // var d = "asd";
+  // console.log("a is " + a);
+  // var b = a + 1;
+  // console.log("b is " + b);
+  // console.log(c);
+  var varInterna = "non puoi vedermi da fuori!!";
+  console.log("la var interna cercata dallo scope locale è: ", varInterna);
+  console.log("la var globale cercata dallo scope locale è: ", varGlobale);
 
-
-//  definisco funzione
-function verificaPariODispari(numero) {
-  if(numero % 2 === 0){
-    return "pari";
-  } else {
-    return "dispari";
-  }
+  return varInterna;
 }
+
+console.log("la var interna cercata dallo scope globale è: ", varInterna);
