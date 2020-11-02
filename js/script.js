@@ -12,3 +12,5 @@ $("#divvone").addClass("classe-aggiunta");
 
 
 $("ul  li:first-child").addClass("classe-aggiunta");
+
+$("div").removeClass("elementoacaso");
