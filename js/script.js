@@ -1,16 +1,24 @@
- // Data una struttura html selezionare gli elementi indicati e applicare loro una classe con la funzione .addClass()
-var titolo = $("h1");
-
-titolo.addClass("classe-aggiunta");
-console.log(titolo);
+// Creare un bottone che on hover aggiunga una classe che cambia il colore del testo e la toglie quando il mouse esce dal bottone.
 
 
-// $("p").addClass("classe-aggiunta");
-$("p.paragrafo-sel").addClass("classe-aggiunta");
+var bottone = $('button');
 
-$("#divvone").addClass("classe-aggiunta");
+console.log(bottone);
 
+bottone.mouseenter(function() {
+  bottone.addClass("red");
+  }
+);
 
-$("ul  li:first-child").addClass("classe-aggiunta");
+bottone.mouseleave(function() {
+  bottone.removeClass("red");
+});
 
-$("div").removeClass("elementoacaso");
+// Con il doppio click cambio il testo in “cliccato”.
+// Con un click solo non fa niente
+bottone.dblclick(function() {
+ // console.log(bottone.text());
+ bottone.text("cliccato000oooooooooo!");
+
+  }
+);
