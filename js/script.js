@@ -1,14 +1,18 @@
- // Creare il titolo di un paragrafo e un bottone che permette di espandere il testo inizialmente nascosto
+ // Rendere visibile la scritta “Live Coding” dentro il cerchio arancione quando passo con il mouse sul cerchio.
 
-$('p').hide();
-var aperto = false;
+var elemento = $('#cerchio span');
+elemento.fadeOut();
 
-$('button').click(function() {
-  if(aperto === false){
-    $('p').show();
-    aperto = true;
-  } else {
-    $('p').hide();
-    aperto = false;
-  }
-});
+$('#cerchio').hover(mouseIn, mouseOut);
+
+
+
+// FUNZIONI
+
+function mouseIn() {
+  elemento.fadeIn();
+}
+
+function mouseOut() {
+  elemento.fadeOut();
+}

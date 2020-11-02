@@ -6,6 +6,14 @@
 }
 
 
-.red {
-  color: red;
+#cerchio {
+  background-color: orange;
+  border-radius: 50%;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
 }
