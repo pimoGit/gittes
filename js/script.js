@@ -1,40 +1,14 @@
-/*un esempio possibile di Campo minato*/
+ // Data una struttura html selezionare gli elementi indicati e applicare loro una classe con la funzione .addClass()
+var titolo = $("h1");
+
+titolo.addClass("classe-aggiunta");
+console.log(titolo);
 
 
-// setto variabili da usare
-var nMina, possibilita = 84, boom = false, inputUser, count = 0;
-var mine = []; //array numeri mina
-var numUser = []; // array numeri inseriti dall'utente
+// $("p").addClass("classe-aggiunta");
+$("p.paragrafo-sel").addClass("classe-aggiunta");
 
-// genero lista mine
-while (mine.length < 16) { // fino a che la lista mine non è di 16
-
- nMina = Math.floor(Math.random() * 100) + 1; // genero un num random
- if(!mine.includes(nMina)) { // verifico che il num non sia già inserito
-   mine.push(nMina);
- }
-}
-// console.log(mine);
+$("#divvone").addClass("classe-aggiunta");
 
 
-//  GIOCO completo
-// finche user non becca una mina o non raggiunge il massimo delle possibilità
-while(boom === false && numUser.length <= possibilita){
-
- // salvo input utente
- inputUser = parseInt(prompt("inserisci un numero nuovo"));
-
- if(mine.includes(inputUser)){ // se beccata una mina
-   boom = true;
-   console.log("numero bomba: ", inputUser);
- } else if (numUser.includes(inputUser)) { // se numero già inserito
-   alert("numeo già inserito");
- } else { // altrimenti
-   numUser.push(inputUser);
-   count++;
- }
-}
-
-console.log(mine, numUser);
-
-console.log("Gioco finito, hai fatto " + count + " punti!");
+$("ul  li:first-child").addClass("classe-aggiunta");

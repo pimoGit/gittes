@@ -6,19 +6,7 @@
 }
 
 
-#nomeutente {
-  color: red;
-}
-
-.redText {
-  color: red;
-  font-size: 20px;
-}
-
-.rosa {
-  color: pink;
-}
-
-.blu {
-  color: lightblue;
+.classe-aggiunta {
+  background-color: red;
+  color: green;
 }
