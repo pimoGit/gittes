@@ -1,18 +1,28 @@
  // Rendere visibile la scritta “Live Coding” dentro il cerchio arancione quando passo con il mouse sul cerchio.
-
-var elemento = $('#cerchio span');
-elemento.fadeOut();
-
-$('#cerchio').hover(mouseIn, mouseOut);
+$(document).ready(function () {
 
 
+  //$('p').hide();
 
-// FUNZIONI
+/*
+  var aperto = false;
 
-function mouseIn() {
-  elemento.fadeIn();
-}
+  $('button').click(function() {
+   if(aperto === false){
+     $('p').show();
+     aperto = true;
+   } else {
+     $('p').hide();
+     aperto = false;
+   }
+ });
+*/
 
-function mouseOut() {
-  elemento.fadeOut();
-}
+ $('button').click(function() {
+    $('p').toggle();
+    //$('button').toggleClass("classe");
+ });
+
+
+
+});
