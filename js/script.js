@@ -19,7 +19,9 @@ $(document).ready(function () {
 */
 
  $('button').click(function() {
-    $('p').toggle();
+    $('p').toggle(1000, function () {
+      alert('Testo gestito');
+});
     //$('button').toggleClass("classe");
  });
 
