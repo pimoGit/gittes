@@ -1,12 +1,30 @@
- // Rendere visibile la scritta “Live Coding” dentro il cerchio arancione quando passo con il mouse sul cerchio.
 $(document).ready(function () {
 
 
-$(".faq p").hide();
+  $(".next").click(nextImg);
 
-$(".faq").click(function () {
-  //$(".faq p").toggle();
-  $(this).children("p").toggle();
-})
+
+
+
+  //FUNZIONI
+  // funzione per l'avanti
+  function nextImg() {
+    //console.log("hai cliccato su next!!");
+
+    var imgAttiva = $("img.active");
+
+    imgAttiva.removeClass("active");
+
+    // se dove sono è l'ultima img allora
+    if (imgAttiva.hasClass("last")){
+      //torna alla prima img
+      $("img.first").addClass("active");
+    } else {// altrimenti
+      //fai diventare attiva l'immagine successiva
+      imgAttiva.next("img").addClass("active");
+    }
+
+    // $("img.active").removeClass("active").next("img").addClass("active");
+  }
 
 });
