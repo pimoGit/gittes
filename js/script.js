@@ -2,11 +2,11 @@
 $(document).ready(function () {
 
 
-  $('.buttons').click(function () {
-    $(this).toggleClass("qualsiasi");
-    //$('.buttons').hide();
-  });
+$(".faq p").hide();
 
-
+$(".faq").click(function () {
+  //$(".faq p").toggle();
+  $(this).children("p").toggle();
+})
 
 });
