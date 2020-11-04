@@ -1,30 +1,27 @@
+// Creare 10 quadrati vuoti.
+// Con jQuery, dentro ognuno scrivere un numero random
+
 $(document).ready(function () {
 
 
-  $(".next").click(nextImg);
+  $('.square').each(function () {
+    console.log($(this));
+    $(this).text(randomNumGen(100));
+  });
+
+
+  //$('.square').text(randomNumGen(100));
 
 
 
 
-  //FUNZIONI
-  // funzione per l'avanti
-  function nextImg() {
-    //console.log("hai cliccato su next!!");
 
-    var imgAttiva = $("img.active");
-
-    imgAttiva.removeClass("active");
-
-    // se dove sono è l'ultima img allora
-    if (imgAttiva.hasClass("last")){
-      //torna alla prima img
-      $("img.first").addClass("active");
-    } else {// altrimenti
-      //fai diventare attiva l'immagine successiva
-      imgAttiva.next("img").addClass("active");
-    }
-
-    // $("img.active").removeClass("active").next("img").addClass("active");
-  }
 
 });
+
+
+//funzioni
+function randomNumGen(max) {
+  var numero = Math.floor(Math.random() * max) + 1;
+  return numero;
+}
