@@ -5,25 +5,35 @@
   font-family: 'Lato';
 }
 
-
-.squares{
+/* regole header */
+header {
+  padding: 10px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+  min-height: 100px;
+  border: solid 1px red;
+  justify-content: flex-end;
 }
 
-
-.square {
-  width: 20%;
-  height: 200px;
-  background-color: gray;
-  border: solid 2px red;
+.mainnav > ul > li {
+  display: inline-block;
+  padding: 5px;
 }
 
-.red {
-  background-color: red;
+.dropitem {
+  position: relative;
 }
-.green {
-  background-color: green;
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top:30px;
+  left:0;
+}
+
+/* .dnone {
+  display: none;
+} */
+
+.dbloc {
+  display: block;
 }
