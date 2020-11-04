@@ -17,6 +17,13 @@
 .square {
   width: 20%;
   height: 200px;
-  background-color: lightgreen;
+  background-color: gray;
   border: solid 2px red;
+}
+
+.red {
+  background-color: red;
+}
+.green {
+  background-color: green;
 }

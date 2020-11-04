@@ -1,12 +1,24 @@
-// Creare 10 quadrati vuoti.
-// Con jQuery, dentro ognuno scrivere un numero random
+ // Creare 10 quadrati vuoti con jQuery,
+ //poi associare una classe red ai quadrati in posizione pari e una classe green ai quadrati in posizione dispari.
 
 $(document).ready(function () {
 
 
-  $('.square').each(function () {
-    console.log($(this));
-    $(this).text(randomNumGen(100));
+  for (var i = 0; i < 10; i++) {
+    var square = '<div class="square"></div>';
+    $('.squares').append(square);
+  }
+
+
+
+  $('.square').each(function (indice, elemento) {
+    //console.log($(this).index());
+    console.log(indice, elemento);
+    if (indice % 2 === 0){ //indice pari
+      $(elemento).addClass("red");
+    } else {
+      $(elemento).addClass("green");
+    }
   });
 
 
@@ -18,10 +30,3 @@ $(document).ready(function () {
 
 
 });
-
-
-//funzioni
-function randomNumGen(max) {
-  var numero = Math.floor(Math.random() * max) + 1;
-  return numero;
-}
