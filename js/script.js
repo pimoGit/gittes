@@ -18,6 +18,7 @@ function countdown() {
   if(count > 0) {
     console.log(count);
     count--;
+    //count = count-1
   } else {
     console.log("Buon anno!!!");
     clearInterval(mioInterval);
