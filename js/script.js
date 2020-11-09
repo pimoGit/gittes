@@ -1,18 +1,18 @@
-var palla = {
-"prezzo": 12,
-"tipo": "pallina da golf",
-"colore": ["rosso", "verde"],
-"motivoGrafico": {
-  "righeOrizzontali": "verdi",
-  "rombi": 10
+var classi = [
+  {
+    'nome' : 'Classe 1',
+    'numero_studenti' : 10
+  },
+  {
+  'numero_studenti' : 15
   }
-};
+];
 
-console.log(palla.colore);
+console.log(classi[1].numero_studenti);
 
-palla.peso = 14;
+/*
+for (var i = 0; i < array.length; i++) {
 
-for (var key in palla) {
-  // console.log(key + ": " + palla[key]);
-  console.log(palla[key]);
+  array[i].numero_studenti;
 }
+*/
