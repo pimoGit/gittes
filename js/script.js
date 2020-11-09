@@ -1,23 +1,13 @@
-
-var proprieta;
-
 var palla = {
-  "colore": ['red', 'blue'],
-  "tipo": 'pallina da golf'
+"prezzo": 12,
+"tipo": "pallina da golf",
+"colore": ["rosso", "verde"]
 };
 
-
-
-proprieta = "tipo";
-
-//console.log(palla.colore);
-
-//console.log(palla[proprieta]);
-
-//console.log("prima di inserimento nuvo prop:", palla);
-
-palla.peso = 46;
-
-palla.tipo = "palla da volley";
-
 console.log(palla);
+
+palla.peso = 14;
+
+for (var key in palla) {
+  console.log(key + ": " + palla[key]);
+}
