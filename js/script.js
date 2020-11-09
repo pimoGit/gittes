@@ -1,27 +1,23 @@
- // Simulare un countdown di 10 secondi che alla fine dice buon anno
+
+var proprieta;
+
+var palla = {
+  "colore": ['red', 'blue'],
+  "tipo": 'pallina da golf'
+};
 
 
-var mioInterval = setInterval(countdown, 200);
 
+proprieta = "tipo";
 
-// function countdown() {
-//   for(var i = 10; i > 0;  i--){
-//     console.log(i);
-//   }
-//   console.log("Buon anno");
-//   clearInterval(mioInterval);
-// }
+//console.log(palla.colore);
 
-var count = 10;
+//console.log(palla[proprieta]);
 
-function countdown() {
-  if(count > 0) {
-    console.log(count);
-    count--;
-    //count = count-1
-  } else {
-    console.log("Buon anno!!!");
-    clearInterval(mioInterval);
-  }
+//console.log("prima di inserimento nuvo prop:", palla);
 
-}
+palla.peso = 46;
+
+palla.tipo = "palla da volley";
+
+console.log(palla);
