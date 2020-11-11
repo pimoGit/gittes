@@ -1,19 +1,7 @@
-//funzione con nome
-const myFunction = x,y => x * y;
-
-/* stessa cosa con sintassi diversa
-const myFunction = function () {
-  return 1 + 1;
+function myFunction(...myArguments) {
+  //console.log(myArguments);
+  return (myArguments[0] + myArguments[2]);
 }
-*/
-
-/* non uguale
-function myFunction() {
-    return 1 + 1;
-}
-*/
 
 
-const resultFunction = myFunction(2,3);
-
-console.log(resultFunction);
+console.log(myFunction(2, 3, 4)); //avremo un array composto da tre elementi
