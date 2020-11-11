@@ -1,10 +1,12 @@
-console.log(variable); //undefined
-var variable = 10;
-variable = 'pippo';
+ {
+  var variable = 'pippo';
+  let secondVariable = 10;
+  const constantVariable = 'constance';
+}
 
-
-
-console.log(variableNew);
-//Uncaught ReferenceError: variableNew is not defined
-let variableNew = 'pluto';
-variableNew = variable + ' ' + variableNew;
+console.log(variable);
+//'pippo'
+console.log(secondVariable);
+// Uncaught ReferenceError: secondVariable is not defined
+console.log(constantVariable);
+// Uncaught ReferenceError: constantVariable is not defined
