@@ -1,8 +1,5 @@
 //funzione con nome
-const myFunction = (x,y) => {
-  console.log("stofacendo altro");
-  return (x + y);
-}
+const myFunction = x,y => x * y;
 
 /* stessa cosa con sintassi diversa
 const myFunction = function () {
