@@ -1,18 +1,21 @@
-var classi = [
-  {
-    'nome' : 'Classe 1',
-    'numero_studenti' : 10
-  },
-  {
-  'numero_studenti' : 15
-  }
-];
+//console.log(constantArray);
 
-console.log(classi[1].numero_studenti);
+const constantArray = [];
 
-/*
-for (var i = 0; i < array.length; i++) {
+constantArray.push(1);
+console.log(constantArray); // [1];
 
-  array[i].numero_studenti;
-}
-*/
+
+const constantObject = {
+  'name' : 'Pippo'
+};
+
+constantObject.age = 20
+constantObject.name = "Franco";
+
+console.log(qualcosa);
+
+var qualcosa = "stringa";
+
+
+console.log(constantObject); // {name: "Pippo", age: 20}
