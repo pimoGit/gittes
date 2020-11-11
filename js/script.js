@@ -1,12 +1,8 @@
- {
-  var variable = 'pippo';
-  let secondVariable = 10;
-  const constantVariable = 'constance';
-}
+let string = 'Qui';
+let stringTwo = 'Qua';
+console.log(
+`
+${string} Quo ${stringTwo}
 
-console.log(variable);
-//'pippo'
-console.log(secondVariable);
-// Uncaught ReferenceError: secondVariable is not defined
-console.log(constantVariable);
-// Uncaught ReferenceError: constantVariable is not defined
+"Andarono al 'mercato'" `
+);
