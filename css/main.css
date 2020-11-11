@@ -5,35 +5,18 @@
   font-family: 'Lato';
 }
 
-/* regole header */
-header {
-  padding: 10px;
-  display: flex;
-  min-height: 100px;
-  border: solid 1px red;
-  justify-content: flex-end;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.mainnav > ul > li {
-  display: inline-block;
-  padding: 5px;
+.container-float::after {
+  content: '';
+  display: table;
+  clear: both;
 }
-
-.dropitem {
-  position: relative;
-}
-
-.dropdown {
-  display: none;
-  position: absolute;
-  top:30px;
-  left:0;
-}
-
-/* .dnone {
-  display: none;
-} */
-
-.dbloc {
-  display: block;
+.float-left{
+  float: left;
+  width: 50%;
+  border: grey 1px solid;
 }
