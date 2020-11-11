@@ -1,13 +1,16 @@
-const students = {
-  name: 'Paolo',
-  age: 30,
-  email: 'paolo@email.it',
-};
+// const students = ['Paolo', 'Giulia', 'Marco'];
+//
+// students.forEach((element, index, array) => {
+//   console.log(element, index, array);
+// });
 
 
-// const mioname = students.name;
-// const email = students.email;
+const cats = [
+  {name: 'Jerry', color: 'Gray'},
+  {name: 'Felix', color: 'Black and White'},
+  {name: 'Garfield',color: 'Orange'}
+];
 
-const {name: mioname, email} = students;
-
-console.log(mioname, email);
+cats.forEach((element) => {
+  console.log(`${element.name}'s color is ${element.color} `);
+});
