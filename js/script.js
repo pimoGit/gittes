@@ -1,21 +1,10 @@
-//console.log(constantArray);
-
-const constantArray = [];
-
-constantArray.push(1);
-console.log(constantArray); // [1];
+console.log(variable); //undefined
+var variable = 10;
+variable = 'pippo';
 
 
-const constantObject = {
-  'name' : 'Pippo'
-};
 
-constantObject.age = 20
-constantObject.name = "Franco";
-
-console.log(qualcosa);
-
-var qualcosa = "stringa";
-
-
-console.log(constantObject); // {name: "Pippo", age: 20}
+console.log(variableNew);
+//Uncaught ReferenceError: variableNew is not defined
+let variableNew = 'pluto';
+variableNew = variable + ' ' + variableNew;
