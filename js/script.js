@@ -1,5 +1,13 @@
-const obj = {name: 'palla', peso: 50};
-const copyObj = {...obj, colore: 'blue'};
+const students = {
+  name: 'Paolo',
+  age: 30,
+  email: 'paolo@email.it',
+};
 
 
-console.log(obj, copyObj);
+// const mioname = students.name;
+// const email = students.email;
+
+const {name: mioname, email} = students;
+
+console.log(mioname, email);
