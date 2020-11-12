@@ -1,4 +1,4 @@
-const students = ['Paolo', 'Giulia', 'Marco'];
+const students = [3, 4, 6, 7, 9, 11];
 
 
 // versione con il for
@@ -19,9 +19,7 @@ console.log(students, newArr);
 
 
 // equivalente con filter
-const newArr = students.filter((element) => {
-  return element === 'Paolo'
-});
+const newArr = students.filter((element) => element % 2 !== 0);
 
 console.log(students, newArr);
 
