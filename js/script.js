@@ -1,15 +1,29 @@
-const students = [2, 4, 6];
+const students = ['Paolo', 'Giulia', 'Marco'];
 
-const newStudents = students.map((element, index) => {
-  console.log(index);
 
-  return element * 2;
-// ma dobbiamo restituire anche gli altri elementi
+// versione con il for
+/*
+var newArr = [];
+
+for (let i = 0; i < students.length; i++) {
+  let element = students[i];
+  console.log(element);
+  if(element === "Paolo"){
+    newArr.push(element);
+  }
+}
+
+console.log(students, newArr);
+*/
+
+
+
+// equivalente con filter
+const newArr = students.filter((element) => {
+  return element === 'Paolo'
 });
 
-//0,1,2
-console.log(students, newStudents); // ['Paola', 'Giulia, 'Marco']
-
+console.log(students, newArr);
 
 
 /*
