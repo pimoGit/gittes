@@ -72,7 +72,7 @@ var ribbonCats = cats.map((element) =>{
   }
 });
 
-console.log(cats, ribbonCats);
+//console.log(cats, ribbonCats);
 
 
 
@@ -81,9 +81,9 @@ console.log(cats, ribbonCats);
 
 // dividiamoli per sesso [2 nuovi array con filter]
 const femaleCats = ribbonCats.filter((element) => element.gender === "female" );
-console.log(femaleCats);
+//console.log(femaleCats);
 const maleCats = ribbonCats.filter((element) => element.gender === "male" );
-console.log(maleCats);
+//console.log(maleCats);
 
 
 // e facciamo output femmine in 'female'
@@ -103,19 +103,52 @@ femaleCats.forEach((element) => {
   `
 });
 
+maleCats.forEach((element) => {
+  let contenuto = maleContainer.innerHTML;
+
+  maleContainer.innerHTML = ` ${contenuto}
+    <div>
+      <i class="fas fa-cat" style="color:${element.color}"></i>
+      <i class="fas fa-ribbon" style="color:${element.ribbon.color}; filter: opacity(${element.ribbon.opacity}%);"> </i>
+      ${element.name}
+    </div>
+  `
+});
+
 
 
 
 //creiamo una versione [nuovo arr] con prima femmine poi maschi [spread-rest]
+const ordCats = [...femaleCats,...maleCats];
 
-
+//console.log(ordCats);
 
 
 // ne facciamo output in 'container-new'
 const containerNew = document.getElementById('container-new');
 // stampiamo tutti i gattini in fila
+ordCats.forEach((element) => {
+  let contenuto = containerNew.innerHTML;
 
+  containerNew.innerHTML = ` ${contenuto}
+    <div>
+      <i class="fas fa-cat" style="color:${element.color}"></i>
+      <i class="fas fa-ribbon" style="color:${element.ribbon.color}; filter: opacity(${element.ribbon.opacity}%);"> </i>
+      ${element.name}
+    </div>
+  `
+});
 
 
 
 //altro array con obj di soli ribbon and name [destructuring in map]
+const propCats = ribbonCats.map((element) => {
+  let {name, ribbon} = element;
+  let myobj =  {
+    name,
+    ribbon
+  }
+   return myobj
+});
+
+console.log(propCats);
