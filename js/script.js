@@ -11,7 +11,7 @@ var app = new Vue({
     mieClassi: "classe2"
   },
   methods: {
-    changeTitle: function() {
+    changeTitle: changeTitle() {
       //alert("ciao dal metodo interno");
       if (this.mieClassi === "classe2"){
         this.mieClassi = "classe1";
