@@ -7,7 +7,7 @@ var app = new Vue({
   el: "#app",
   data: {
     nome: "nome",
-    cognome: "cognome"
+    cognome: "cognome",
+    mieClassi: "classe2"
   }
-
 });
