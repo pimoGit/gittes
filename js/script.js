@@ -11,8 +11,14 @@ var app = new Vue({
     mieClassi: "classe2"
   },
   methods: {
-    miaFunzione: function() {
-      alert("ciao dal metodo interno");
+    changeTitle: function() {
+      //alert("ciao dal metodo interno");
+      if (this.mieClassi === "classe2"){
+        this.mieClassi = "classe1";
+      } else {
+        this.mieClassi = "classe2";
+      }
+      console.log(this.cognome);
     }
   }
 });
