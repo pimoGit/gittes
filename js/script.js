@@ -9,5 +9,10 @@ var app = new Vue({
     nome: "nome",
     cognome: "cognome",
     mieClassi: "classe2"
+  },
+  methods: {
+    miaFunzione: function() {
+      alert("ciao dal metodo interno");
+    }
   }
 });
