@@ -7,19 +7,20 @@
             integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
             crossorigin="anonymous" />
       <link rel="stylesheet" href="css/main.css">
-        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
         <title>Slider</title>
     </head>
     <body>
 
-      <div id="container"></div>
+    <div id="app">
 
-    <div class="container-float">
-      <div class="float-left" id="female"></div>
-      <div class="float-left" id="male"></div>
+      <input v-model="nome" >
+      <input v-model="cognome" >
+
+      <p>Ciao {{nome + " " + cognome}}</p>
+
     </div>
 
-    <div id="container-new"></div>
 
     <script src="js/script.js"></script>
     </body>
