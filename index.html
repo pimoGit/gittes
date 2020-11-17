@@ -12,19 +12,28 @@
     </head>
     <body>
 
+      <div id="app">
+        <h1 v-if="titleShow">Qualcosa che risponde ad una condizione</h1>
+        <h1 v-else>Alternativa del titolo</h1>
+        <button type="button" name="button" @click="toggleVisible">cliccami</button>
+      </div>
 
-    <div id="app">
 
-      <h1 :class="mieClassi">Titolo</h1>
-
-      <input v-model="nome" >
-      <input v-model="cognome" >
-
-      <p>Ciao {{nome}} {cognome}}</p>
-
-      <button @click="changeTitle">Bottone</button>
-
-    </div>
+      <!-- <div id="app" class="container">
+          <div class="slider-wrapper">
+              <div class="prev" >
+                  <i class="fas fa-angle-left"></i>
+              </div>
+              <div class="images">
+                  <img :src="" alt="">
+              </div>
+              <div class="next" >
+                  <i class="fas fa-angle-right"></i>
+              </div>
+              <div class="nav">
+              </div>
+          </div>
+      </div> -->
 
 
     <script src="js/script.js"></script>
