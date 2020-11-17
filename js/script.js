@@ -3,7 +3,8 @@
 var app = new Vue({
   el: "#app",
   data: {
-    titleShow: "A"
+    titleShow: "A",
+    names: ['Michele', 'Fabio', 'Roberto']
   },
   methods: {
     toggleVisible: function() {

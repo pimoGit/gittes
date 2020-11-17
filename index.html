@@ -17,6 +17,13 @@
         <h1 v-else-if="titleShow === 'B'">Qualcosa che risponde a B</h1>
         <h1 v-else>Alternativa del titolo</h1>
         <button type="button" name="button" @click="toggleVisible">cliccami</button>
+
+        <ol>
+           <li v-for="(item, i) in names">
+             {{i}} {{ item }}
+           </li>
+        </ol>
+
       </div>
 
 
