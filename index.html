@@ -12,36 +12,22 @@
     </head>
     <body>
 
-      <div id="app">
-        <h1 v-if="titleShow === 'A'">Qualcosa che risponde a A</h1>
-        <h1 v-else-if="titleShow === 'B'">Qualcosa che risponde a B</h1>
-        <h1 v-else>Alternativa del titolo</h1>
-        <button type="button" name="button" @click="toggleVisible">cliccami</button>
 
-        <ol>
-           <li v-for="(item, i) in names">
-             {{i}} {{ item }}
-           </li>
-        </ol>
-
-      </div>
-
-
-      <!-- <div id="app" class="container">
+      <div id="app" class="container">
           <div class="slider-wrapper">
               <div class="prev" >
                   <i class="fas fa-angle-left"></i>
               </div>
               <div class="images">
-                  <img :src="" alt="">
+                  <img :src="foto[fotoIndex]" alt="">
               </div>
-              <div class="next" >
+              <div class="next" @click="nextFoto" >
                   <i class="fas fa-angle-right"></i>
               </div>
               <div class="nav">
               </div>
           </div>
-      </div> -->
+      </div>
 
 
     <script src="js/script.js"></script>
