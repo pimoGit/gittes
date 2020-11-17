@@ -3,14 +3,14 @@
 var app = new Vue({
   el: "#app",
   data: {
-    titleShow: false
+    titleShow: "A"
   },
   methods: {
     toggleVisible: function() {
-      if(this.titleShow === true){
-        this.titleShow = false;
+      if(this.titleShow === "A"){
+        this.titleShow = "B";
       } else {
-        this.titleShow = true;
+        this.titleShow = "A";
       }
     }
   }
