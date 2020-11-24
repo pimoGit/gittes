@@ -1,35 +1,110 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <!-- <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-            integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
-            crossorigin="anonymous" />
-      <link rel="stylesheet" href="css/main.css">
-        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-        <title>Slider</title>
-    </head>
-    <body>
 
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" -->
+          <!-- integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+          crossorigin="anonymous"></script> -->
+  <title>Todo List</title>
+</head>
 
-      <div id="app" class="container">
-          <div class="slider-wrapper">
-              <div class="prev" >
-                  <i class="fas fa-angle-left"></i>
-              </div>
-              <div class="images">
-                  <img :src="foto[fotoIndex]" alt="">
-              </div>
-              <div class="next" @click="nextFoto" >
-                  <i class="fas fa-angle-right"></i>
-              </div>
-              <div class="nav">
-              </div>
-          </div>
+<body>
+<div id="app" class="container">
+  <!-- contenitore sx -->
+  <div class="left">
+    <div class="header-left">
+      <div class="header-left-logo">
+        <img :src="'img/avatar' + user.avatar + '.jpg'" :alt="user.name">
+        <span>{{user.name}}</span>
       </div>
+      <div class="header-left-icons">
+        <i class="fas fa-circle-notch"></i>
+        <i class="fas fa-comment-alt"></i>
+        <i class="fas fa-ellipsis-v"></i>
+      </div>
+    </div>
+    <div class="left-disclaimer">
+      <div class="left-disclaimer-logo">
+        <i class="fa fa-bell-slash" aria-hidden="true"></i>
+      </div>
+      <div class="left-disclaimer-text">
+        <h3>Ricevi notifiche di nuovi messaggi</h3>
+        <a href="#">Attiva notifiche desktop</a>
+      </div>
+    </div>
+    <div class="left-searchbar">
+      <label class="search-label" for="search">
+        <i class="fa fa-search" aria-hidden="true" ></i>
+      </label>
+      <input id="contacts-filter" class="left-searchbar-input" placeholder="Cerca o inizia una nuova chat"
+             name="search">
+    </div>
+    <div class="contacts">
+      <div v-for="(contact, index) in contacts" :class="(index === contactActive) ? 'contact active' : 'contact'" @click="setActiveConversation(index)">
+        <div class="contact-logo">
+          <img :src="'img/avatar' + contact.avatar + '.jpg'" :alt="contact.name">
+        </div>
+        <div class="contact-info">
+          <h3>
+            <span class="contact-name">{{contact.name}}</span>
+            <span class="time f-right">
+              {{contact.date}}
+              </span>
+          </h3>
+          <small></small>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /contenitore sx -->
+  <!-- contenitore dx -->
+  <div class="right">
+    <div class="header-right">
+      <div class="header-right-logo">
+        <img :src="'img/avatar' + contacts[contactActive].avatar + '.jpg'" :alt="contacts[contactActive].name">
+        <h3><span id="header-right-contact-name">{{contacts[contactActive].name}}</span> <br> <small
+                class="time">Ultimo accesso oggi alle </small></h3>
+      </div>
+      <div class="header-right-icons">
+        <i class="fas fa-search"></i>
+        <i class="fas fa-paperclip"></i>
+        <i class="fas fa-ellipsis-v"></i>
+      </div>
+    </div>
+    <div class="right-messages-container">
+      <div class="right-messages">
+        <div v-for="(message, index) in contacts[contactActive].messages"
+             :class='message.status'>
+          <span class="message-text">{{message.message}}</span>
+          <span class="message-time"> {{message.date}}
+            </span>
+          <i class="fa fa-chevron-down f-right message-options"></i>
+          <!--          <div class="message-options-panel">-->
+          <!--            <div class="message-info">Info messaggio</div>-->
+          <!--            <div class="message-destroy">Cancella messaggio</div>-->
+          <!--          </div>-->
+        </div>
+      </div>
+    </div>
+    <div class="right-footer">
+      <div class="right-footer-icon f-left">
+        <i class="far fa-smile"></i>
+      </div>
+      <input class="new-message-inputs" placeholder="Scrivi un messaggio">
+      <div class="right-footer-icon f-right">
+        <i class="fa fa-microphone" aria-hidden="true"></i>
+      </div>
+    </div>
+  </div>
+  <!-- /contenitore dx -->
+</div>
 
+<script src="js/script.js"></script>
+</body>
 
-    <script src="js/script.js"></script>
-    </body>
 </html>
