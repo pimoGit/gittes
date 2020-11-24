@@ -79,7 +79,7 @@
     <div class="right-messages-container">
       <div class="right-messages">
         <div v-for="(message, index) in contacts[contactActive].messages"
-             :class='message.status'>
+             :class='"message " + message.status'>
           <span class="message-text">{{message.message}}</span>
           <span class="message-time"> {{message.date}}
             </span>
