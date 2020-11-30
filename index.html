@@ -17,7 +17,14 @@
 <body>
 
   <div id="app">
-    <span>{{ number }}</span>
+    <span>{{ numberUser }}</span>
+    <span>{{ numberPc }}</span>
+
+    <span v-if="numberUser > numberPc">hai vinto tu</span>
+    <span v-else-if="numberUser < numberPc">ha vinto il pc</span>
+    <span v-else >siete pari</span>
+
+
   </div>
 
 
