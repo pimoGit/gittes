@@ -11,20 +11,15 @@
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" -->
           <!-- integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
           crossorigin="anonymous"></script> -->
-  <title>Todo List</title>
+  <title>LC quadratini ajax in Vue</title>
 </head>
 
 <body>
 
   <div id="app">
-    <span>{{ numberUser }}</span>
-    <span>{{ numberPc }}</span>
-
-    <span v-if="numberUser > numberPc">hai vinto tu</span>
-    <span v-else-if="numberUser < numberPc">ha vinto il pc</span>
-    <span v-else >siete pari</span>
-
-
+    <div class="square" @click="generaNumero">
+      {{ numbers[0] }}
+    </div>
   </div>
 
 
