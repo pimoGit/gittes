@@ -17,8 +17,8 @@
 <body>
 
   <div id="app">
-    <div class="square" @click="generaNumero">
-      {{ numbers[0] }}
+    <div v-for="(square, index) in numbers" class="square" @click="generaNumero(index)">
+      {{ square }}
     </div>
   </div>
 

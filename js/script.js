@@ -14,12 +14,12 @@ var app = new Vue({
     //this.faiqualcosa();
   },
   methods: {
-    generaNumero: function () {
+    generaNumero: function (indice) {
       axios.get(randNUm)
       .then(risposta => {
         let pushedNum = risposta.data.response;
         //this.numbers[0] = pushedNum;
-        this.$set(this.numbers, 0, pushedNum);
+        this.$set(this.numbers, indice, pushedNum);
         // console.log(pushedNum);
         console.log(this.numbers);
       })

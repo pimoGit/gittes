@@ -9,13 +9,15 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+  flex-wrap: wrap;
 }
 
 .square {
+  border: 1px solid #000;
   text-align: center;
   line-height: 100px;
   font-size: 30px;
-  width: 100px;
-  height: 100px;
+  width: calc(100% / 6);
+  height: calc(100% / 6);
   background-color: red;
 }
