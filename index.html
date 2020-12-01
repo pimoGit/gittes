@@ -17,8 +17,11 @@
 <body>
 
   <div id="app">
-    <div v-for="(square, index) in numbers" class="square" @click="generaNumero(index)">
-      {{ square }}
+    <div v-for="(number, index) in numbers" class="square" @click="generaNumero(index)">
+      <span v-if="number === ''">schiacciami</span>
+      <span v-else :class="number <=5 ? 'yellow' : 'green' ">{{ number }}</span>
+      <!-- <span v-else-if="number <=5" class="yellow">{{ number }}</span>
+      <span v-else-if="number >5" class="green">{{ number }}</span> -->
     </div>
   </div>
 
