@@ -1,32 +1,46 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>prova di selettori avanzati</title>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
 
-<head>
-  <meta charset="utf-8">
-  <!-- <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> -->
-  <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"> -->
-  <link rel="stylesheet" href="css/main.css">
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" -->
-          <!-- integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
-          crossorigin="anonymous"></script> -->
-  <title>LC quadratini ajax in Vue</title>
-</head>
-
-<body>
-
-  <div id="app">
-    <div v-for="(number, index) in numbers" class="square" @click="generaNumero(index)">
-      <span v-if="number === ''">schiacciami</span>
-      <span v-else :class="number <=5 ? 'yellow' : 'green' ">{{ number }}</span>
-      <!-- <span v-else-if="number <=5" class="yellow">{{ number }}</span>
-      <span v-else-if="number >5" class="green">{{ number }}</span> -->
+    <div>
+      <p>
+        ciao io sono un figlio diretto di p
+      </p>
+      <span>
+        sadsadadsadsa
+        <p>
+          ciao io invece sono dentro uno span e quindi sono nipote di div
+        </p>
+      </span>
     </div>
-  </div>
+
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <span class="classe1">Excepteur sint occaecat</span> cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+
+    <p class="classe1">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br>
+      <a href="#">ciao sono un link</a>
+    </p>
+
+    <form class="" action="index.html" method="post">
+      <input type="text" name="" value="">
+      <input type="email" name="" value="">
+
+    </form>
+
+    <ul>
+      <li>dfdsfdsfdsf</li>
+      <li>dfdsfdsfdsf</li>
+      <li>dfdsfdsfdsf ero l'ultimo</li>
+      <li>dfdsfdsfdsf</li>
+    </ul>
 
 
-<script src="js/script.js"></script>
-</body>
-
+  </body>
 </html>
