@@ -31,8 +31,14 @@ input {
   border: solid 3px #000;
 }
 
+
+
 input[type="email"]{
   border-color: blue;
+}
+
+input:focus {
+  border-color: red;
 }
 
 p .classe1 {
@@ -43,6 +49,17 @@ p.classe1 {
   color: green;
 }
 
+ul {
+  margin-left: 15px;
+}
+
 ul li{
-  color: yellow;
+  color: blue;
+  list-style-type: none;
+}
+
+li::before{
+  content: "X";
+  /* display: inline-block; */
+  margin-right: 5px;
 }
