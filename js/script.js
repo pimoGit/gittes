@@ -23,6 +23,12 @@ var app = new Vue({
         // console.log(pushedNum);
         console.log(this.numbers);
       })
+
+      // axios.get("https://api.themoviedb.org/3/search/tv?api_key=e99307154c6dfb0b4750f6603256716d&language=en-EN&query=casa")
+      // .then(risposta => {
+      //
+      //   console.log(risposta);
+      // })
     },
     faiqualcosa: function () {
       alert("ho fatto qualcosa!");
