@@ -7,59 +7,26 @@
   box-sizing: border-box;
 }
 
-a {
-  display: inline-block;
-  width: 150px;
-  height: 50px;
-  line-height: 50px;
-  text-align: center;
-  background-color: #ccc;
-  text-decoration: none;
-}
 
-a:hover {
-  background-color: #999;
-}
-
-div > p, span{
-  margin: 10px 0;
+#container {
   background-color: red;
+  width: 300px;
+  height: 200px;
+  position: relative;
 }
 
-input {
-  padding: 20px;
-  border: solid 3px #000;
+#container div {
+  width: 50px;
+  height: 50px;
 }
 
-
-
-input[type="email"]{
-  border-color: blue;
+.blue{
+  background-color: blue;
 }
 
-input:focus {
-  border-color: red;
-}
-
-p .classe1 {
-  color: red;
-}
-
-p.classe1 {
-  color: green;
-}
-
-ul {
-  margin-left: 15px;
-}
-
-ul li{
-  color: blue;
-  list-style-type: none;
-}
-
-li::before{
-  content: "X";
-  /* display: inline-block; */
-  margin-right: 5px;
+.green {
+ background-color: green;
+ position: absolute;
+ bottom:0;
+ right:-50px;
 }
