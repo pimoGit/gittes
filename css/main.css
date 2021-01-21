@@ -24,9 +24,14 @@
   background-color: blue;
 }
 
-.green {
- background-color: green;
- position: absolute;
- bottom:0;
- right:-50px;
+#container .blue:nth-child(2){
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#container .blue:nth-child(3){
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
