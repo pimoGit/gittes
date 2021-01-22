@@ -17,6 +17,41 @@ header{
   z-index: 700;
 }
 
+#mainnav{
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 120px;
+}
+
+#mainnav li{
+  display: inline-block;
+  list-style-type: none;
+  margin-right: 15px;
+}
+
+#mainnav li:last-child{
+  margin-right: 0;
+}
+
+#mainnav li a{
+  text-decoration: none;
+  color: blue;
+  font-size: 18px;
+  /* display: inline-block; */
+  padding: 10px;
+  /* height: 100%;
+  box-sizing: border-box; */
+}
+
+
+#mainnav li a:hover {
+  background-color: orange;
+}
+
+#mainnav li:first-child a:hover{
+  background-color: transparent;
+}
 
 
 /* regole parte corpo principale */
