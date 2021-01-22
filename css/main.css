@@ -1,5 +1,4 @@
 /* regole generali */
-
 *{
   margin: 0;
   padding: 0;
@@ -7,47 +6,29 @@
   box-sizing: border-box;
 }
 
-
-.container {
-  background-color: blue;
-  width: 300px;
-  height: 200px;
+#container{
+  background: url("../img/landscapebg.jpg");
+  background-size: cover;
+  height: 100vh;
   position: relative;
-  display: inline-block;
 }
 
-.container div {
-  width: 50px;
-  height: 50px;
-}
-
-.red{
-  background-color: red;
-}
-
-.impila{
-  position: relative;
-  z-index: 10;
-}
-
-.green {
-  background-color: green;
-  position:absolute;
-  top:10px;
-  left: 10px;
-  z-index: 11;
-}
-
-
-.container:first-child .red:last-child{
+.layover {
+  background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
-  bottom: 0;
-  right: 0;
+  left: 0;
+  top: 0;
+  /* bottom: 0;
+  right: 0; */
+  height: 100%;
+  width: 100%;
+  z-index: 100;
 }
 
-
-.container:last-child .red:last-child{
-  position: relative;
-  left: 25px;
-  top: 0;
+#titoli{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 150;
 }
