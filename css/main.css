@@ -6,30 +6,44 @@
   box-sizing: border-box;
 }
 
-#container{
-  background: url("../img/landscapebg.jpg");
-  background-size: cover;
-  height: 100vh;
+/* regole header */
+header{
+  height: 120px;
+  width: 100%;
+  background-color: red;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 700;
+}
+
+
+
+/* regole parte corpo principale */
+
+main{
+  width: 60%;
+  margin: 150px auto 30px auto;
+  /* padding-top: 120px; */
+}
+
+
+#widget {
   position: relative;
 }
-
-.layover {
-  background-color: rgba(0, 0, 0, 0.5);
+.contentw {
   position: absolute;
-  left: 0;
   top: 0;
-  /* bottom: 0;
-  right: 0; */
-  height: 100%;
-  width: 100%;
-  z-index: 100;
+  left: 0;
+  color: green;
+  background-color: blue;
+  border: solid 4px #000;
 }
 
-#titoli{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 150;
-  color: #fff;
+/* regole footer */
+footer{
+  height: 100px;
+  text-align: center;
+  background-color: lightblue;
+  line-height: 100px;
 }
