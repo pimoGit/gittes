@@ -14,7 +14,8 @@
 
 #container{
   width: 80%;
-  margin: 0 auto;
+  margin: 0 10%;
+  /* margin: 0 calc(100% - 90%); */
 }
 
 /* parte header */
