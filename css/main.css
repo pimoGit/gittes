@@ -2,83 +2,58 @@
 *{
   margin: 0;
   padding: 0;
-  /* border: 0; */
   box-sizing: border-box;
 }
 
-/* regole header */
-header{
-  height: 120px;
-  width: 100%;
-  background-color: red;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 700;
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-#mainnav{
-  width: 60%;
+
+#container{
+  width: 80%;
   margin: 0 auto;
-  text-align: center;
-  line-height: 120px;
 }
 
-#mainnav li{
-  display: inline-block;
-  list-style-type: none;
-  margin-right: 15px;
+/* parte header */
+header{
+  height: 150px;
+  /* debug */
+  background-color: yellow;
 }
 
-#mainnav li:last-child{
-  margin-right: 0;
+/* regole main */
+main {
+  margin:30px 0;
 }
 
-#mainnav li a{
-  text-decoration: none;
-  color: blue;
-  font-size: 18px;
-  /* display: inline-block; */
-  padding: 10px;
-  /* height: 100%;
-  box-sizing: border-box; */
-}
-
-
-#mainnav li a:hover {
-  background-color: orange;
-}
-
-#mainnav li:first-child a:hover{
-  background-color: transparent;
-}
-
-
-/* regole parte corpo principale */
-
-main{
-  width: 60%;
-  margin: 150px auto 30px auto;
-  /* padding-top: 120px; */
-}
-
-
-#widget {
-  position: relative;
-}
-.contentw {
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: green;
-  background-color: blue;
-  border: solid 4px #000;
-}
-
-/* regole footer */
-footer{
+.aside{
+  float: left;
+  width: 25%;
+  /* debug */
+  background-color: pink;
   height: 100px;
-  text-align: center;
-  background-color: lightblue;
-  line-height: 100px;
+}
+/* .aside.due {
+  float: right;
+} */
+
+.sezione{
+  float: left;
+  width: 40%;
+  margin: 0 5%;
+  /* debug */
+  background-color: purple;
+  height: 200px;
+}
+
+
+
+/* footer */
+footer{
+  /* debug */
+  background-color: blue;
+  height: 70px;
 }
