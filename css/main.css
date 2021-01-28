@@ -25,6 +25,11 @@ header{
   background-color: yellow;
 }
 
+header .fab{
+  color: red;
+  font-size: 30px;
+}
+
 /* regole main */
 main {
   margin:30px 0;
