@@ -22,6 +22,7 @@
   max-width: 100%;
 }
 
+/* versione tablet */
 @media screen and (max-width: 780px) {
   .square {
     width: 50%;
@@ -33,6 +34,7 @@
 
 }
 
+/* versione smartphone */
 @media screen and (max-width: 568px) {
   .square {
     float: none;
