@@ -5,19 +5,41 @@
   box-sizing: border-box;
 }
 
-ul{
-  margin-left: 30px;
+.row::after{
+  content: "";
+  display: table;
+  clear: both;
 }
 
+.blue{
+  float: left;
+  background-color: blue;
+  width: 30%;
+  min-height: 200px;
+}
 
-@media all and (min-width:780px) {
-  ul li {
-    display: inline-block;
+.verde{
+  float: left;
+  background-color: green;
+  width: 70%;
+  min-height: 200px;
+}
+
+.rosso{
+  float: left;
+  background-color: red;
+  height: 180px;
+  width: 40%;
+  margin: 0 5%;
+}
+
+@media all and (max-width:580px) {
+  .verde {
+    display: none;
   }
-  li a {
-    background-color: grey;
-    color: #fff;
-    text-decoration: none;
-    padding: 5px 10px;
+  .blue{
+    width: 100%;
+    float: none;
   }
+
 }
