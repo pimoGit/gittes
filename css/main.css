@@ -5,25 +5,37 @@
   box-sizing: border-box;
 }
 
-.square {
-  background: blue;
-  width: 100px;
-  height: 100px;
-  margin-bottom: 10px;
+
+.container::after{
+  content: "";
+  display: table;
+  clear: both;
 }
 
-@media screen and (min-width: 479px) {
+.square {
+  float: left;
+  width: calc(100% / 3);
+  text-align: center;
+}
 
-  .container::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+.square img {
+  max-width: 100%;
+}
 
+@media screen and (max-width: 780px) {
   .square {
-    background: red;
-    margin: 0 10px;
-    float: left;
+    width: 50%;
+  }
+  .square:last-child{
+    width: 100%;
+    float: none;
   }
 
+}
+
+@media screen and (max-width: 568px) {
+  .square {
+    float: none;
+    width: 100%;
+  }
 }
