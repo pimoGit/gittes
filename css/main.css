@@ -5,17 +5,25 @@
   box-sizing: border-box;
 }
 
-body{
-  background-color: green;
-  /* altre regole del body */
+.square {
+  background: blue;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
 }
 
-.selettori{
-  /* regolevarie */
-}
+@media screen and (min-width: 479px) {
 
-@media screen and (min-width: 480px) {
-  body{
-    background-color: red;
+  .container::after {
+    content: "";
+    display: table;
+    clear: both;
   }
+
+  .square {
+    background: red;
+    margin: 0 10px;
+    float: left;
+  }
+
 }
