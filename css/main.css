@@ -5,61 +5,17 @@
   box-sizing: border-box;
 }
 
-.row::after {
-  content: "";
-  display: table;
-  clear: both;
+body{
+  background-color: green;
+  /* altre regole del body */
 }
 
-
-#container{
-  width: 80%;
-  margin: 0 10%;
-  /* margin: 0 calc(100% - 90%); */
+.selettori{
+  /* regolevarie */
 }
 
-/* parte header */
-header{
-  height: 150px;
-  /* debug */
-  background-color: yellow;
-}
-
-header .fab{
-  color: red;
-  font-size: 30px;
-}
-
-/* regole main */
-main {
-  margin:30px 0;
-}
-
-.aside{
-  float: left;
-  width: 25%;
-  /* debug */
-  background-color: pink;
-  height: 100px;
-}
-/* .aside.due {
-  float: right;
-} */
-
-.sezione{
-  float: left;
-  width: 40%;
-  margin: 0 5%;
-  /* debug */
-  background-color: purple;
-  height: 200px;
-}
-
-
-
-/* footer */
-footer{
-  /* debug */
-  background-color: blue;
-  height: 70px;
+@media screen and (min-width: 480px) {
+  body{
+    background-color: red;
+  }
 }
