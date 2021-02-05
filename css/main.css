@@ -1,45 +1,6 @@
-/* regole generali */
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.row::after{
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.blue{
-  float: left;
-  background-color: blue;
-  width: 30%;
-  min-height: 200px;
-}
-
-.verde{
-  float: left;
-  background-color: green;
-  width: 70%;
-  min-height: 200px;
-}
-
-.rosso{
-  float: left;
+/* degug */
+[class*="col-"]{
+  min-height: 100px;
   background-color: red;
-  height: 180px;
-  width: 40%;
-  margin: 0 5%;
-}
-
-@media all and (max-width:580px) {
-  .verde {
-    display: none;
-  }
-  .blue{
-    width: 100%;
-    float: none;
-  }
-
+  border: solid 1px #000;
 }
