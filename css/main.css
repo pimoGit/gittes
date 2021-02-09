@@ -4,3 +4,14 @@
   background-color: red;
   border: solid 1px #000;
 }
+
+/* regole generali */
+.contenitore{
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* regole header */
+header {
+  margin-bottom: 30px;
+}
