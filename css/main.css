@@ -22,3 +22,7 @@ header .navbar-default .navbar-nav > .active > a:focus,
 header .navbar-default .navbar-nav > .active > a:hover {
   background-color: red;
 }
+
+header .navbar-default {
+  background-color: green;
+}
