@@ -15,3 +15,10 @@
 header {
   margin-bottom: 30px;
 }
+
+/* modifiche componente navbar di BS */
+header .navbar-default .navbar-nav > .active > a,
+header .navbar-default .navbar-nav > .active > a:focus,
+header .navbar-default .navbar-nav > .active > a:hover {
+  background-color: red;
+}
