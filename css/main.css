@@ -4,21 +4,33 @@
   box-sizing: border-box;
 }
 
-.bottone {
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  background-color: blue;
-  animation: muoviti 4s ease 3 1s;
+
+.container {
+  max-width: 1170px;
+
 }
 
+.row::after{
+  content: "";
+  display: table;
+  clear: both;
 
-/* animazioni */
-@keyframes muoviti {
-  0% { left: 0; top: 0;}
-  15% { left: calc(90% - 100px); top: 0; }
-  25% { left: calc(100% - 100px); top: 0; }
-  50% { left: calc(100% - 100px); top: calc(100% - 100px); }
-  75% { left: 0; top: calc(100% - 100px); }
-  100% { left: 0; top: 0;}
+}
+
+.col-6 {
+  width: 50%;
+  float: left;
+  text-align: center;
+
+}
+
+.col-6 img {
+  filter: grayscale(1);
+  transition: filter 2s ease-in;
+}
+
+.col-6 img:hover {
+  /* filter: grayscale(0); */
+  filter: none;
+  cursor: pointer;
 }
