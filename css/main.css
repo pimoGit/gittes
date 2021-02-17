@@ -1,28 +1,11 @@
-/* degug */
-[class*="col-"]{
-  min-height: 100px;
+.bottone {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  transition: all 2s;
+}
+
+.bottone:hover{
   background-color: red;
-  border: solid 1px #000;
-}
-
-/* regole generali */
-.contenitore{
-  width: 80%;
-  margin: 0 auto;
-}
-
-/* regole header */
-header {
-  margin-bottom: 30px;
-}
-
-/* modifiche componente navbar di BS */
-header .navbar-default .navbar-nav > .active > a,
-header .navbar-default .navbar-nav > .active > a:focus,
-header .navbar-default .navbar-nav > .active > a:hover {
-  background-color: red;
-}
-
-header .navbar-default {
-  background-color: green;
+  width: 150px;
 }
