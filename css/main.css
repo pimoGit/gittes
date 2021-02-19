@@ -17,20 +17,28 @@
 
 .square{
   background-color: red;
-  width: 150px;
-  height: 150px;
+  width: 250px;
+  height: 250px;
+  margin: 0 10px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .square.second{
-  order: -1;
+  flex-grow: 1;
+  background-color: green;
 }
 
 .square.terzo{
-  order: -1;
+  flex-grow: 2;
 }
+
+.square:first-child {
+  flex-shrink: 2;
+}
+
+
 
 /* .square h1 {
   text-align: center;
