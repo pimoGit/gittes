@@ -10,18 +10,26 @@
   height: 100vh;
   display: flex;
   /* flex-direction: row; */
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
 
 .square{
   background-color: red;
-  width: 400px;
-  height: 400px;
+  width: 150px;
+  height: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.square.second{
+  order: -1;
+}
+
+.square.terzo{
+  order: -1;
 }
 
 /* .square h1 {
