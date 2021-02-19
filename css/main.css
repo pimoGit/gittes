@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .centratura {
   padding: 10px 0;
   width: 80%;
@@ -54,4 +58,20 @@ nav {
   .lgmenu {
     display: none;
   }
+}
+
+
+/* main */
+
+/* customer  */
+
+#customer {
+  background-color: #ccc;
+  text-align: center;
+}
+
+#customer ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
