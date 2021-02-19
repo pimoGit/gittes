@@ -12,6 +12,8 @@
   /* flex-direction: row; */
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
+  align-content: flex-start;
 }
 
 
@@ -34,8 +36,8 @@
   flex-grow: 2;
 }
 
-.square:first-child {
-  flex-shrink: 2;
+.square{
+  flex-shrink: 0;
 }
 
 
