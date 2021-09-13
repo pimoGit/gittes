@@ -1,0 +1,22 @@
+body {
+    background-color: blueviolet;
+}
+
+/* selezione per tag */
+
+h1 {
+    color: rgb(149, 100, 100);
+    text-align: center;
+}
+
+/* selezione per ID */
+#punico {
+    color: teal;
+    text-align: right;
+}
+
+/* selezione per class */
+.esclass {
+    color: cornsilk;
+    text-align: left;
+}

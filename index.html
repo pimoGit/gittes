@@ -4,131 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Viaggio Londra</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- altra possibilità per inclusione regole css (ma anche da evitare) -->
+    <style>
+        h1 {
+            height: 100px;
+        }
+    </style>
+    <title>Uso CSS</title>
 </head>
 <body>
-    <!-- intestazione -->
-    <header>
-        <h1>
-            Il mio Viaggio a Londra
-        </h1>
-        <img src="img/pexels-bill-emrich-230794-0.jpg" alt="londra oparte 1">
-        <img src="img/pexels-bill-emrich-230794-1.jpg" alt="londra oparte 2">
-        <img src="img/pexels-bill-emrich-230794-2.jpg" alt="londra oparte 3">
-        <hr>
-    </header>
 
-    <!-- corpo principale -->
-    <main>
-        <!-- sezione1 -->
-        <section>
-            <h2>
-                Le mie spese
-            </h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Numero</th>
-                        <th>Descrizione</th>
-                        <th>Costo</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Biglietto Aereo</td>
-                        <td>120&euro;</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Biglietto Aereo</td>
-                        <td>120&euro;</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Biglietto Aereo</td>
-                        <td>120&euro;</td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <td colspan="2">Totale</td>
-                        <td>360&euro;</td>
-                    </tr>
-                </tfoot>
-            </table>
-            <hr>
-        </section>
+    <h1>
+        questo &egrave; il titolo principale
+    </h1>
 
-        <!-- sezione2 -->
-        <section>
-            <h3>
-               Cose da fare 
-            </h3>
-            <ul>
-                <li>
-                    oiudwhfkewhvew iehwoe &check;
-                </li>
-                <li>
-                    oiudwhfkewhvew iehwoe &check;
-                </li>
-                <li>
-                    oiudwhfkewhvew iehwoe &check;
-                </li>
-                <li>
-                    oiudwhfkewhvew iehwoe &check;
-                </li>
-            </ul>
-        </section>
+    <p id="punico">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, cumque. Pariatur quos repellat cumque necessitatibus? Ipsum exercitationem itaque deserunt minus accusamus labore obcaecati libero, doloremque nemo repudiandae minima ipsam impedit.
+    </p>
 
-        <!-- sezione3 -->
-        <section>
-            <h3>Info utili</h3>
+    <!-- elementi con classe -->
+    <div class="esclass">
+        Io sono un div
+    </div>
 
-            <ol>
-                <li>
-                    Numeri utili di emergenza
-                    <ul>
-                        <li>
-                            <strong>999</strong>  - Emergenza
-                        </li>
-                        <li>
-                            <strong>999</strong>  - Emergenza
-                        </li>
-                        <li>
-                            <strong>999</strong>  - Emergenza
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    Hotel
-                    <ul>
-                        <li>
-                            <strong>999</strong>  - Emergenza
-                        </li>
-                        <li>
-                            <strong>999</strong>  - Emergenza
-                        </li>
-                    </ul>
-                </li>
-            </ol>
-            <hr>
-        </section>
+    <p class="esclass">
+        Io sono un p  ma ho la stessa classe del div
+    </p>
 
-
-
-
-    </main>
-        
-    <!-- footer -->
-    <footer>
-        <h3>
-            Le foto
-        </h3>
-        <img src="https://www.abta.com/sites/default/files/styles/large/public/media/uploads/london-400x400-compressor_0.jpg" alt="foto Londra 1">
-        <img src="https://pokerstarscareers.com/wp-content/uploads/2020/01/London-Wider-Area-e1597319992670-400x400.jpg" alt="foto Londra 2">
-
-    </footer>
+    <!-- css inline nell'HTML (DA EVITARE COME LA PESTE) -->
+    <p style="color: red;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam placeat dolorum eum odit iusto recusandae laudantium in, a consectetur dicta corrupti error blanditiis vel ratione, iste quae vitae reprehenderit expedita?
+    </p>
     
 </body>
 </html>
