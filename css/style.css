@@ -14,12 +14,19 @@
 }
 */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Roboto', Arial, sans-serif;
 }
 
 .highlight {
     background-color: yellow;
+    box-sizing: content-box;
   }
   
   /* header */
