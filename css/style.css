@@ -62,3 +62,7 @@ body {
 .unreadmsg {
     background-color: #ccc;
 }
+
+.star::after{
+    content: "\02605";
+}
