@@ -1,19 +1,64 @@
+/* impostazioni generali */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-#testid {
-    background-color: burlywood;
+body {
+    background-image: url('https://ssl.gstatic.com/ui/v1/icons/mail/themes/desk/bg2_1920x1200.jpg');
 }
 
-.test {
-    width: 50%;
-    /* height: 100px; */
-    background-color: blueviolet;
-    border: solid 5px #ccc;
-    padding: 10px 20px;
-    margin: 10px 20px 30px 40px;
+#container {
+ width: 80%;
+ margin: 30px auto;
+ /* regole debug */
+ /* background-color: chartreuse;
+ height: 50px; */
+}
+
+/* header */
+#logo {
+    height: 100px;
+    line-height: 100px;
+    vertical-align: middle;
+}
+#logotext{
+    font-size: 25px;
+    color: white;
+    margin-left: 20px;
+}
+
+.headsection {
+    border-bottom: solid 2px #fff;
+    padding: 10px 0 20px;
+}
+
+#counting {
+    color: white;
+    font-size: 35px;
+    margin-top: 10px;
+}
+
+#counting span {
+    background-color: orange;
+    width: 50px;
+    height: 50px;
     display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    vertical-align: middle;
+    border-radius: 50%;
+}
+
+
+/* corpo messaggi */
+.msgrow {
+    background-color: rgb(150, 148, 148);
+    padding: 10px 5px;
+    border-bottom: solid 1px #000;
+}
+
+.unreadmsg {
+    background-color: #ccc;
 }
