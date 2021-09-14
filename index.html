@@ -1,81 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>CV</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>The Booleaner</title>
 </head>
 <body>
+  <!-- header -->
+  <header>
+    <img src="img/logo.svg" alt="The Booleaner" class="logo">
+  </header>
+ <!-- /header -->
 
-    <!-- intestazione -->
-    <header>
-        <img src="img/unknown-man-150x150.jpg" alt="tizio">
-        <h1>
-            nome tizzio - web developer
-        </h1>
+  <!-- main -->
+  <main>
+      <h1>Internet deve essere al servizio del "bene pubblico": il manifesto di Tim Berners-Lee</h1>
+      <div class="author">Scritto da <span class="author-name"> The Booleaner</span> </div>
+      <div class="date">il 10/10/2020</div>
 
-    </header>
+      <div class="photo">
+        <img src="img/tim-1.jpg" alt="Tim Berners-Lee speak">
+        <img src="img/tim-2.jpg" alt="Tim Berners-Lee">
+        <div class="caption">
+          1st Photo: John S. and James L. Knight Foundation, by Scott Henrichsen <br>
+          2nd Photo: Wikimedia, by Paul Clarke
+        </div>
+      </div>
 
-    <!-- parte principale -->
-    <main>
+      <!-- in questo caso presupponniamo ci possano essere più blocchi simili a content, perciò usiamo una class -->
+      <div class="content">
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+          dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud <span class="highlight"> exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat</span>. Duis autem vel eum iriure dolor in
+          hendrerit in vulputate
+          velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio
+          dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+        </p>
+        
+        <ul>
+          <li>Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</li>
+          <li>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</li>
+          <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</li>
+        </ul>
 
-        <!-- sezione1 -->
-        <section class="sezione_cv">
-            <h2>
-                Esperienze
-            </h2>
-            <h3>
-                sotto titolo
-            </h3>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo voluptatibus, natus officiis a recusandae nihil eius perferendis ullam iusto autem quam! Praesentium natus sed id unde modi. Unde, asperiores ipsa.
-            </p>
+        <table>
+          <thead>
+            <tr>
+              <th>Lorem ipsum dolor</th>
+              <th>Lorem ipsum dolor</th>
+              <th class="text">Lorem ipsum dolor</th>
+            </tr>
+          </thead>
 
-            <h3>
-                sotto titolo
-            </h3>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo voluptatibus, natus officiis a recusandae nihil eius perferendis ullam iusto autem quam! Praesentium natus sed id unde modi. Unde, asperiores ipsa.
-            </p>
-        </section>
+          <tbody>
+            <tr class="odd">
+              <td>Lorem ipsum dolor</td>
+              <td>Lorem ipsum dolor</td>
+              <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium eos quo, placeat consectetur ullam
+                fugiat similique perferendis repellendus illo mollitia eveniet expedita a quia modi. Totam saepe quibusdam
+                natus harum.</td>
+            </tr>
+            <tr>
+              <td>Lorem ipsum dolor</td>
+              <td>Lorem ipsum dolor</td>
+              <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium eos quo, placeat consectetur ullam
+                fugiat similique perferendis repellendus illo mollitia eveniet expedita a quia modi. Totam saepe quibusdam
+                natus harum.</td>
+            </tr>
+            <tr class="odd">
+              <td>Lorem ipsum dolor</td>
+              <td>Lorem ipsum dolor</td>
+              <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium eos quo, placeat consectetur ullam fugiat similique perferendis repellendus illo mollitia eveniet expedita a quia modi. Totam saepe quibusdam natus harum.</td>
+            </tr>
+          </tbody>
+        </table>
 
-        <!-- sezione2 -->
-        <section class="sezione_cv">
-            <h2>
-                Education
-            </h2>
-            <h3>
-                sotto titolo
-            </h3>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo voluptatibus, natus officiis a recusandae nihil eius perferendis ullam iusto autem quam! Praesentium natus sed id unde modi. Unde, asperiores ipsa.
-            </p>
-        </section>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel <span class="highlight">illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto </span> odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+      </div>
+  </main> 
+  <!-- /main -->
 
-        <!-- sezione3 -->
-        <section class="sezione_cv">
-            <h2>
-                Interests
-            </h2>
-            <h3>
-                sotto titolo
-            </h3>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo voluptatibus, natus officiis a recusandae nihil eius perferendis ullam iusto autem quam! Praesentium natus sed id unde modi. Unde, asperiores ipsa.
-            </p>
-        </section>
+  <!-- footer -->
+  <footer>
+      <h2>Potrebbero interessarti</h2>
+      <div id="image-monitor" class="image">
+        <h3>Lorem ipsum dolor</h3>
+      </div>
+      <div id="image-graph" class="image">
+        <h3>Lorem ipsum dolor</h3>
+      </div>
+  </footer>
+  <!-- /footer -->
 
-    </main>
-
-
-
-    <!-- footer -->
-    <footer id="footer_bottom">
-        Made with (entity code del cuore) Boolean
-    </footer>
-
-    
 </body>
 </html>

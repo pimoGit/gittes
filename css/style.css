@@ -1,30 +1,120 @@
-/* stili generici di pagina */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,900;1,400;1,500&display=swap');
+
+/* solo in caso di bonus 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+*/
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-family: 'Roboto', Arial, sans-serif;
 }
 
-/* stili header */
-header{
-    background-color: #ccc;
-    text-align: center;
-    border-bottom: solid 2px rgba(255, 166, 0, 0.838); 
-}
-
-/* stili sezioni cv */
-.sezione_cv{
-    margin-bottom: 60px;
-}
-.sezione_cv h2 {
-    color: rgba(255, 166, 0, 0.838);
-}
-
-
-
-
-
-/* stili footer */
-#footer_bottom {
-    border-top: solid 2px rgba(255, 166, 0, 0.838); 
+.highlight {
+    background-color: yellow;
+  }
+  
+  /* header */
+  header {
+    height: 100px;
+    background-image: url(../img/pattern.png);
+    background-color: #4ea0ff;
+    background-size: 30%;
+  }
+  
+  .logo {
+    height: 50px;
+    margin-top: 40px;
+  }
+  
+  /* main */
+  main {
+    margin-top: 20px;
+  }
+  
+  h1 {
+    font-size: 38px;
+    line-height: 40px;
+  }
+  
+  .author {
+    font-size: 18px;
+    color: gray;
+  }
+  
+  .author-name {
+    color: #20a9e5;
+  }
+  
+  .date {
     font-size: 12px;
-}
+    color: gray;
+  }
+  
+  .photo {
+    margin: 20px 0;
+  }
+  .photo .caption {
+    font-size: 12px;
+  }
+  
+  .content p {
+    margin: 20px 0;
+  }
+  
+  .content ul {
+    margin: 30px 15px;
+  }
+  
+  .content table {
+    text-align: left;
+    border-spacing: 0;
+  }
+  .content table thead {
+    background-color: #20a9e5;
+    color: white;
+  }
+  .content table .odd {
+    background-color: #b1e5f2;
+  }
+  .content table th.text{
+    width: 50%;
+  }
+  
+  
+  /* footer */
+  footer {
+    margin: 30px 0;
+  }
+  
+  footer h2 { 
+    font-size: 16px;
+    color: gray;
+    margin-bottom: 10px;
+  }
+  
+  .image  {
+    width: 208px;
+    height: 160px;
+    margin: 10px 0;
+    padding: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+  }
+  
+  #image-monitor {
+    background-image: url(../img/monitor.jpg);
+  }
+  
+  #image-graph {
+    background-image: url(../img/graph.jpg);
+  }
