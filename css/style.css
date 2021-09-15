@@ -5,16 +5,42 @@
     box-sizing: border-box;
 }
 
-div{
-    height: 100px;
-    width: 100px;
-    background-color: orange;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
 }
 
-#div2 {
-    margin-top: 30px;
+.class1 {
+    background-color: orchid;
 }
 
-#div1 {
-    margin-bottom: 30px;
+div.class1 {
+    color: red;
+}
+
+input[type="email"] {
+    background-color: plum;
+}
+
+a {
+    text-decoration: none;
+    font-size: 30px;
+    color: purple;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+ul li {
+    padding-left: 10px;
+}
+
+ul li:first-child {
+    color: salmon;
+}
+
+input[type="checkbox"]:checked {
+    width: 40px;
 }
