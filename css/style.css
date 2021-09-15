@@ -5,145 +5,16 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: #f6f8f9;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
+div{
+    height: 100px;
+    width: 100px;
+    background-color: orange;
 }
 
-.container {
-    width: 70%;
-    margin: 0 auto;
-    background-color: white;
-    border-radius: 5px;
+#div2 {
+    margin-top: 30px;
 }
 
-/* header */
-header {
-    height: 70px;
-    background-color: white;
-    margin-bottom: 40px;
-    padding: 10px 20px;
-}
-
-#logo {
-    height: 100%;
-    vertical-align: middle;
-}
-
-#logo-text {
-    font-size: 38px;
-    font-weight: 900;
-    vertical-align: middle;
-}
-
-
-/* main */
-.top {
-    height: 50px;
-    padding: 0 50px;
-    border-bottom: 2px solid #f6f8f9;
-    line-height: 50px;
-}
-
-.btn {
-    padding: 5px 10px;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-}
-
-
-.btn-filled {
-    border: 1px solid #14aaf5;
-    background-color: #14aaf5;
-    color: white;
-}
-
-
-.btn-empty {
-    border: 1px solid #c4cbd0;
-    background-color: white;
-    color: #c4cbd0;
-}
-
-
-.tasks {
-    padding: 20px 50px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-}
-
-.category {
-    margin-bottom: 20px;
-}
-
-.category h3::before {
-    /* https://www.w3schools.com/cssref/css_entities.asp */
-    content: '\25BE';
-}
-
-li {
-    list-style: none;
-    padding: 10px 0;
-    color: #434851;
-}
-
-/* li.circle {
-    border-bottom: 1px solid #f6f8f9;
-} */
-
-li .circle::before {
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    margin-right: 10px;
-    border-radius: 50%;
-    line-height: 15px;
-    font-size: 10px;
-    text-align: center;
-}
-
-li .circle.checked::before {
-    content: '\2713';
-    border: 1px solid #2cc6ab;
-    color: #2cc6ab;
-}
-
-li .circle.delete::before {
-    content: '\2573';
-    border: 1px solid #ff0000;
-    color: #ff0000;
-    /* font-size: 6px; diverso su chrome*/
-}
-
-.tag {
-    padding: 5px 10px;
-    border-radius: 10px;
-    font-size: 10px;
-    color: white;
-}
-
-.tag-type-1 {
-    background-color: #09a9ed;
-}
-
-.tag-type-2 {
-    background-color: #ab5de6;
-}
-
-.tag-type-3 {
-    background-color: #2cc6ab;
-}
-
-.tag-type-4 {
-    background-color: #ff9b00;
-}
-
-.tag-type-5 {
-    background-color: #ec4a9d;
-}
-
-.tag-type-6 {
-    background-color: #a3d116;
+#div1 {
+    margin-bottom: 30px;
 }
