@@ -1,4 +1,4 @@
-/* impostazioni generali */
+/* generali */
 * {
     margin: 0;
     padding: 0;
@@ -6,63 +6,144 @@
 }
 
 body {
-    background-image: url('https://ssl.gstatic.com/ui/v1/icons/mail/themes/desk/bg2_1920x1200.jpg');
+    background-color: #f6f8f9;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
 }
 
-#container {
- width: 80%;
- margin: 30px auto;
- /* regole debug */
- /* background-color: chartreuse;
- height: 50px; */
+.container {
+    width: 70%;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 5px;
 }
 
 /* header */
+header {
+    height: 70px;
+    background-color: white;
+    margin-bottom: 40px;
+    padding: 10px 20px;
+}
+
 #logo {
-    height: 100px;
-    line-height: 100px;
+    height: 100%;
     vertical-align: middle;
 }
-#logotext{
-    font-size: 25px;
-    color: white;
-    margin-left: 20px;
+
+#logo-text {
+    font-size: 38px;
+    font-weight: 900;
+    vertical-align: middle;
 }
 
-.headsection {
-    border-bottom: solid 2px #fff;
-    padding: 10px 0 20px;
-}
 
-#counting {
-    color: white;
-    font-size: 35px;
-    margin-top: 10px;
-}
-
-#counting span {
-    background-color: orange;
-    width: 50px;
+/* main */
+.top {
     height: 50px;
-    display: inline-block;
-    text-align: center;
+    padding: 0 50px;
+    border-bottom: 2px solid #f6f8f9;
     line-height: 50px;
-    vertical-align: middle;
+}
+
+.btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+
+.btn-filled {
+    border: 1px solid #14aaf5;
+    background-color: #14aaf5;
+    color: white;
+}
+
+
+.btn-empty {
+    border: 1px solid #c4cbd0;
+    background-color: white;
+    color: #c4cbd0;
+}
+
+
+.tasks {
+    padding: 20px 50px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.category {
+    margin-bottom: 20px;
+}
+
+.category h3::before {
+    /* https://www.w3schools.com/cssref/css_entities.asp */
+    content: '\25BE';
+}
+
+li {
+    list-style: none;
+    padding: 10px 0;
+    color: #434851;
+}
+
+/* li.circle {
+    border-bottom: 1px solid #f6f8f9;
+} */
+
+li .circle::before {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
     border-radius: 50%;
+    line-height: 15px;
+    font-size: 10px;
+    text-align: center;
 }
 
-
-/* corpo messaggi */
-.msgrow {
-    background-color: rgb(150, 148, 148);
-    padding: 10px 5px;
-    border-bottom: solid 1px #000;
+li .circle.checked::before {
+    content: '\2713';
+    border: 1px solid #2cc6ab;
+    color: #2cc6ab;
 }
 
-.unreadmsg {
-    background-color: #ccc;
+li .circle.delete::before {
+    content: '\2573';
+    border: 1px solid #ff0000;
+    color: #ff0000;
+    /* font-size: 6px; diverso su chrome*/
 }
 
-.star::after{
-    content: "\02605";
+.tag {
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 10px;
+    color: white;
+}
+
+.tag-type-1 {
+    background-color: #09a9ed;
+}
+
+.tag-type-2 {
+    background-color: #ab5de6;
+}
+
+.tag-type-3 {
+    background-color: #2cc6ab;
+}
+
+.tag-type-4 {
+    background-color: #ff9b00;
+}
+
+.tag-type-5 {
+    background-color: #ec4a9d;
+}
+
+.tag-type-6 {
+    background-color: #a3d116;
 }

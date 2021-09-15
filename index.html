@@ -2,64 +2,65 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toboolist</title>
     <link rel="stylesheet" href="css/style.css">
-    <title>Gmail replica</title>
 </head>
 <body>
-
-    <div id="container">
-
-        <!-- intestazione -->
-        <header>
-
-            <section class="headsection">
-                <img id="logo" src="img/gmail.png" alt="logo gmail">
-                <span id="logotext">Gmail</span>
-            </section>
-
-            <section class="headsection">
-                <input type="text" placeholder="Search">
-                <button>VAI</button>
-
-                <!-- unread -->
-                <div id="counting">
-                    You have 
-                    <span>30</span> 
-                    unread
-                </div>
-            </section>
-
-        </header>
-
-        <!-- parte principale -->
-        <main>
-            <section>
-                <div class="msgrow">
-                    dsjkhjksadc
-                    <span class="star"></span>
-                </div>
-                <div class="msgrow">
-
-                </div>
-                <div class="msgrow unreadmsg">
-
-                </div>
-            </section>
-
-        </main>
+    <header>
+        <!-- <img id="logo" src="https://www.boolean.careers/images/misc/logo.png" alt=""> -->
+        <img id="logo" src="img/logo.png" alt="logo boolean">
+        <span id="logo-text">Toboolist</span>
+    </header>
+    <main>
+        <div class="container">
+            <div class="top">
+                <a href="#" class="btn btn-filled">Add Task</a>
+                <a href="#" class="btn btn-empty">Add Section</a>
+            </div>
+            <div class="tasks">
+                    <div class="category">
+                        <h3> New Task </h3> <!-- &#9662 -->
+                        <ul>
+                            <li>
+                                <span class="circle checked">
+                                    <!-- questo è fatto con code su un :before ma si può fare anche con sempici img o altra soluzione a seconda anche della classe -->
+                                </span>Quarterly Newsletter 
+                                <!-- spieghiamo che la classe tag ci serve per centralizzare le caratteristiche principali del tag e tag-type-n per gestire i colori, non sono degli id perchè possiamo avere tanti tag con quel tipo -->
+                                <span class="tag tag-type-1">Editorial</span>
+                            </li>
+                        </ul>
+                    </div>
 
 
-        <!-- footer -->
-        <footer>
+                    <div class="category">
+                        <h3> Today </h3>
+                        <ul>
+                            <li>
+                                <span class="circle checked"></span>Recruiting blog post <span class="tag tag-type-1">Editorial</span>
+                            </li>
+                            <li><span class="circle checked"></span>Mobile app luaunch <span class="tag tag-type-2">Q1 Goals</span></li>
+                            <li>
+                                <span class="circle delete">
+                                    <!-- questo è un pò diverso tra chrome e firefox, in caso ottima occasione per parlare del fatto che spesso sarà così -->
+                                </span>
+                                Interview John H. <span class="tag tag-type-3">Recruiting</span></li>
+                            <li><span class="circle checked"></span>Summit update to mobiile storefronts <span class="tag tag-type-4">Mobile</span></li>
+                        </ul>
+                    </div>
 
-        </footer>
 
+                    <div class="category">
+                        <h3> Upcoming </h3>
+                        <ul>
+                            <li><span class="circle delete"></span>Schedule meeting with Alex </li>
+                            <li><span class="circle checked"></span>Homepage refresh <span class="tag tag-type-5">Website</span></li>
+                            <li><span class="circle checked"></span>Onboard new Sales team members <span class="tag tag-type-6">Sales</span></li>
+                            <li><span class="circle checked"></span>Review editorial calendar <span class="tag tag-type-1">Editorial</span></li>
+                        </ul>
+                    </div>
 
-    </div>
-
-    
-    
+            </div>
+        </div>
+    </main>
 </body>
 </html>
