@@ -5,42 +5,30 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
+.container{
+    /* regole di debug */
+    background-color: yellow;
 }
 
-.class1 {
-    background-color: orchid;
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
-div.class1 {
-    color: red;
+.colsx, .coldx{
+    /* regole di debug */
+   width: 200px;
+   height: 200px; 
 }
 
-input[type="email"] {
-    background-color: plum;
+.colsx {
+    /* regole di debug */
+    background-color: blueviolet;
+    float: left;
 }
-
-a {
-    text-decoration: none;
-    font-size: 30px;
-    color: purple;
-}
-
-a:hover {
-    text-decoration: underline;
-    color: red;
-}
-
-ul li {
-    padding-left: 10px;
-}
-
-ul li:first-child {
-    color: salmon;
-}
-
-input[type="checkbox"]:checked {
-    width: 40px;
+.coldx {
+    /* regole di debug */
+    background-color: chartreuse;
+    float: right;
 }
