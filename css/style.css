@@ -7,7 +7,7 @@
 
 .container{
     width: 80%;
-    margin: 0 auto;
+    margin: 30px auto;
     /* regole di debug */
     background-color: yellow;
 }
@@ -18,24 +18,40 @@
     clear: both;
 }
 
-.colsx, .coldx{
+/* header */
+header {
     /* regole di debug */
-   height: 200px; 
+    background-color: yellowgreen;
+    height: 100px;
 }
 
-.colsx {
-    width: 70%;
-    float: left;
-    /* regole di debug */
-    background-color: blueviolet;
+/* parte principale di pagina */
 
-}
-.coldx {
-    width: 25%;
-    /* float: right; */
+    /* parte widgets */
+.widgets{
     float: left;
-    margin-left: 5%;
+    width: 15%;
     /* regole di debug */
-    background-color: chartreuse;
- 
+    background-color: tomato;
+    /* height: 200px; */
+}
+.widget {
+    margin-bottom: 30px;
+}
+
+#sezione1{
+    float: left;
+    width: 66%;
+    margin: 0 2%;
+    /* regole di debug */
+    background-color:turquoise;
+    height: 300px;
+}
+
+
+/* footer */
+footer {
+    /* regole di debug */
+    background-color:teal;
+    height: 100px;
 }
