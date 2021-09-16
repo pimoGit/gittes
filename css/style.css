@@ -6,6 +6,8 @@
 }
 
 .container{
+    width: 80%;
+    margin: 0 auto;
     /* regole di debug */
     background-color: yellow;
 }
@@ -18,17 +20,22 @@
 
 .colsx, .coldx{
     /* regole di debug */
-   width: 200px;
    height: 200px; 
 }
 
 .colsx {
+    width: 70%;
+    float: left;
     /* regole di debug */
     background-color: blueviolet;
-    float: left;
+
 }
 .coldx {
+    width: 25%;
+    /* float: right; */
+    float: left;
+    margin-left: 5%;
     /* regole di debug */
     background-color: chartreuse;
-    float: right;
+ 
 }
