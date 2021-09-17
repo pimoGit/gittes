@@ -5,3 +5,74 @@
     box-sizing: border-box;
 }
 
+body{
+    font-size: 16px;
+    /* font-family: ....; */
+}
+
+#container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.clearfix{
+    /* regole dubug */
+    background-color: crimson;
+}
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* header */
+header{
+    /* regole dubug */
+    height: 100px;
+    background-color: violet;
+}
+
+
+/* jumbotron */ 
+#jumbotron{
+    margin: 30px 0;
+    /* regole dubug */
+    height: 300px;
+    background-color:yellow;
+}
+
+/* main */
+.maintitles{
+    margin-bottom: 20px;
+    /* regole dubug */
+    height: 100px;
+    background-color:cadetblue;
+}
+
+.sideelement{
+    float: left;
+    width: 15%;
+    /* regole dubug */
+    height: 400px;
+    background-color:cadetblue;
+}
+
+#hpsection{
+    float: left;
+    width: 60%;
+    margin: 0 5%;
+    /* regole dubug */
+    height: 400px;
+    background-color:cadetblue;
+}
+
+
+
+/* footer */
+footer{
+    margin-top: 30px;
+    /* regole dubug */
+    height: 100px;
+    background-color:blueviolet;
+}
