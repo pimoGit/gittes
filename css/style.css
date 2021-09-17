@@ -33,6 +33,12 @@ header{
     background-color: violet;
 }
 
+#mainnav li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 10px;
+}
+
 
 /* jumbotron */ 
 #jumbotron{
