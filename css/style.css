@@ -24,11 +24,20 @@ h2 {
 .container {
     width: 80%;
     margin: 0 auto;
+    padding-top: 175px;
 }
 
 /* header */
 header{
-    margin-bottom: 40px;
+    /* margin: 40px; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 135px;
+    width: 100%;
+    padding:0 10%;
+    z-index: 999;
+    background-color: #fff;
 }
 
 #header-up img {
