@@ -2,136 +2,77 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Wordpress Theme</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Heebo:wght@600&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <title>Shop</title>
 </head>
 <body>
-    <div class="container">
 
-        <!-- header -->
-        <header>
-
-            <div id="header-up">
-                <a href="#">
-                    <img src="img/logo.png" alt="logo">
-                </a> 
-            </div>
-
-            <nav>
-                <ul>
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">Editorials</a></li>
-                    <li><a href="#">Environment</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Shop</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-
-        </header>
-
-
-        <!-- jumbotron/banner messo fuori da header per andare più in parallelo con screeshot struttura, ma può stare anche dentro -->
-        <section class="banner">
-            <div class="overlay"></div>
-            <!-- per tenere la grafica l'img potrebbe sgranare, qui entra in gioco la creazione dell'asset fatta ad hoc -->
-            <img src="img/banner.jpg" alt="immagine banner">
-            <div class="banner-text">
-                <h3>Pretium ac placerat dui interdum nunc in eros urna morbi</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut viverra nisl rutrum, pretium lectus nec, sagittis dolor. Phasellus eleifend efficitur...</p>
-            </div>
-
-            <!-- blocco rosso -->
-            <div id="red"></div>
-        </section>
-
-        <!-- corpo -->
-        <main>
-
-            <div class="title">
-                <h2>Leadership</h2>
-                <h4>Fertenum urna a libero tempus</h4>
-            </div>
-
-            <!-- blocco a colonne con "contenitore di row" in clearfix -->
+    <main>
+        <section>
+            <!-- riga blocco prodotti -->
             <div class="clearfix">
+                <!-- scheda prodotto -->
+                <div class="product">
+                    <img src="img/pd1.jpg" alt="product n">
+                    <div class="discount">30%</div>
+                    <span class="cuore">
+                        &hearts;
+                    </span>
+                </div>
 
-                <!-- colonna sx -->
-                <aside class="col-side">
-                    <div class="col-in-item"><!-- blocco interno alla colonna di raggrupamento blocco contenuto, possibile utilità -->
-                        <div class="col-img">
-                            <div class="overlay"></div>
-                            <img src="img/img-1.jpg" alt="">
-                        </div>
-                        <div class="col-text">
-                            <h4>Lorem</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nostrum illo reprehenderit, aspernatur beatae architecto vero dolorem at facilis ad, placeat velit porro dolorum molestias alias assumenda ullam? Sint, veniam.</p>
-                        </div>
-                    </div>
+                <!-- scheda prodotto -->
+                <div class="product">
+                    <img src="img/pd2.jpg" alt="product n">
+                    <div class="discount alert">5%</div>
+                    <span class="cuore">
+                        &hearts;
+                    </span>
+                </div>
 
-                    <!-- esempio di utilità blocco interno, se ci fossero nella colonna più blocchi
-                    <div class="col-in-item">
-                        <div class="col-img">
-                            <div class="overlay"></div>
-                            <img src="img/img-1.jpg" alt="">
-                        </div>
-                        <div class="col-text">
-                            <h4>Lorem</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nostrum illo reprehenderit, aspernatur beatae architecto vero dolorem at facilis ad, placeat velit porro dolorum molestias alias assumenda ullam? Sint, veniam.</p>
-                        </div>
-                    </div>
-                     -->
-
-                </aside>
-
-                <!-- blocco centrale  -->
-                <section class="col-center">
-                    <div class="col-in-item">
-                        <div class="col-img">
-                            <div class="overlay"></div>
-                            <img src="img/banner-2.jpg" alt="">
-                        </div>
-                        <div class="col-text">
-                            <h4>Ipsum</h4>
-                            <p>
-                                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, minus, cum. Laudantium repellendus repellat beatae ex magnam unde sint earum, voluptatibus, vero nulla distinctio, harum dolor iure reprehenderit consectetur magni.</span>
-                                <span>Voluptatibus cum sapiente similique sunt mollitia voluptates, molestiae odio atque reiciendis corrupti quae pariatur, ex delectus beatae corporis recusandae minima explicabo totam illo distinctio, quidem fugit dolore? Accusamus est, quaerat?</span>
-                                <span>Ratione dolorem consequuntur ab temporibus enim corporis quia et doloribus libero, tenetur dolorum earum veritatis! Saepe provident, quae. Itaque velit deserunt molestiae ullam tenetur quisquam adipisci recusandae, sit fugiat quia.</span>
-                                <span>Repellat assumenda asperiores voluptatem ad voluptate alias quos fugit sed possimus, aspernatur a, labore, laboriosam enim aut! Ratione doloribus, unde. Quidem totam, cum in praesentium doloribus nesciunt atque enim commodi.</span>
-                                <span>Perspiciatis veritatis commodi quod, quos ducimus exercitationem qui provident vel adipisci eos modi molestias quas debitis, doloribus mollitia sapiente quaerat dignissimos quis unde ea optio autem voluptas corrupti. Distinctio, itaque.</span>
-                            </p>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- colonna  dx -->
-                <aside class="col-side">
-                    <div class="col-in-item">
-                        <div class="col-img">
-                            <div class="overlay"></div>
-                            <img src="img/img-3.jpg" alt="">
-                        </div>
-                        <div class="col-text">
-                            <h4>Lorem</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, saepe debitis ipsum dolorum consectetur aspernatur laborum voluptatum ex ipsam corporis quasi veritatis laboriosam nisi beatae, aut quisquam placeat nihil. Totam.</p>
-                        </div>
-                    </div>
-                </aside>
-
+                <!-- scheda prodotto -->
+                <div class="product">
+                    <img src="img/pd3.jpg" alt="product n">
+                    <div class="discount">25%</div>
+                    <span class="cuore">
+                        &hearts;
+                    </span>
+                </div>
             </div>
 
-        </main>
+            <!-- riga blocco prodotti -->
+            <div class="clearfix">
+                <!-- scheda prodotto -->
+                <div class="product">
+                    <img src="img/pd1.jpg" alt="product n">
+                    <div class="discount">30%</div>
+                    <span class="cuore">
+                        &hearts;
+                    </span>
+                </div>
 
-        <!-- footer -->
-        <footer>
-            <span class="love">
-                Designed with
-            </span>
-        </footer>
+                <!-- scheda prodotto -->
+                <div class="product">
+                    <img src="img/pd2.jpg" alt="product n">
+                    <div class="discount alert">5%</div>
+                    <span class="cuore">
+                        &hearts;
+                    </span>
+                </div>
 
-    </div>
+                <!-- scheda prodotto -->
+                <div class="product">
+                    <img src="img/pd3.jpg" alt="product n">
+                    <div class="discount">25%</div>
+                    <span class="cuore">
+                        &hearts;
+                    </span>
+                </div>
 
+            </div>
+        </section>
+    </main>
+    
 </body>
 </html>
