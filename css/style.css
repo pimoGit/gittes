@@ -5,13 +5,41 @@
 }
 
 
-#square {
+section {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    border: solid 7px #fff;
+    background-size: cover;
+    /* debug */
+    /* background-color: red; */
+}
+
+h1 {
+    font-size: 40px;
+    color: #fff;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* debug */
-    width: 100px;
-    height: 100px;
-    background-color: red;
+}
+
+
+.layover{
+    height: 100%;
+    background-color: rgba(75, 75, 75, .5);
+}
+
+/* bg img città dettaglio */
+
+#roma {
+    background-image: url('https://citynews-romatoday.stgy.ovh/~media/original-hi/602411987578/colosseo-roma-3.jpg');
+}
+
+#napoli {
+    background-image: url('https://siviaggia.it/wp-content/uploads/sites/2/2020/08/innamorarsi-napoli.jpg');
+}
+
+#milano {
+    background-image: url('https://www.open.online/wp-content/uploads/2020/03/MILANO-TAG.jpg');
 }
