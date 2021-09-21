@@ -4,42 +4,76 @@
     box-sizing: border-box;
 }
 
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
 
-section {
+
+/* section */
+section, aside {
+    float: left;
+}
+
+section{
     height: 100vh;
-    width: 100vw;
+    width: 80%;
     position: relative;
-    border: solid 7px #fff;
-    background-size: cover;
     /* debug */
-    /* background-color: red; */
+    /* background-color: rosybrown; */
 }
 
-h1 {
-    font-size: 40px;
-    color: #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-
-.layover{
+section img {
+    object-fit: cover;
     height: 100%;
+    width: 100%;
+    display: block;
+}
+
+#player {
+    height: 100px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+    width: 80%;
+    border-top: 5px solid red;
     background-color: rgba(75, 75, 75, .5);
+    /* debug */
+    /* background-color: salmon; */
+
 }
 
-/* bg img città dettaglio */
-
-#roma {
-    background-image: url('https://citynews-romatoday.stgy.ovh/~media/original-hi/602411987578/colosseo-roma-3.jpg');
+#play{
+    color: #fff;
+    font-size: 50px;
+    line-height: 100px;
+    vertical-align: middle;
+    margin-left: 50px;
+    cursor: pointer;
 }
 
-#napoli {
-    background-image: url('https://siviaggia.it/wp-content/uploads/sites/2/2020/08/innamorarsi-napoli.jpg');
+/* aside */
+aside {
+    height: 100vh;
+    width: 20%;
+    padding: 10px;
+    overflow: auto;
+    /* debug */
+    /* background-color:royalblue; */
 }
 
-#milano {
-    background-image: url('https://www.open.online/wp-content/uploads/2020/03/MILANO-TAG.jpg');
+.suggested {
+    margin-bottom: 20px;
 }
+
+.suggested img {
+    max-width: 45%;
+}
+
+.suggested h3 {
+    display: inline-block;
+    max-width: 40%;
+}
+
