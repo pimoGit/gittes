@@ -1,48 +1,96 @@
-/* general rules */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.clearfix::after{
-    content: "";
-    display: table;
-    clear: both;
+body {
+    font-family: sans-serif;
+    font-size: 14px;
 }
 
-.product{
-    float: left;
+.container {
+    width: 80%;
+    margin: 0 auto; 
+    padding: 20px;
+}
+
+.row {
+    width: 100%;
+}
+
+.card {
     width: calc(100% / 3);
-    text-align: center;
-    background-color:#ccc;
-    border: solid 2px #000;
+    display: inline-block;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.card-image {
     position: relative;
     cursor: pointer;
 }
 
-.discount {
-    padding: 10px;
-    font-size: 30px;
-    background-color: darkgreen;
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-.discount.alert {
-    background-color: red;
+.card-image .first-image {
+    display: block;
 }
 
-.cuore {
-    color: red;
-    position: absolute;
-    bottom: 10px;
-    left: 0;
-    width: 100%;
-    text-align: center;
+.card-image .second-image {
     display: none;
 }
 
-.product:hover .cuore{
-    display: inline-block;
+.card-image:hover .first-image {
+    display: none;
 }
+
+.card-image:hover .second-image {
+    display: block;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card-heart {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    background-color: #fff;
+    font-size: 30px;
+    padding: 8px 15px;
+}
+
+.card-promo {
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+}
+
+.card-promo span {
+    display: inline-block;
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+.card-discount {
+    background-color: #eb0037;
+}
+
+.card-tag {
+    background-color: #00875a;
+}
+
+.card-text {
+    margin-top: 10px;
+}
+
+.product-name {
+    text-transform: uppercase;
+}
+
+.price {
+    color: red;
+    font-weight: bold;
+}
+
