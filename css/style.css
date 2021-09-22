@@ -5,4 +5,35 @@
     box-sizing: border-box;
   }
   
+
+  /* header */
+  header {
+      background-color: #698ef0;
+      /* debug */
+      height: 300px;
+  }
+
+  header .fa-facebook-f {
+      font-size: 25px;
+      color: #fff;
+  }
   
+
+  /* sezione principale */
+main {
+    margin: 50px 0;
+}
+
+section {
+    /* debug */
+    height: 200px;
+
+}
+
+
+/* footer */
+footer{
+    background-color: #23272a;
+    /* debug */
+    height: 200px;
+}
