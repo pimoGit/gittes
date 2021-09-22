@@ -4,6 +4,14 @@
     padding: 0;
     box-sizing: border-box;
   }
+
+  .container-center{
+      width: 90%;
+      margin: 0 auto;
+      /* debug */
+      background-color: tomato;
+      height: 100px;
+  }
   
 
   /* header */
