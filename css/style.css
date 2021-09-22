@@ -1,79 +1,97 @@
+/* general rules */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-.clearfix::after{
-    content: "";
-    display: table;
-    clear: both;
-}
-
-
-/* section */
-section, aside {
-    float: left;
-}
-
-section{
-    height: 100vh;
-    width: 80%;
-    position: relative;
-    /* debug */
-    /* background-color: rosybrown; */
-}
-
-section img {
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-    display: block;
-}
-
-#player {
-    height: 100px;
+  }
+  
+  html {
+    /*Spiegare in livecoding che non è compatibile con tuttii browser*/
+    scroll-behavior: smooth;
+  }
+  
+  
+  /* navbar */
+  nav {
     position: fixed;
-    bottom: 0;
-    left: 0;
-    z-index: 99;
-    width: 80%;
-    border-top: 5px solid red;
-    background-color: rgba(75, 75, 75, .5);
-    /* debug */
-    /* background-color: salmon; */
-
-}
-
-#play{
-    color: #fff;
-    font-size: 50px;
-    line-height: 100px;
-    vertical-align: middle;
-    margin-left: 50px;
-    cursor: pointer;
-}
-
-/* aside */
-aside {
+    top:0;
+    right: 0;
+    z-index: 9999;
+  }
+  nav ul {
+    display: inline-block; /* solo per consistenza in debugger*/
+  }
+  
+  nav li {
+    float: left;
+    list-style: none;
+  }
+  
+  nav li a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 40px 20px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Rubik Mono One', sans-serif;
+    color: black;
+  }
+  
+  nav li a:hover {
+    box-shadow: 0 6px 12px rgba(0,0,0,0.64);
+  }
+  
+  nav li a:active {
+    color: black;
+    background-color: #ededed;
+  }
+  
+  
+  /* sections */
+  section {
+    width: 100%;
     height: 100vh;
-    width: 20%;
-    padding: 10px;
-    overflow: auto;
-    /* debug */
-    /* background-color:royalblue; */
-}
-
-.suggested {
-    margin-bottom: 20px;
-}
-
-.suggested img {
-    max-width: 45%;
-}
-
-.suggested h3 {
-    display: inline-block;
-    max-width: 40%;
-}
-
+    position: relative;
+  }
+  
+  section .blocco {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .blocco img {
+    max-width: 100%;
+  }
+  
+  .blocco .text {
+    font-family: sans-serif;
+    /* font-size: 3vw; */
+    font-size: 30px ;
+    text-align: center;
+    font-family: 'Rubik Mono One', sans-serif;
+  }
+  
+  /*  sections detail IDs */
+  #scarpa-1 {
+    background-color: red;
+    color: yellow;
+  }
+  
+  #scarpa-2 {
+    background-color: green;
+    color: yellow;
+  }
+  
+  #scarpa-3 {
+    background-color: yellow;
+    color: green;
+  }
+  
