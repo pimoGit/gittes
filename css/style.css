@@ -1,47 +1,319 @@
-/* general rules */
+/* general rules ------------- */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-
-  .container-center{
-      width: 90%;
-      margin: 0 auto;
-      /* debug */
-      background-color: tomato;
-      height: 100px;
-  }
-  
-
-  /* header */
-  header {
-      background-color: #698ef0;
-      /* debug */
-      height: 300px;
-  }
-
-  header .fa-facebook-f {
-      font-size: 25px;
-      color: #fff;
-  }
-  
-
-  /* sezione principale */
-main {
-    margin: 50px 0;
 }
 
-section {
-    /* debug */
-    height: 200px;
+body{
+    /* il font principale sarebbe da mettere con @fontface, ma non lo vedono loro
+    quindi non introduco e lascio così */
+    font-family: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 20px;
+    color: #23272a;
+}
 
+/* comportamento base della maggior parte dei link */
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* contenitore condiviso per centrare tutti i contenuti dei macroblocchi 
+e dare stesso ingombro (rendiamo già un minimo adaptive)
+e li richiama anche strutture a griglie di BS*/
+.container-center {
+    width: 90%;
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+/* contenitore riga clearfix */
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* centralizziamo ciò che si può */
+.btn {
+    display: inline-block;
+    border-radius: 40px;
+    padding: 16px 32px;
+    background-color: #8ea1e1;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* ipotizziamo di avere un tot di varianti simili nel sito quindi centralizziamo */
+.btn.white-black {
+    background-color: #fff;
+    color: #23272a;
+}
+.btn.black-white {
+    background-color: #23272a;
+    color: #fff;
+}
+.btn:hover{ /* semplifichiamo hover per tutti*/
+    text-decoration: none;
+    color: rgba(49,97,224,255);
+}
+/* icona */
+.btn .fas {
+    margin-right: 8px;
+}
+
+/* immaginandolo come elemento di possibile ripetizione nel sito (lo generalizziamo) */
+.title-stars {
+    background: url("../img/stars.svg") no-repeat;
+    background-size: contain;
+    padding: 10px;
+    padding-top: 40px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 30px;
+}
+
+/* parte del logo, centralizzato perchè ha le stesse regole in header e footer */
+.logo{
+    float: left;
+}
+.logo a{
+    display: inline-block;
+}
+.logo img {
+    vertical-align: middle; /* centratura verticale*/
+}
+
+/* header  ------------- */
+header {
+    height: 80px;
+    line-height: 80px; /* centratura verticale*/
+    background-color: rgba(49,97,224,255);
 }
 
 
-/* footer */
+    /* main nav */
+#main-nav {
+    float: left;
+    text-align: center;
+    width: calc(100% - 197px); /*finezza se abbiam visto il calc (100% meno gli altri 2 elementi)*/
+}
+#main-nav ul {
+    list-style-type: none;
+    width: 100%; 
+}
+    /* non abbiam necessariamente bisogno dei float ovunque */
+#main-nav li {
+    display: inline-block;
+}
+#main-nav li a {
+    margin: 10px;
+    padding: 10px;
+    color: #fff;
+    font-size: 16px;
+}
+#main-nav li a:hover {
+    text-decoration: underline;
+}
+
+#accedi {
+    float: right;
+}
+#accedi .btn {
+    padding: 10px 14px;
+    background-color: #fff;
+    font-size: 14px;
+    color: #23272a;
+    display: inline;
+}
+#accedi .btn:hover{
+    color: rgba(49,97,224,255);
+}
+
+/* jumbo  ------------- */
+#jumbotron{
+    min-height: 546px;
+    background-image: url("../img/jumbo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#jumbotron .container-center{
+    /* adattiamo qualche proprietà qui */
+    max-width: 780px; 
+    text-align: center;
+    padding-top: 100px;
+    color: #fff;
+}
+
+#jumbotron .container-center h1{
+    font-size: 56px;
+    margin-bottom: 40px;
+}
+
+#jumbotron .container-center p{
+    margin-bottom: 25px;
+    line-height: 32px;
+}
+
+#jumbotron .container-center .btn:first-of-type{
+    margin-right: 24px;
+}
+
+/* main content  ------------- */
+    /* anche qui centralizziamo il possibile visto che le 3 sez main sono uguali su molto */
+    /* sezione tipo */
+.main-section{
+    padding: 120px 0;
+}
+.main-section .colsx {
+    float: left;
+}
+.main-section .coldx { 
+    /* con il right possiamo evitarci il margine tra le col
+    guadaganndo un pò di adaptiveness 
+    (finezza, ma possiamo sennò andare anche di left su entrambe e agiungere margin su .text)*/
+    float: right; 
+}
+.main-section .text {
+    width: 360px;
+    padding-top: 30px;
+    /* margin-left: 142px; */
+}
+.main-section .text h2{
+    font-size: 48px;
+    margin-bottom: 24px;
+}
+
+.main-section .text p{
+    line-height: 150%;
+}
+
+/* versione di sezione simile ma alternativa (blocchi rovesciati, bgcolor e blocchi wave) */
+.main-section.alt-v{
+    background-color:#f6f6f6;
+}
+
+/* versione di sezione diversa (senza colonne ma stesse regole di testo e wavetop,
+quindi anche qui ereditiamo le cose simili) */
+.main-section.alt-v-nocols{
+    background-color:#f6f6f6;
+}
+/* cambiamo solo le parti che ci interessano ereditando il resto */
+.main-section.alt-v-nocols .nocol{
+    margin-bottom: 16px;
+    text-align: center;
+}
+.main-section.alt-v-nocols .text {
+    width: auto;
+    padding-top:0;
+    padding-left: 90px;
+    padding-right: 90px;
+    /* margin-left: 0; */
+}
+.main-section.alt-v-nocols .nocol img{
+    width: 100%;
+}
+
+.main-section.alt-v-nocols .nocol h3{
+    width: 50%;
+    margin-bottom: 30px;
+}
+
+/* gestione wave svg 
+(può essere complessa, possiamo lasciare come bonus e poi facciamo giusto vedere in correzione) */
+.wave svg{
+    color: #f6f6f6;
+    display: block; /* toglie margine di sporcatura su svg */
+}
+/* copia di wave.top ma ribaltata in verticale */
+.wave.down {
+    transform: rotate(180deg);
+}
+
+
+/* footer  ------------- */
 footer{
     background-color: #23272a;
-    /* debug */
-    height: 200px;
+    padding: 80px 0 60px 0;
+}
+
+    /* up */
+#foot-up{
+ padding-bottom: 35px;
+}
+
+    /* distribuiamo in unità realtive sempre per favorire l'adaptive  */
+    /* main col */
+#foot-up .main-col {
+    float: left;
+    width: 28%;
+    margin-right: 4%;
+}
+#foot-up .main-col h4{
+    font-size: 32px;
+    color:#7289da;
+    margin-bottom: 20px;
+}
+#foot-up .main-col #social{
+    margin-top: 20px;
+}
+#foot-up .main-col #social a{
+    color: #fff;
+    margin-right: 20px;
+}
+#foot-up .main-col #social a:hover{
+    text-decoration: none;
+}
+
+    /* menu replica col */
+#foot-up .menu-col {
+    float: left;
+    width: 17%;
+}
+#foot-up .menu-col h5 {
+    font-size: 16px;
+    color:#7289da;
+    padding-top: 8px;
+}
+#foot-up .menu-col ul{
+    list-style-type: none;
+}
+#foot-up .menu-col li {
+    margin-top: 8px;
+}
+#foot-up .menu-col li a{
+    color: #fff;
+    font-size: 16px;
+}
+
+#language {
+    color: #fff;
+    font-size: 14px;
+}
+#language img{
+    vertical-align: middle;
+    height: 16px;
+}
+
+
+    /* down */
+#foot-down{
+ border-top: solid 1px #7289da;
+ padding: 35px 0;
+}
+
+#registrati {
+    float: right;
+}
+#registrati .btn {
+    padding: 10px 14px;
+    font-size: 14px;
+    display: inline;
+}
+#registrati .btn:hover{
+    color: rgba(49,97,224,255);
 }
