@@ -47,14 +47,21 @@ header li {
 #flex-container {
     display: flex;
     justify-content: space-evenly;
+    align-items: stretch;
     height: 200px;
     background-color: blueviolet;
 }
 
 .flex-item {
     height: 100px;
-    width: 100px;
+    /* width: 100px; */
     background-color: crimson;
+    border: solid 1px #000;
+    /* flex item */
+    flex-basis: 100px;
+    flex-grow: 1;
+
+    /* flex container */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -66,6 +73,7 @@ header li {
 }
 .flex-item.due {
     order: 4;
+    flex-grow: 2;
 }
 .flex-item.tre {
     order: 1;
