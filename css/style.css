@@ -41,3 +41,35 @@ header li {
     list-style-type: none;
     /* margin: 0 10px; */
 }
+
+
+/* prova order */
+#flex-container {
+    display: flex;
+    justify-content: space-evenly;
+    height: 200px;
+    background-color: blueviolet;
+}
+
+.flex-item {
+    height: 100px;
+    width: 100px;
+    background-color: crimson;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.flex-item.uno {
+    order: 2;
+}
+.flex-item.due {
+    order: 4;
+}
+.flex-item.tre {
+    order: 1;
+}
+.flex-item.quattro {
+    order: 3;
+}
