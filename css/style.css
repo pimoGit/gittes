@@ -6,39 +6,21 @@
     box-sizing: border-box;
 }
 
-#square {
-    width: 100px;
-    height: 100px;
-    background-color: deeppink;
-    position: absolute;
-    left: 0;
-    top: 0;
-    animation-name: muoviti;
-    animation-duration: 4s;
-    /* animation-iteration-count: infinite; */
+#container-flex{
+    display: flex;
+    /* height: 100vh;
+    justify-content: center;
+    align-items: center; */
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
+.flex-item  img {
+    filter: grayscale(1);
+    transition: all 1.5s;
+}
 
-@keyframes muoviti {
-    0% {
-        left: 0;
-        top: 0;
-    }
-    15%{
-        left: calc(100% - 100px);
-        top: 0;
-    }
-    60%{
-        left: calc(100% - 100px);
-        top: calc(100% - 100px);
-    }
-    75%{
-        left: 0;
-        top: calc(100% - 100px);
-    }
-    100%{
-        left: 0;
-        top: 0;
-    }
-    
+.flex-item:hover img {
+    filter: none;
 }
