@@ -6,76 +6,18 @@
     box-sizing: border-box;
 }
 
-/* toolbar alta */
-header {
+#call-to-action {
     height: 100px;
-    background-color: #f6f4f7;
-    display: flex;
-    /* flex-direction: row; */
-    justify-content: space-between;
-    align-items: center;
+    background-color: darkviolet;
+    font-size: 50px;
+    text-align: center;
+    line-height: 100px;
+    padding: 10px;
+    transition: all 1s ease-in-out;
 }
 
-
-/* blocco principale  */
-main {
-    height: calc(100vh - 100px);
-
-    /* debug */
-    background-color: darkblue;
-}
-
-    /* nav sinistra sopra */
-#nav_sx {
-    /* width: 30%; */
-    display: flex;
-    /* justify-content: space-around; */
-    /* align-items: center; */
-}
-#pallini{
-    width: 50px;
-    margin: 0 7px;
-    /* debug */
-    height: 25px;
-    background-color: darkred;
-}
-#paging{
-    width: 70px;
-    margin: 0 7px;
-    /* debug */
-    height: 25px;
-    background-color:darkturquoise;
-}
-#cerca{
-    width: 150px;
-    margin: 0 7px;
-    /* debug */
-    height: 25px;
-    background-color:darkslategray;
-}
-
-
-
-#nav_center {
-    /* width: 30%; */
-    display: flex;
-}
-
-.ico{
-    width: 50px;
-    margin: 0 7px;
-    /* debug */
-    height: 25px;
-    background-color: darkred;
-}
-
-
-#profilo {
-    /* width: 10%; */
-}
-
-/* debug */
-header div {
-    /* height: 50px; */
-    background-color: darkgoldenrod;
+#call-to-action:hover{
+    cursor: pointer;
+    background-color: deeppink;
+    font-size: 60px;
 }
