@@ -6,24 +6,29 @@
     box-sizing: border-box;
 }
 
-.shape {
-    height: 100px;
-    background-color: blue;
+body {
+    font-size: 20px;
 }
 
+nav ul {
+    margin: 20px;
+}
 
-@media all and (min-width: 1441px){
+a {
+    text-decoration: none;
+}
 
-    .shape {
-        background-color: red;
+@media all and (min-width: 780px){
+
+    nav ul li {
+        display: inline-block;
+        width: calc(90% / 5);
+        background-color: grey;
+        text-align: center;
     }
 
+    nav ul li a {
+        color: honeydew;
+        font-size: 0.8rem;
+    }
 }
-
-@media all and (max-width:479px){
-
-        .shape {
-            background-color: green;
-        }
-}
-
