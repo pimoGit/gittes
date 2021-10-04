@@ -6,16 +6,46 @@
     box-sizing: border-box;
 }
 
-body{
+/* MOBILE FIRST */
+.item {
+    width: 200px;
+    height: 200px;
     background-color: deepskyblue;
-    font-size: 15px;
+    margin-bottom: 20px;
 }
 
-@media screen and (min-width: 480px) and (max-width: 600px){
 
-    body {
-        background-color: deeppink;
-        font-size: 1.5rem;
+/* versione FLEX 
+@media all and (min-width:479px){
+
+    .item {
+        background-color: firebrick;
+        margin-bottom: 0;
+        margin-left: 20px;
+
+    }
+
+    #container {
+        display: flex;
+    }
+
+}*/
+
+
+/* versione FLOAT */
+@media all and (min-width:479px){
+
+    #container::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .item {
+        background-color: fuchsia;
+        margin-bottom: 0;
+        float: left;
+        margin-left: 20px;
     }
 
 }
