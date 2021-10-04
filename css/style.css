@@ -7,14 +7,23 @@
 }
 
 .shape {
-    width: 100px;
     height: 100px;
-    background-color: fuchsia;
+    background-color: blue;
 }
 
-@media all and (max-width:480px){
-    
+
+@media all and (min-width: 1441px){
+
     .shape {
-        border-radius: 50%;
+        background-color: red;
     }
+
 }
+
+@media all and (max-width:479px){
+
+        .shape {
+            background-color: green;
+        }
+}
+
