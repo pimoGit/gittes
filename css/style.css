@@ -6,29 +6,40 @@
     box-sizing: border-box;
 }
 
-body {
-    font-size: 20px;
+.green {
+    display: none;
 }
 
-nav ul {
-    margin: 20px;
+.blue {
+    height: 100px;
+    background-color: indigo;
 }
 
-a {
-    text-decoration: none;
-}
 
-@media all and (min-width: 780px){
+/* versione desktop */
+@media all and (min-width:580px){
 
-    nav ul li {
-        display: inline-block;
-        width: calc(90% / 5);
-        background-color: grey;
-        text-align: center;
+    #container {
+        display: flex;
     }
 
-    nav ul li a {
-        color: honeydew;
-        font-size: 0.8rem;
+    .blue {
+        width: 20%;
     }
+
+    .green {
+        width: 80%;
+        height: 100px;
+        background-color: lawngreen;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+    }
+
+    .white {
+        height: 80px;
+        width: 80px;
+        background-color: #fff;
+    }
+   
 }
