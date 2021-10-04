@@ -6,21 +6,16 @@
     box-sizing: border-box;
 }
 
-#container-flex{
-    display: flex;
-    /* height: 100vh;
-    justify-content: center;
-    align-items: center; */
-    flex-wrap: wrap;
-    max-width: 800px;
-    margin: 0 auto;
+body{
+    background-color: deepskyblue;
+    font-size: 15px;
 }
 
-.flex-item  img {
-    filter: grayscale(1);
-    transition: all 1.5s;
-}
+@media screen and (min-width: 480px) and (max-width: 600px){
 
-.flex-item:hover img {
-    filter: none;
+    body {
+        background-color: deeppink;
+        font-size: 1.5rem;
+    }
+
 }
