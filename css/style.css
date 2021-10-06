@@ -6,40 +6,36 @@
     box-sizing: border-box;
 }
 
-.green {
-    display: none;
+#wrapper {
+    height: calc(100vh - 100px) ;
+    background-color: lightblue;
+    display: flex;
 }
 
-.blue {
+/* #wrapper::after{
+    content: "";
+    display: table;
+    clear: both;
+} */
+
+aside {
+    /* float: left; */
+    width: 250px;
+    height: 100%;
+    background-color: lightcoral;
+}
+
+main{
+    /* float: left; */
+    height: 100%;
+    width: calc(100% - 250px) ;
+    background-color:magenta;
+}
+
+
+
+/* regole player */
+#player {
     height: 100px;
-    background-color: indigo;
-}
-
-
-/* versione desktop */
-@media all and (min-width:580px){
-
-    #container {
-        display: flex;
-    }
-
-    .blue {
-        width: 20%;
-    }
-
-    .green {
-        width: 80%;
-        height: 100px;
-        background-color: lawngreen;
-        display: flex;
-        justify-content:space-between;
-        align-items: center;
-    }
-
-    .white {
-        height: 80px;
-        width: 80px;
-        background-color: #fff;
-    }
-   
+    background-color: lawngreen;
 }
