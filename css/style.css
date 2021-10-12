@@ -6,36 +6,18 @@
     box-sizing: border-box;
 }
 
-#wrapper {
-    height: calc(100vh - 100px) ;
-    background-color: lightblue;
-    display: flex;
+[class*="col-"] {
+    min-height: 100px;
+    background-color: blueviolet;
+    border: solid 1px #000;
 }
 
-/* #wrapper::after{
-    content: "";
-    display: table;
-    clear: both;
-} */
-
-aside {
-    /* float: left; */
-    width: 250px;
-    height: 100%;
-    background-color: lightcoral;
+[class="col"] {
+    min-height: 100px;
+    background-color:chartreuse;
+    border: solid 1px #000;
 }
 
-main{
-    /* float: left; */
-    height: 100%;
-    width: calc(100% - 250px) ;
-    background-color:magenta;
-}
-
-
-
-/* regole player */
-#player {
-    height: 100px;
-    background-color: lawngreen;
+.ms-container-full-page {
+    /* max-width: 1170px; */
 }
