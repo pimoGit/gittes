@@ -1,16 +1,15 @@
-// chiedi all'utente quanti anni ha e digli in che anno è nato
+const squareCont = document.getElementById("containerSquare");
 
+console.log(squareCont);
 
-// chiediamo a utente età
-let age = parseInt(prompt("quanti anni hai?"));
+for (let i = 0; i <= 1000; i++){
+    // console.log("iterazione numero:",i,squareCont.innerHTML);
+    // squareCont.innerHTML += `<div class="square">
+    // ${i}
+    // </div>`;
 
-// stabiliamo in che anno siamo
-const anno = 2021;
-
-// ricaviamo l'anno di nascita sottraendo l'età all'anno in cui siamo
-let annoDiNascita = anno - age;
-
-// console.log(annoDiNascita);
-
-// gli diciamo in che anno è nato
-document.getElementById("mio_id").innerHTML = `Sei nato nel ${annoDiNascita}`;
+    let square = document.createElement("div");
+    square.classList.add("square");
+    square.append(i);
+    squareCont.append(square);
+}

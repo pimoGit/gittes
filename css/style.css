@@ -1,3 +1,27 @@
-#mio_id {
-    color: blueviolet;
+body {
+    background-color: #0d3b4c;
+}
+
+#container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+#containerSquare {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.square {
+    background-color: #2b8ab2;
+    height: 50px;
+    width: calc(92% / 9);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
