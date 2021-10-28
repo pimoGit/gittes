@@ -1,11 +1,10 @@
-// chiediamo all'utente nome e sesso e se è maschio il njome sarà azzurro altrimenti sarà rosa
+const arr = [];
 
-const el = document.getElementById("mio_id");
-
-el.addEventListener("click",
-
-    function(){
-        alert("Hey ti ho visto che hai cliccato su di me!");
+while (arr.length < 10){
+    let num = Math.floor(Math.random() * 1000) +1;
+    if (!arr.includes(num)){
+        arr.push(num);
     }
+}
 
-);
+console.log(arr);
