@@ -1,27 +1,52 @@
-body {
-    background-color: #0d3b4c;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-#container {
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
+html, body {
+    background-color: #011627;
 }
 
-
-#containerSquare {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.container {
+    width: 500px;
+    margin: 60px auto;
+    border: 2px solid white;
 }
 
 .square {
-    background-color: #2b8ab2;
-    height: 50px;
-    width: calc(92% / 9);
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    float: left;
+    width: calc(100% / 8);
+    height: calc(100% / 8);
+    border: 2px solid white;
+    cursor: pointer;
 }
+
+.square span {
+    display: none;
+}
+
+.square span.green{
+    color: green;
+}
+.square span.red{
+    color: red;
+}
+
+
+.square-container {
+    height: 500px;
+}
+
+.square.clicked-true {
+    background: #fff;
+}
+
+.square.clicked-true.boom {
+    background: #e71d36;
+}
+
+.square.clicked-true span {
+    display: block;
+}
+

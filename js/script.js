@@ -1,38 +1,84 @@
-// stampare lista della spesa da un arr con entrambi i cicli
+const gridCont = document.getElementById("grid");
+const levl = parseInt(prompt("livello?"));
+var points = 0;
 
-const spesa = ["uova", "patate", "latte", "burro", "nutella", "sombrero"];
-console.log("array iniziale",spesa);
-// stampare con una serie di log con il for
-// for (let i = 0; i < spesa.length; i++){
-
-//     console.log(spesa[i]);
+// const generaElemento = (elementGen, classPlus) => {
+//     let node = document.createElement(elementGen);
+//     node.classList.add(classPlus);
+//     return node
 // }
 
+// genero l'array bombe
+const bombList = bombGen(16, 1, levl);
+// console.log(bombList);
 
-// prendiamo l'elemento contenitore della generazione di elementi lista
-const ulLista = document.getElementById("lista");
-// const liLista = document.createElement("li");
+for(let i = 1; i <= 64; i++){
 
-let i = 0;
-while (i < spesa.length){
-    // console.log(spesa[i]);
-    // ulLista.innerHTML += `<li>${spesa[i]}</li>`;
-    const liLista = document.createElement("li");
-    liLista.append(spesa[i]);
-    ulLista.append(liLista);
-    i++;
+    let newElem = generaElemento("div", "square", i);    
+
+    newElem.addEventListener("click",
+        function(){
+            // newElem.classList.add("clicked-true");
+            console.log(this);
+            this.classList.add("clicked-true");
+
+            let numInt = parseInt(this.innerText);
+
+            // se è una bomba agiungo altra classe
+            if(bombList.includes(numInt)){
+                this.classList.add("boom");
+                console.log("BOOOM! FINE GIOCO!!, hai totalizzato punti: ", points);
+            } else {
+                ++points;
+                console.log("BRAVO/A!!! punteggio momentaneo a:", points);
+            }
+            // console.log(this.innerText);
+            // sennò aggiungo punto
+        }
+
+
+        // () => {
+        //     // newElem.classList.add("clicked-true");
+        //     console.log(this);
+        //     this.classList.add("clicked-true");
+        // }
+    );
+
+    gridCont.appendChild(newElem);
 }
 
-const btn = document.getElementById("aggiungi");
 
-btn.addEventListener("click",
-    function(){
-        // l'utente può inserire un elemento nella lista
-        const addItem = prompt("aggiungi un elemento");
-        spesa.push(addItem);
-        console.log("array aggiornata",spesa);
-        ulLista.innerHTML += `<li>${addItem}</li>`;
+
+
+// funzioni utili
+
+//  crea elemento del DOM
+function generaElemento(elementGen, classPlus, tex) {
+    let node = document.createElement(elementGen);
+    node.append(tex);
+    node.classList.add(classPlus);
+    return node
+}
+
+// crea array di numeri bomba
+function bombGen (bombnum, min, max){
+    let arrBombs = [];
+    while(arrBombs.length < bombnum){
+        let num = getRandomInt(min, max);
+        if(!arrBombs.includes(num)){
+            arrBombs.push(num);
+        }
     }
-);
+    return arrBombs
+
+}
+
+// crea numeri random tra min e max
+function getRandomInt(min, max) {
+    min = Math.ceil(min) || 0;
+    max = Math.floor(max) || Number.MAX_SAFE_INTEGER;
+    let result = Math.floor(Math.random() * (max - min + 1)) + min;
+    return result;
+  }
 
 
